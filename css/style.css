@@ -141,8 +141,8 @@ nav a:hover
 
 .centerHeader
 {
-    letter-spacing: 10px;
-    font-family: 'Lato', sans-serif;
+    letter-spacing: 0px;
+    font-family: 'Roboto', sans-serif, 700;
     margin: 0;
     padding-bottom: 0px;
     font-size: 3.5em;
@@ -150,17 +150,17 @@ nav a:hover
 
 .centerSubHeader
 {
-	  letter-spacing: 15px;
-		padding-top: 10px;
+	  letter-spacing: 3px;
+		padding-top: 5px;
 		padding-bottom: 0px;
     font-size: 1.8em;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 hr
 {
-    border: solid white 1.5px;
-    width: 90%;
+    border: solid white 2px;
+    width: 0px;
 }
 
 .buttonFlex
@@ -178,7 +178,7 @@ hr
     padding: 15px 25px;
     transition: color .5s ease;
 		transition: background-color .5s ease;
-    border: solid 3px white;
+    border: solid 2px white;
     text-decoration: none;
 }
 
@@ -195,7 +195,7 @@ hr
     padding: 15px 25px;
     transition: color .5s ease;
 		transition: background-color .5s ease;
-    border: solid 3px white;
+    border: solid 2px white;
     text-decoration: none;
 }
 
@@ -229,18 +229,19 @@ hr
 p
 {
     font-family: 'Work Sans', sans-serif;
-    font-size: 1.5em;
+    font-size: 1.25em;
     color: #e2e2e2;
-    text-indent: 50px;
-    line-height: 35px;
+		padding-left: 50px;
+    /*text-indent: 50px;*/
+    line-height: 30px;
 }
 
 .title
 {
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 3em;
     text-align: left;
-    margin-top: 30px;
+    margin-top: 0px;
     color: white;
 }
 
@@ -254,7 +255,13 @@ p
 
 section h1
 {
-		padding-bottom: 2%;
+		padding-right: 50px;
+}
+
+.profPic
+{
+		width: 80%;
+		padding: 10px;
 }
 
 #centerPhoto{
@@ -296,6 +303,8 @@ section h1
 
 section
 {
+		display: flex;
+		flex-direction: row;
     text-align: left;
     padding: 30px;
     margin: 0 auto;
