@@ -99,27 +99,38 @@ nav
 .navbar
 {
 		display: flex;
-		justify-content: center;
+		justify-content: space-between;
 		align-items: center;
 		background: #0d0d0d;
 		height: 80px;
+		margin: 0 auto;
 		width: 100%;
 		top: 0;
     position: fixed;
+		font-family: 'Raleway', sans-serif;
 }
 
 .navCont
 {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
 		width: 60%;
-    margin: 0 auto;
-    position: fixed;
-		top: 0;
+		margin: 0 auto;
+}
+
+.navName
+{
+		color: white;
+		padding: 15px;
+		font-size: 1.2em;
 }
 
 nav a
 {
     text-decoration: none;
-    padding: 30px;
+    padding: 25px;
     font-size: 1.2em;
 		color: white;
     transition: color .3s ease;
@@ -142,7 +153,8 @@ nav a:hover
 .centerHeader
 {
     letter-spacing: 0px;
-    font-family: 'Roboto', sans-serif, 700;
+    font-family: 'Raleway', sans-serif;
+		font-weight: bold;
     margin: 0;
     padding-bottom: 0px;
     font-size: 3.5em;
@@ -153,14 +165,16 @@ nav a:hover
 	  letter-spacing: 3px;
 		padding-top: 5px;
 		padding-bottom: 0px;
-    font-size: 1.8em;
-    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    font-family: 'Raleway', sans-serif;
 }
 
 hr
 {
     border: solid white 2px;
-    width: 0px;
+    width: 5%;
+		margin-right: 95%;
+		margin-top:30px;
 }
 
 .buttonFlex
@@ -170,6 +184,7 @@ hr
     font-size: 100%;
     letter-spacing: 5px;
     width: 40%;
+		font-family: 'Raleway', sans-serif;
 }
 
 .aboutButton
@@ -209,14 +224,17 @@ hr
 {
     width: 60%;
     background: #161616;
+		font-family: 'Raleway', sans-serif;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 120px;
+		line-height: 25px;
 }
 
 .notHome
 {
     margin: 0;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;
+		color: #e2e2e2;
 		background: #161616;
     background-size: cover;
 }
@@ -228,20 +246,17 @@ hr
 
 p
 {
-    font-family: 'Work Sans', sans-serif;
-    font-size: 1.25em;
-    color: #e2e2e2;
-		padding-left: 50px;
+    font-size: 1em;
+		padding-top: 25px;
     /*text-indent: 50px;*/
-    line-height: 30px;
 }
 
 .title
 {
-    font-family: 'Roboto', sans-serif;
     font-size: 3em;
     text-align: left;
     margin-top: 0px;
+		margin-bottom: 15px;
     color: white;
 }
 
@@ -303,9 +318,6 @@ section h1
 
 section
 {
-		display: flex;
-		flex-direction: row;
-    text-align: left;
-    padding: 30px;
+    padding: 25px;
     margin: 0 auto;
 }
