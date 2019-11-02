@@ -55,18 +55,15 @@ body
 {
     margin: 0;
     font-family: Arial;
-		background: url(../images/fade.jpg);
+		background: url(../images/averyBackground.jpg);
     background-size: cover;
 }
 
-.home
-{
-    display: flex;
-    align-items: center;
-    height: 100vh;
-		width: 60%;
-		margin: 0 auto;
-}
+
+
+/* -----HOMEPAGE----- */
+
+
 
 header
 {
@@ -81,6 +78,93 @@ header img
     width: 150px;
 }
 
+.home
+{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+		width: 60%;
+		margin: 0 auto;
+}
+
+.centerBox
+{
+		padding-left: 0px;
+    width: 95%;
+    color: white;
+}
+
+.centerHeader
+{
+    margin: 0;
+    letter-spacing: 1px;
+    font-family: 'Work Sans', sans-serif;
+		font-weight: bold;
+    padding-bottom: 0px;
+    font-size: 3.5em;
+}
+
+.centerSubHeader
+{
+		font-family: 'Raleway', sans-serif;;
+	  letter-spacing: 0px;
+		padding-top: 10px;
+		padding-bottom: 0px;
+    font-size: 2em;
+		font-weight: lighter;
+}
+
+.buttonFlex
+{
+		font-family: 'Work Sans', sans-serif;
+		font-weight: ;
+    display: flex;
+    padding-top: 20px;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}
+
+.resumeButton
+{
+		margin-left: 20px;
+    color: white;
+    padding: 15px 20px;
+    transition: color .5s ease;
+		transition: .5s;
+    border: solid 2px #fb463c;
+    text-decoration: none;
+		border-radius: 100px;
+}
+
+.resumeButton:hover
+{
+    background: #fb463c;
+}
+
+.portButton
+{
+		color: white;
+		padding: 15px 20px;
+		transition: color .5s ease;
+		transition: .5s;
+		border: solid 2px #fb463c;
+		text-decoration: none;
+		border-radius: 100px;
+}
+
+.portButton:hover
+{
+    /*background: rgba(255, 255, 255, 1);
+    color: black;*/
+		background: #fb463c;
+}
+
+
+
+/* -----NAVIGATION------ */
+
+
+
 nav
 {
     display: flex;
@@ -89,25 +173,33 @@ nav
     text-align: center;
 }
 
-.video
+.navbarHome
 {
+		font-family: 'Work Sans', sans-serif;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: rgba(0, 0, 0, 0.6);
+		height: 80px;
 		margin: 0 auto;
-		padding: 0;
 		width: 100%;
+		position: fixed;
+		top: 0;
 }
 
 .navbar
 {
+		font-family: 'Work Sans', sans-serif;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		background: #0d0d0d;
+		background: rgba(0, 0, 0, 1);
+		box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
 		height: 80px;
 		margin: 0 auto;
 		width: 100%;
+		position: fixed;
 		top: 0;
-    position: fixed;
-		font-family: 'Raleway', sans-serif;
 }
 
 .navCont
@@ -123,7 +215,7 @@ nav
 .navName
 {
 		color: white;
-		padding: 15px;
+		padding: 15px 15px 15px 0px;;
 		font-size: 1.2em;
 }
 
@@ -133,7 +225,7 @@ nav a
     padding: 25px;
     font-size: 1.2em;
 		color: white;
-    transition: color .3s ease;
+    transition: .3s;
 }
 
 nav a:hover
@@ -142,31 +234,22 @@ nav a:hover
     transition: .3s;
 }
 
-.centerBox
+
+
+/* -----OTHER PAGES----- */
+
+
+
+section
 {
-    text-align: left;
+    padding: 25px 25px 25px 0px;
     margin: 0 auto;
-    width: 95%;
-    color: white;
 }
 
-.centerHeader
+p
 {
-    letter-spacing: 0px;
-    font-family: 'Raleway', sans-serif;
-		font-weight: bold;
-    margin: 0;
-    padding-bottom: 0px;
-    font-size: 3.5em;
-}
-
-.centerSubHeader
-{
-	  letter-spacing: 3px;
-		padding-top: 5px;
-		padding-bottom: 0px;
-    font-size: 2em;
-    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+		padding-top: 25px;
 }
 
 hr
@@ -177,73 +260,40 @@ hr
 		margin-top:30px;
 }
 
-.buttonFlex
+.notHome
 {
-    display: flex;
-    padding-top: 15px;
-    font-size: 100%;
-    letter-spacing: 5px;
-    width: 40%;
-		font-family: 'Raleway', sans-serif;
-}
-
-.aboutButton
-{
-    color: white;
-    padding: 15px 25px;
-    transition: color .5s ease;
-		transition: background-color .5s ease;
-    border: solid 2px white;
-    text-decoration: none;
-}
-
-.aboutButton:hover
-{
-    background: rgba(255, 255, 255, 1);
-    color: black;
-}
-
-.portButton
-{
-		margin-left: 25px;
-    color: white;
-    padding: 15px 25px;
-    transition: color .5s ease;
-		transition: background-color .5s ease;
-    border: solid 2px white;
-    text-decoration: none;
-}
-
-.portButton:hover
-{
-    background: rgba(255, 255, 255, 1);
-    color: black;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+		color: #e2e2e2;
+		background: url(../images/averyBackgroundDark.jpg);
+    background-size: cover;
 }
 
 .info
 {
     width: 60%;
-    background: #161616;
 		font-family: 'Raleway', sans-serif;
     margin: 0 auto;
     margin-top: 120px;
 		line-height: 25px;
 }
 
-.about
+.title
 {
-		display: flex;
-		align-content: center;
-		flex-wrap: wrap;
+    font-size: 3em;
+		font-weight: bold;
+		letter-spacing: 2px;
+    text-align: left;
+    margin-top: 0px;
+		margin-bottom: 15px;
+    color: white;
 }
 
-.notHome
+.prof
 {
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
-		color: #e2e2e2;
-		background: #161616;
-    background-size: cover;
+		width: 25%;
+		padding: 30px 30px 20px 0px;
+		float: left;
 }
 
 .spacedP
@@ -251,21 +301,11 @@ hr
 		padding: 40px;
 }
 
-p
-{
-    font-size: 1em;
-		padding-top: 25px;
-    /*text-indent: 50px;*/
-}
 
-.title
-{
-    font-size: 3em;
-    text-align: left;
-    margin-top: 0px;
-		margin-bottom: 15px;
-    color: white;
-}
+
+/* GALLERY */
+
+
 
 .gallery
 {
@@ -273,39 +313,6 @@ p
 		display: flex;
 		justify-content: space-around;
 		padding: 0% 1%;
-}
-
-section h1
-{
-		padding-right: 50px;
-}
-
-.prof
-{
-		width: 25%;
-		margin-top: 20px;
-}
-
-#centerPhoto{
-	width:90%;
-	margin:0 auto;
-}
-
-.resume
-{
-		padding-top: 60px;
-		width: 100%;
-		margin: 0 auto;
-}
-
-.title2
-{
-		padding-bottom: 0;
-		font-family: 'Ubuntu', sans-serif;
-    font-size: 4em;
-    text-align: center;
-    margin-top: 30px;
-    color: white;
 }
 
 .gallery a
@@ -321,10 +328,4 @@ section h1
 {
 		width: 100%;
 		height: 100%;
-}
-
-section
-{
-    padding: 25px;
-    margin: 0 auto;
 }
