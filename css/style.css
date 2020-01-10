@@ -55,8 +55,8 @@ body
 {
     margin: 0;
     font-family: Arial;
-		background: url(../images/averyBackground.jpg);
-    background-size: cover;
+		background: #1c1c1c;
+		background-size: cover;
 		background-attachment: fixed;
 }
 
@@ -83,26 +83,42 @@ header img
 {
     display: flex;
     align-items: center;
-    height: 100vh;
-		width: 60%;
+		text-align: center;
+		background: #ffffff;
+		color: #1c1c1c;
+		padding-top: 70px;
+    height: 70vh;
+		width: 100%;
 		margin: 0 auto;
+}
+
+.slideshow
+{
+    display: flex;
+    align-items: center;
+		text-align: center;
+		padding-top: 70px;
+    height: 70vh;
+		width: 100%;
+		margin: 0 auto;
+		background: #fba957;
+		color: white;
 }
 
 .centerBox
 {
 		padding-left: 0px;
     width: 95%;
-    color: white;
 }
 
 .centerHeader
 {
     margin: 0;
-    letter-spacing: 1px;
+    letter-spacing: 3px;
     font-family: 'Work Sans', sans-serif;
 		font-weight: bold;
     padding-bottom: 0px;
-    font-size: 3.5em;
+    font-size: 4em;
 }
 
 .centerSubHeader
@@ -117,29 +133,32 @@ header img
 
 .buttonFlex
 {
-		font-family: 'Work Sans', sans-serif;
-		font-weight: ;
+		font-family: 'Raleway', sans-serif;
+		margin: 0 auto;
     display: flex;
+		justify-content: center;
     padding-top: 20px;
     font-size: 1.1em;
     letter-spacing: 1px;
 }
 
-.resumeButton
+.button
 {
-		margin-left: 20px;
-    color: white;
+		margin: 0 10px 0 10px;
+    color: #EA7419;
+		font-weight: bold;
     padding: 15px 20px;
     transition: color .5s ease;
 		transition: .5s;
-    border: solid 2px #fb463c;
+    border: solid 2px #EA7419;
     text-decoration: none;
 		border-radius: 100px;
 }
 
-.resumeButton:hover
+.button:hover
 {
-    background: #fb463c;
+    background: #EA7419;
+		color: white;
 }
 
 .portButton
@@ -148,16 +167,14 @@ header img
 		padding: 15px 20px;
 		transition: color .5s ease;
 		transition: .5s;
-		border: solid 2px #fb463c;
+		border: solid 2px #EA7419;
 		text-decoration: none;
 		border-radius: 100px;
 }
 
 .portButton:hover
 {
-    /*background: rgba(255, 255, 255, 1);
-    color: black;*/
-		background: #fb463c;
+		background: #EA7419;
 }
 
 
@@ -165,14 +182,6 @@ header img
 /* -----NAVIGATION------ */
 
 
-
-nav
-{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    text-align: center;
-}
 
 .navbarHome
 {
@@ -188,27 +197,40 @@ nav
 		top: 0;
 }
 
+#navbar
+{
+		font-family: 'Work Sans', sans-serif;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background: #1c1c1c;
+		box-shadow: 0px 2px 1px #ffffff;
+		height: 80px;
+		margin: 0 auto;
+		width: 100%;
+		position: fixed;
+		top: 0px;
+		transition: top 0.3s;
+}
+
 .navbar
 {
 		font-family: 'Work Sans', sans-serif;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		background: rgba(0, 0, 0, 1);
-		box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
 		height: 80px;
 		margin: 0 auto;
 		width: 100%;
-		position: fixed;
-		top: 0;
 }
 
-.navCont
+nav
 {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
+		text-align: center;
 		width: 60%;
 		margin: 0 auto;
 }
@@ -231,10 +253,12 @@ nav a
 
 nav a:hover
 {
-    color: #f7534a;
+    color: #EA7419;
     transition: .3s;
 }
 
+
+/* RED #f7534a */
 
 
 /* -----OTHER PAGES----- */
@@ -255,10 +279,10 @@ p
 
 hr
 {
-    border: solid white 2px;
+    border: solid 2px;
     width: 5%;
-		margin-right: 95%;
-		margin-top:30px;
+		margin-right: 90%;
+		margin-top: 15px;
 }
 
 .notHome
@@ -271,7 +295,7 @@ hr
 
 .info
 {
-    width: 97%;
+    width: 95%;
 		margin: 0 auto;
 		font-family: 'Raleway', sans-serif;
 		padding: 120px 30px 30px 30px;
@@ -281,7 +305,7 @@ hr
 .tint
 {
 		margin: 0 auto;
-		width: 61%;
+		width: 63%;
 		background: rgba(0, 0, 0, 0.9);
 }
 
@@ -293,7 +317,6 @@ hr
     text-align: left;
     margin-top: 0px;
 		margin-bottom: 15px;
-    color: white;
 }
 
 .prof
@@ -335,4 +358,103 @@ hr
 {
 		width: 100%;
 		height: 100%;
+}
+
+
+
+/* PORTFOLIO PAGE */
+
+
+
+.portfolio
+{
+		background: url(../images/averyBackground.jpg);
+		background-size: cover;
+}
+
+.galleryCont
+{
+		margin: 0 auto;
+		padding-bottom: 50px;
+		width: 70%;
+}
+
+.gameSection
+{
+    width: 100%;
+		margin: 0 auto;
+		color: white;
+		font-family: 'Roboto', sans-serif;
+		padding-top: 120px;
+		background-size: cover;
+		line-height: 25px;
+}
+
+.subCont
+{
+		background: rgba(0, 0, 0, 0.9);
+		padding: 25px;
+		border-radius: 20px;
+		margin-left: 5%;
+		overflow:hidden;
+}
+
+.subTitle
+{
+		font-size: 1.2em;
+		font-weight: bold;
+		letter-spacing: 2px;
+		text-align: left;
+		margin-top: 0px;
+		margin-bottom: 15px;
+}
+
+.portTitle
+{
+		font-family: Lato;
+		font-size: 3.75em;
+		font-weight: bold;
+		padding: 0 0 30px 0;
+}
+
+iframe
+{
+		margin: 20px 30px 30px 0px;
+		border-radius: 15px;
+		float: left;
+}
+
+.alignContent
+{
+		margin: 30px 5px 30px 0px;
+}
+
+.hrBlack
+{
+		border: solid 2px #282828;
+		margin-top: 15px;
+}
+
+.portText
+{
+		padding: 20px 0 0 0;
+}
+
+.icon
+{
+		width: 30%;
+		border-radius: 15px;
+}
+
+
+
+/* RESPONSIVE (1600px Width) */
+
+
+
+@media only screen and (max-width: 1600px) {
+  nav
+	{
+
+  }
 }
