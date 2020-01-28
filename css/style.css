@@ -87,7 +87,7 @@ header img
 		background: #ffffff;
 		color: #1c1c1c;
 		padding-top: 70px;
-    height: 70vh;
+    height: 95vh;
 		width: 100%;
 		margin: 0 auto;
 }
@@ -101,7 +101,7 @@ header img
     height: 70vh;
 		width: 100%;
 		margin: 0 auto;
-		background: #fba957;
+		background: #1c1c1c;
 		color: white;
 }
 
@@ -145,19 +145,19 @@ header img
 .button
 {
 		margin: 0 10px 0 10px;
-    color: #EA7419;
+    color: #ff7e08;
 		font-weight: bold;
     padding: 15px 20px;
     transition: color .5s ease;
 		transition: .5s;
-    border: solid 2px #EA7419;
+    border: solid 2px #ff7e08;
     text-decoration: none;
 		border-radius: 100px;
 }
 
 .button:hover
 {
-    background: #EA7419;
+    background: #ff7e08;
 		color: white;
 }
 
@@ -167,17 +167,15 @@ header img
 		padding: 15px 20px;
 		transition: color .5s ease;
 		transition: .5s;
-		border: solid 2px #EA7419;
+		border: solid 2px #ff7e08;
 		text-decoration: none;
 		border-radius: 100px;
 }
 
 .portButton:hover
 {
-		background: #EA7419;
+		background: #ff7e08;
 }
-
-
 
 /* -----NAVIGATION------ */
 
@@ -253,12 +251,13 @@ nav a
 
 nav a:hover
 {
-    color: #EA7419;
+    color: #ff7e08;
     transition: .3s;
 }
 
 
-/* RED #f7534a */
+
+/* RED COLOR #f7534a */
 
 
 /* -----OTHER PAGES----- */
