@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\css",
+    "\\images",
+    "\\javascript"
   ],
-  "SelectedNode": "\\portfolio.html",
+  "SelectedNode": "\\images\\averyLogo.png",
   "PreviewInSolutionExplorer": false
 }

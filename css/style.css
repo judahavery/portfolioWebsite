@@ -87,7 +87,7 @@ header img
 		background: #ffffff;
 		color: #1c1c1c;
 		padding-top: 70px;
-    height: 650px;
+    height: 70vh;
 		width: 100%;
 		margin: 0 auto;
 }
@@ -97,12 +97,16 @@ header img
     display: flex;
     align-items: center;
 		text-align: center;
-		padding-top: 70px;
-    height: 70vh;
 		width: 100%;
 		margin: 0 auto;
 		background: #1c1c1c;
-		color: white;
+}
+
+.carousel
+{
+    width: 100%;
+    margin: 0 auto;
+    z-index: 0;
 }
 
 .centerBox
@@ -155,10 +159,11 @@ header img
 		border-radius: 100px;
 }
 
-.button:hover
+.button:hover 
 {
     background: #ff7e08;
-		color: white;
+    text-decoration: none;
+    color: white;
 }
 
 .portButton
@@ -176,6 +181,8 @@ header img
 {
 		background: #ff7e08;
 }
+
+
 
 /* -----NAVIGATION------ */
 
@@ -207,6 +214,7 @@ header img
 		margin: 0 auto;
 		width: 100%;
 		position: fixed;
+        z-index: 1;
 		top: 0px;
 		transition: top 0.3s;
 }
