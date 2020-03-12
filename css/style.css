@@ -55,7 +55,7 @@ body
 {
     margin: 0;
     font-family: Arial;
-		background: #1c1c1c;
+		background: #0d0d0d;
 		background-size: cover;
 		background-attachment: fixed;
 }
@@ -118,8 +118,8 @@ header img
 .centerHeader
 {
     margin: 0;
-    letter-spacing: 3px;
-    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 2px;
+    font-family: 'Lato', sans-serif;
 		font-weight: bold;
     padding-bottom: 0px;
     font-size: 4em;
@@ -208,13 +208,13 @@ header img
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		background: #1c1c1c;
-		box-shadow: 0px 2px 1px #ffffff;
+		background: #0d0d0d;
+		//box-shadow: 0px 2px 1px #ffffff;
 		height: 80px;
 		margin: 0 auto;
 		width: 100%;
 		position: fixed;
-        z-index: 1;
+    z-index: 1;
 		top: 0px;
 		transition: top 0.3s;
 }
@@ -258,7 +258,7 @@ nav a
 
 nav a:hover
 {
-    color: #ff7e08;
+    color: #ff7300;
     transition: .3s;
 }
 
