@@ -87,7 +87,7 @@ header img
 		background: #ffffff;
 		color: #1c1c1c;
 		padding-top: 70px;
-    height: 90vh;
+    height: 70vh;
 		width: 100%;
 		margin: 0 auto;
 }
@@ -112,6 +112,7 @@ header img
 .centerBox
 {
 		padding-left: 0px;
+		margin: 0 auto;
     width: 95%;
 }
 
@@ -129,8 +130,6 @@ header img
 {
 		font-family: 'Raleway', sans-serif;;
 	  letter-spacing: 0px;
-		padding-top: 10px;
-		padding-bottom: 0px;
     font-size: 2em;
 		font-weight: lighter;
 }
@@ -151,9 +150,9 @@ header img
 		margin: 0 10px 0 10px;
     color: #ff7e08;
 		font-weight: bold;
-    padding: 15px 20px;
+    padding: 12px 25px;
     transition: color .5s ease;
-		transition: .5s;
+		transition: .3s;
     border: solid 2px #ff7e08;
     text-decoration: none;
 		border-radius: 100px;
@@ -164,22 +163,6 @@ header img
     background: #ff7e08;
     text-decoration: none;
     color: white;
-}
-
-.portButton
-{
-		color: white;
-		padding: 15px 20px;
-		transition: color .5s ease;
-		transition: .5s;
-		border: solid 2px #ff7e08;
-		text-decoration: none;
-		border-radius: 100px;
-}
-
-.portButton:hover
-{
-		background: #ff7e08;
 }
 
 
@@ -253,13 +236,13 @@ nav a
     padding: 25px;
     font-size: 1.2em;
 		color: white;
-    transition: .3s;
+    transition: .1s;
 }
 
 nav a:hover
 {
-    color: #ff7300;
-    transition: .3s;
+    color: #ff8200;
+    transition: .1s;
 }
 
 a:hover
