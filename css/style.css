@@ -79,6 +79,13 @@ header img
     width: 150px;
 }
 
+.home hr
+{
+		width: 100%;
+		border: solid 0.5px #989898;
+		margin: 50px 0 ;
+}
+
 .home
 {
     display: flex;
@@ -86,9 +93,21 @@ header img
 		text-align: center;
 		background: #ffffff;
 		color: #1c1c1c;
-		padding-top: 70px;
-    height: 70vh;
-		width: 100%;
+		width: 60%;
+		margin: 0 auto;
+		margin-top: 80px;
+		padding: 200px 0;
+}
+
+.summary
+{
+		display: flex;
+		align-items: center;
+		text-align: center;
+		background: #ffffff;
+		color: #1c1c1c;
+		height: 30vh;
+		width: 50%;
 		margin: 0 auto;
 }
 
@@ -112,7 +131,6 @@ header img
 .centerBox
 {
 		padding-left: 0px;
-		margin: 0 auto;
     width: 95%;
 }
 
@@ -122,8 +140,19 @@ header img
     letter-spacing: 2px;
     font-family: 'Lato', sans-serif;
 		font-weight: bold;
-    padding-bottom: 0px;
+    padding-bottom: 5px;
     font-size: 4em;
+}
+
+.header
+{
+    margin: 0;
+    letter-spacing: 2px;
+    font-family: 'Lato', sans-serif;
+		font-weight: bold;
+    padding: 15px;
+    font-size: 4em;
+		text-align: center;
 }
 
 .centerSubHeader
@@ -134,10 +163,23 @@ header img
 		font-weight: lighter;
 }
 
+.columnBox
+{
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
+}
+
+.leftText
+{
+		font-size: 1.3em;
+		text-align: left;
+		width: 47%;
+}
+
 .buttonFlex
 {
 		font-family: 'Raleway', sans-serif;
-		margin: 0 auto;
     display: flex;
 		justify-content: center;
     padding-top: 20px;
@@ -165,25 +207,16 @@ header img
     color: white;
 }
 
+.carousel-caption h1
+{
+		font-size: 3em;
+}
+
 
 
 /* -----NAVIGATION------ */
 
 
-
-.navbarHome
-{
-		font-family: 'Work Sans', sans-serif;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		background: rgba(0, 0, 0, 0.6);
-		height: 80px;
-		margin: 0 auto;
-		width: 100%;
-		position: fixed;
-		top: 0;
-}
 
 #navbar
 {
@@ -192,8 +225,8 @@ header img
 		justify-content: space-between;
 		align-items: center;
 		background: #0d0d0d;
-		//box-shadow: 0px 2px 1px #ffffff;
-		height: 80px;
+		box-shadow: 0px 0px 10px #000000;
+		height: 65px;
 		margin: 0 auto;
 		width: 100%;
 		position: fixed;
@@ -207,10 +240,10 @@ header img
 		font-family: 'Work Sans', sans-serif;
 		display: flex;
 		justify-content: space-between;
-		align-items: center;
-		height: 80px;
+		align-content: center;
 		margin: 0 auto;
-		width: 100%;
+		padding: 0 !important;
+		width: 60%;
 }
 
 nav
@@ -218,31 +251,30 @@ nav
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		align-items: center;
+		align-items: left;
 		text-align: center;
-		width: 60%;
-		margin: 0 auto;
 }
 
 .navName
 {
 		color: white;
-		padding: 15px 15px 15px 0px;;
 		font-size: 1.2em;
+		line-height: 0;
+		margin: 0;
 }
 
 nav a
 {
-    padding: 25px;
+    padding: 15px 25px;
     font-size: 1.2em;
 		color: white;
-    transition: .1s;
+    transition: .15s;
 }
 
 nav a:hover
 {
     color: #ff8200;
-    transition: .1s;
+    transition: .15s;
 }
 
 a:hover
