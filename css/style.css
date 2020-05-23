@@ -54,8 +54,8 @@ table {
 body
 {
     margin: 0;
-    font-family: Arial;
-		background: #000;
+    font-family: 'Josefin Sans', sans-serif;
+		color: #161616 !important;
 		background-size: cover;
 		background-attachment: fixed;
 }
@@ -92,23 +92,11 @@ header img
     align-items: center;
 		text-align: center;
 		background: #ffffff;
-		color: #1c1c1c;
+		color: #161616;
 		width: 60%;
 		margin: 0 auto;
 		margin-top: 80px;
-		padding: 120px 0;
-		height: 50vh;
-}
-
-.summary
-{
-		display: flex;
-		align-items: center;
-		text-align: center;
-		background: #ffffff;
-		color: #1c1c1c;
-		width: 50%;
-		margin: 0 auto;
+		padding: 250px 0;
 }
 
 .slideshow
@@ -118,7 +106,7 @@ header img
 		text-align: center;
 		width: 100%;
 		margin: 0 auto;
-		background: #1c1c1c;
+		background: #161616;
 }
 
 .carousel
@@ -138,10 +126,10 @@ header img
 {
     margin: 0;
     letter-spacing: 2px;
-    font-family: 'Lato', sans-serif;
-		font-weight: bold;
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight: 700;
     padding-bottom: 5px;
-    font-size: 4em;
+    font-size: 4.5em;
 }
 
 .header
@@ -197,19 +185,19 @@ header img
 .button
 {
 		margin: 0 10px 0 10px;
-    color: #ff7e08;
+    color: #ff7a00;
 		font-weight: bold;
     padding: 12px 25px;
     transition: color .5s ease;
 		transition: .3s;
-    border: solid 2px #ff7e08;
+    border: solid 2px #ff7a00;
     text-decoration: none;
 		border-radius: 100px;
 }
 
 .button:hover
 {
-    background: #ff7e08;
+    background: #ff7a00;
     text-decoration: none;
     color: white;
 }
@@ -231,7 +219,7 @@ header img
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		background: #000;
+		background: #161616;
 		/*box-shadow: 0px 0px 0px #000000;*/
 		height: 75px;
 		margin: 0 auto;
@@ -244,7 +232,7 @@ header img
 
 .navbar
 {
-		font-family: 'Work Sans', sans-serif;
+		font-family: 'Josefin Sans', sans-serif;
 		display: flex;
 		justify-content: space-between;
 		align-content: center;
@@ -280,7 +268,7 @@ nav a
 
 nav a:hover
 {
-    color: #ff8200;
+    color: #ff7a00;
     transition: .15s;
 }
 
@@ -291,26 +279,24 @@ a:hover
 
 
 
-/* RED COLOR #f7534a */
-
-
 /* -----FOOTER----- */
 
 
 
 footer
 {
-		background: #000;
+		background: #161616;
 		color: #FFF;
 		font-size: 1em;
-		font-family: Raleway;
+		font-family: 'Josefin Sans', sans-serif;
+		font-weight: 400;
 }
 
 .footerCont
 {
 		margin: 0 auto;
 		padding: 20px;
-		padding-bottom: 30px;
+		padding-bottom: 50px;
 		width: 35%;
 
 		display: flex;
@@ -320,6 +306,7 @@ footer
 
 .footerElement
 {
+		padding-top: 20px;
 	 	width: 300px;
 	 	text-align: left;
 }
@@ -400,16 +387,6 @@ hr
 		background: rgba(0, 0, 0, 0.9);
 }
 
-.title
-{
-    font-size: 3em;
-		font-weight: bold;
-		letter-spacing: 2px;
-    text-align: left;
-    margin-top: 0px;
-		margin-bottom: 15px;
-}
-
 .prof
 {
 		width: 25%;
@@ -424,16 +401,114 @@ hr
 
 
 
-/* GALLERY */
+/* PROJECTS */
 
 
+
+.projects
+{
+		text-align: left;
+		font-family: 'Josefin Sans', sans-serif;
+		background: #ffffff;
+		color: #161616;
+		width: 50%;
+		margin: 0 auto;
+		padding: 60px 0;
+}
+
+.projectItem
+{
+		padding: 50px 20px;
+
+		display: flex;
+		flex-direction: row;
+}
+
+.description
+{
+		display: flex;
+		flex-direction: column;
+
+		padding-right: 50px;
+		width: 100%;
+}
+
+.description p
+{
+		padding-top: 10px;
+		font-size: 1.2em;
+}
+
+.projectVis a
+{
+		position: relative;
+		display: block;
+}
+
+.projectVis img
+{
+		width: 100%;
+		border-radius: 15px;
+		transition: 0.3s ease;
+}
+
+.projectVis:hover img
+{
+		transition: 0.3s ease;
+		border-radius: 35px;
+}
+
+.overlay {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  opacity: 0;
+	  transition: .3s ease;
+		border-radius: 15px;
+		color: #fff;
+	  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.projectVis:hover .overlay
+{
+		transition: 0.3s ease;
+		border-radius: 35px;
+		opacity: 1;
+		color: #fff;
+}
+
+.title
+{
+    font-size: 4em;
+		font-weight: 700;
+		letter-spacing: 0px;
+    text-align: center;
+		margin: 0 auto;
+    margin-top: 0px;
+		margin-bottom: 15px;
+}
+
+.subTitle
+{
+    font-size: 2..5em;
+		font-weight: 700;
+		letter-spacing: 0px;
+    margin-top: 0px;
+		margin-bottom: 15px;
+}
 
 .gallery
 {
+		margin-top: 50px;
 		margin: 0 auto;
 		display: flex;
 		justify-content: space-around;
-		padding: 0% 1%;
 }
 
 .gallery a
@@ -490,16 +565,6 @@ hr
 		overflow:hidden;
 }
 
-.subTitle
-{
-		font-size: 1.2em;
-		font-weight: bold;
-		letter-spacing: 2px;
-		text-align: left;
-		margin-top: 0px;
-		margin-bottom: 15px;
-}
-
 .portTitle
 {
 		font-family: Lato;
@@ -522,7 +587,7 @@ iframe
 
 .hrBlack
 {
-		border: solid 2px #282828;
+		border: solid 2px #000000;
 		margin-top: 15px;
 }
 
