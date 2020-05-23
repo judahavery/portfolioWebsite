@@ -287,48 +287,79 @@ footer
 {
 		background: #161616;
 		color: #FFF;
-		font-size: 1em;
 		font-family: 'Josefin Sans', sans-serif;
-		font-weight: 400;
+		font-weight: light;
+}
+
+.subFooterCont
+{
+		margin: 0 auto;
+		padding: 15px 0 5px 0;
+		width: 40%;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
 }
 
 .footerCont
 {
 		margin: 0 auto;
-		padding: 20px;
-		padding-bottom: 50px;
+		padding: 20px 0 15px 0;
 		width: 35%;
+		color: #aaaaaa;
 
 		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
 }
 
 .footerElement
 {
-		padding-top: 20px;
-	 	width: 300px;
+		padding: 10px;
+		margin: 0 auto;
 	 	text-align: left;
 }
 
 .iconText
 {
 		display: flex;
-		flex-direction: row;
-		padding: 5px;
+		justify-content: space-between;
+		align-items: baseline;
+		padding: 15px;
+		color: #fff;
+		transition: 0.2s ease;
 }
 
-.iconText img
+.iconText i
 {
 		width: 15px;
 		height: 15px;
 		margin-right: 10px;
+		border-radius: 0;
+		transition: 0.2s ease;
+		color: white;
+}
+
+.link:hover i
+{
+		transition: 0.2s ease;
+		color: #41bbff;
+}
+
+.link:hover
+{
+		transition: 0.2s ease;
+		color: #41bbff;
 }
 
 .alignRight
 {
-		display: flex;
-		justify-content: flex-end;
+		/*display: flex;
+		justify-content: flex-end;*/
+		text-align: right;
 }
 
 .alignLeft
@@ -411,7 +442,7 @@ hr
 		font-family: 'Josefin Sans', sans-serif;
 		background: #ffffff;
 		color: #161616;
-		width: 50%;
+		width: 65%;
 		margin: 0 auto;
 		padding: 60px 0;
 }
@@ -424,19 +455,35 @@ hr
 		flex-direction: row;
 }
 
+.black
+{
+		background: #0d0d0d;
+}
+
 .description
 {
 		display: flex;
 		flex-direction: column;
-
-		padding-right: 50px;
 		width: 100%;
+}
+
+.leftDisplay
+{
+		text-align: left;
+		padding-right: 50px;
+}
+
+.rightDisplay
+{
+		text-align: left;
+		padding-left: 50px;
 }
 
 .description p
 {
 		padding-top: 10px;
 		font-size: 1.2em;
+		text-align: left;
 }
 
 .projectVis a
@@ -472,7 +519,7 @@ hr
 	  transition: .3s ease;
 		border-radius: 15px;
 		color: #fff;
-	  background-color: rgba(0, 0, 0, 0.6);
+	  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .projectVis:hover .overlay
@@ -483,6 +530,16 @@ hr
 		color: #fff;
 }
 
+.projects a
+{
+		color: #01a399;
+}
+
+.projects a:hover
+{
+		color: #00635d;
+}
+
 .title
 {
     font-size: 4em;
@@ -491,7 +548,7 @@ hr
     text-align: center;
 		margin: 0 auto;
     margin-top: 0px;
-		margin-bottom: 15px;
+		margin-bottom: 50px;
 }
 
 .subTitle
@@ -503,58 +560,11 @@ hr
 		margin-bottom: 15px;
 }
 
-.gallery
-{
-		margin-top: 50px;
-		margin: 0 auto;
-		display: flex;
-		justify-content: space-around;
-}
-
-.gallery a
-{
-		margin: 0;
-		padding: 2%;
-		width: 100%;
-		height: 100%;
-		text-align: center;
-}
-
-.gallery img
-{
-		width: 100%;
-		height: 100%;
-}
-
 
 
 /* PORTFOLIO PAGE */
 
 
-
-.portfolio
-{
-		background: url(../images/averyBackground.jpg);
-		background-size: cover;
-}
-
-.galleryCont
-{
-		margin: 0 auto;
-		padding-bottom: 50px;
-		width: 70%;
-}
-
-.gameSection
-{
-    width: 100%;
-		margin: 0 auto;
-		color: white;
-		font-family: 'Roboto', sans-serif;
-		padding-top: 120px;
-		background-size: cover;
-		line-height: 25px;
-}
 
 .subCont
 {
@@ -595,13 +605,6 @@ iframe
 {
 		padding: 20px 0 0 0;
 }
-
-.icon
-{
-		width: 30%;
-		border-radius: 15px;
-}
-
 
 
 /* RESPONSIVE (1600px Width) */
