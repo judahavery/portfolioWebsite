@@ -55,7 +55,7 @@ body
 {
     margin: 0;
     font-family: Arial;
-		background: #0d0d0d;
+		background: #000;
 		background-size: cover;
 		background-attachment: fixed;
 }
@@ -96,7 +96,8 @@ header img
 		width: 60%;
 		margin: 0 auto;
 		margin-top: 80px;
-		padding: 200px 0;
+		padding: 120px 0;
+		height: 50vh;
 }
 
 .summary
@@ -106,7 +107,6 @@ header img
 		text-align: center;
 		background: #ffffff;
 		color: #1c1c1c;
-		height: 30vh;
 		width: 50%;
 		margin: 0 auto;
 }
@@ -174,7 +174,14 @@ header img
 {
 		font-size: 1.3em;
 		text-align: left;
-		width: 47%;
+		width: 60%;
+}
+
+.rightText
+{
+		font-size: 1.3em;
+		text-align: left;
+		width: 30%;
 }
 
 .buttonFlex
@@ -224,9 +231,9 @@ header img
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		background: #0d0d0d;
-		box-shadow: 0px 0px 10px #000000;
-		height: 65px;
+		background: #000;
+		/*box-shadow: 0px 0px 0px #000000;*/
+		height: 75px;
 		margin: 0 auto;
 		width: 100%;
 		position: fixed;
@@ -285,6 +292,64 @@ a:hover
 
 
 /* RED COLOR #f7534a */
+
+
+/* -----FOOTER----- */
+
+
+
+footer
+{
+		background: #000;
+		color: #FFF;
+		font-size: 1em;
+		font-family: Raleway;
+}
+
+.footerCont
+{
+		margin: 0 auto;
+		padding: 20px;
+		padding-bottom: 30px;
+		width: 35%;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+}
+
+.footerElement
+{
+	 	width: 300px;
+	 	text-align: left;
+}
+
+.iconText
+{
+		display: flex;
+		flex-direction: row;
+		padding: 5px;
+}
+
+.iconText img
+{
+		width: 15px;
+		height: 15px;
+		margin-right: 10px;
+}
+
+.alignRight
+{
+		display: flex;
+		justify-content: flex-end;
+}
+
+.alignLeft
+{
+		display: flex;
+		justify-content: flex-start;
+}
+
 
 
 /* -----OTHER PAGES----- */
