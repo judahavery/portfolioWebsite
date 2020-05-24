@@ -27,25 +27,23 @@
 <body>
 
     <div id="navbar">
-      <div class="navbar">
-        <h1 class="navName">JUDAH AVERY</h1>
-        <nav>
-            <a class="active" href="#scrollHere">HOME</a>
-            <a href="#scrollHere">PROJECTS</a>
-            <a href="#scrollHere">ABOUT</a>
-            <a href="#scrollHere">CONTACT</a>
-        </nav>
-      </div>
+      <nav>
+          <a class="active" href="#home">HOME</a>
+          <a href="#projects">PROJECTS</a>
+          <a class="navName" href="#about">JUDAH AVERY</a>
+          <a href="#contact">CONTACT</a>
+          <a target="_blank" href="downloads/averyJudahResume.pdf">RESUME</a>
+      </nav>
     </div>
 
-    <main class="home">
+    <main id="home" class="home">
 
         <div class="centerBox">
             <h1 class="centerHeader">JUDAH AVERY</h1>
-            <h1 class="centerSubHeader">Systems & Level Design</h1>
+            <h1 class="centerSubHeader">Systems Design / Level Design / Visual Design</h1>
             <div class="buttonFlex">
-                <a class="button" href="portfolio.html">Projects</a>
-                <a class="button" href="resume.html">Resume</a>
+                <a class="button" href="#projects">Projects</a>
+                <a target="_blank" class="button" href="downloads/averyJudahResume.pdf">Resume</a>
             </div>
         </div>
 
@@ -100,7 +98,7 @@
 
     </div>
 
-    <main class="projects">
+    <main id="projects" class="projects">
 
       <h1 class="title">PROJECTS</h1>
 
@@ -108,23 +106,19 @@
         <div class="description leftDisplay">
           <h1 class="subTitle">COBBLE</h1>
           <h4>Lead Designer | Product Owner</h4>
-          <p>Cobble is a 2.5D side scrolling puzzle-adventure game created in the short time span of 48 hours for the 2020 Global Game Jam.
-          Afterward, our team of 8 students continued development on the project in the pre-production phase for a few months.</p>
-          <h4>My Contributions</h4>
-          <ul>
-            <li>- Responsible for all documents, level design, and systems design</li>
-            <li>- Built levels, environments, lighting, and adjusted systems in UE4</li>
-            <li>- Managed team using Agile Scrum development methodologies</li>
-            <li>- Scheduled and ran all team meetings both on site and remotely</li>
-            <li>- Lead and maintained the creative direction among a large development team</li>
-          </ul>
-          <a target="_blank" href="downloads/cobbleDesignDocuments.zip" download><h5 class="subTitle">Design Documents</h5></a>
+          <p>Cobble is a 2.5D side scrolling puzzle-adventure game. The base game was created in under 48 hours for the 2020 Global Game Jam.
+          After the jam, our team of 8 continued development on the project in the pre-production phase for a few months.</p>
+
+          <div class="buttonFlex">
+            <a target="_blank" class="button" href="downloads/cobbleDesignDocuments.zip">Design Documents</a>
+          </div>
         </div>
         <div class="projectVis">
-          <a target="_blank" href="https://jollycoopco.itch.io/cobble">
+          <a target="_blank" href="cobble.html">
             <img src="images/cobbleRunning.png" alt="Cobble Gameplay Screenshot">
             <div class="overlay">
               <h1>Learn More</h1>
+              <h4 class="overlaySubText">and play Cobble</h4>
             </div>
           </a>
         </div>
@@ -132,10 +126,11 @@
 
       <div class="projectItem">
         <div class="projectVis">
-          <a target="_blank" href="https://judah-avery.itch.io/neo">
+          <a target="_blank" href="neo.html">
             <img src="images/neoGameplay.png" alt="NEO Gameplay Screenshot">
             <div class="overlay">
               <h1>Learn More</h1>
+              <h4 class="overlaySubText">and play NEO</h4>
             </div>
           </a>
         </div>
@@ -146,7 +141,10 @@
           I developed this game in GamemakerStudio2 for a semester long project, which had an emphasis on overall
           game design, game feel, and exploring unfamiliar dev tools. Consequently, I programmed a custom
           particle system to handle all the VFX in Game Maker Language.</p>
-          <a target="_blank" href="downloads/neoDesignDocuments.zip" download><h5 class="subTitle">Design Documents</h5></a>
+
+          <div class="buttonFlex">
+            <a target="_blank" class="button" href="downloads/neoDesignDocuments.zip">Design Documents</a>
+          </div>
         </div>
       </div>
 
@@ -157,20 +155,12 @@
           <p>Fade is a short atmospheric puzzle game that takes place in a mysterious, eerie world.
           This game was developed in 5 months for the SkillsUSA Game Competition. Fade won 1st place
           at the state Level, and at the national level placed 7th.</p>
-          <h4>My Contributions</h4>
-          <ul>
-            <li>- Rigged and Animated Character in Maya</li>
-            <li>- 3D Modeled assets for the environment</li>
-            <li>- Programmed systems in Unreal Engine 4 Blueprints</li>
-            <li>- Designed levels and built environments</li>
-            <li>- Pitched and showcased game to industry professionals</li>
-          </ul>
         </div>
         <div class="projectVis">
           <a target="_blank" href="https://www.youtube.com/watch?v=RmceM-9JSDE&t=">
             <img src="images/conveyor_2.jpg" alt="FADE Gameplay Screenshot">
             <div class="overlay">
-              <h1>Learn More</h1>
+              <h1>Watch Gameplay</h1>
             </div>
           </a>
         </div>
@@ -181,7 +171,8 @@
           <a target="_blank" href="https://judah-avery.itch.io/luminescent">
             <img src="images/luminescent.png" alt="Luminescent Gameplay Screenshot">
             <div class="overlay">
-              <h1>Learn More</h1>
+              <h1>Play Luminescent</h1>
+              <h4 class="overlaySubText">itch.io page</h4>
             </div>
           </a>
         </div>
@@ -191,14 +182,6 @@
           <p>Luminescent is a 2D side scrolling Metroidvania that uses drives players to explore a dark corrupted ocean.
           More recent than FADE, this game was also developed across a team of 3 people (myself included) in a total of
           5 months for the SkillsUSA Game Competition. Luminescent won 1st place at the state Level, and at the national level placed 5th.
-          <h4>My Contributions</h4>
-          <ul>
-            <li>- Designed all gameplay systems, levels, and encounters</li>
-            <li>- Built environments, animated enemies, and created VFX in Unity</li>
-            <li>- Programmed all systems and encounters in C#</li>
-            <li>- Established the game's art style and lead the creative direction</li>
-            <li>- Pitched and showcased game to industry professionals</li>
-          </ul>
           </p>
         </div>
       </div>
@@ -206,11 +189,8 @@
     </main>
 
     <main class="black">
-      <div class="about">
-        <h1 class="title">ABOUT ME</h1>
-        <div class="resume">
-
-        </div>
+      <div id="about" class="about">
+        <h1 class="title">About Me</h1>
         <div class="summary">
           <img src="images/judahNewYork.jpg" alt="Photo of Myself In New York City">
           <p>
@@ -228,10 +208,23 @@
       </div>
     </main>
 
-    <main class="contact">
-      <h1 class="title">CONTACT</h1>
-      <h2 class="subTitle">Let's Get In Touch<h2>
-
+    <main id="contact" class="contact">
+      <div id="about" class="about">
+        <h1 class="title black">Get In Touch</h1>
+        <div class="summary black">
+          <p>
+            I'm an undergraduate <strong>game design</strong> student at Champlain College anticipating graduation in 2023.
+            I'm also <strong>minoring in game programming</strong> to become more proficient in the technical side of games.
+            I love working with others and collaborating on projects everyone is mutually passionate about. Constantly, I'm striving
+            to learn from new experiences and seek out unfamiliar territory where I can deliver beyond expectations.
+            <br><br>
+            I'm all about crafting an experience, and games are an extremely prevalent medium others can interact with.
+            Designing and creating content for players to experience excites and drives me to invest all of my efforts toward
+            challenging myself to improve as a developer and designer. Outside of work, school, and my personal game projects,
+            I like to spend my time outdoors. Whenever I have the chance, I'm hiking, skiing, snowboarding, or rock climbing.
+          </p>
+        </div>
+      </div>
     </main>
 
     <footer>

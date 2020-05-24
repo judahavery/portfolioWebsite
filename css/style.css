@@ -60,6 +60,11 @@ body
 		background-attachment: fixed;
 }
 
+html
+{
+		scroll-behavior: smooth;
+}
+
 
 
 /* -----HOMEPAGE----- */
@@ -215,13 +220,13 @@ header img
 
 #navbar
 {
-		font-family: 'Work Sans', sans-serif;
+		font-family: 'Josefin Sans', sans-serif;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		background: #161616;
+		background: rgba(22, 22, 22, 1);
 		/*box-shadow: 0px 0px 0px #000000;*/
-		height: 75px;
+		height: 70px;
 		margin: 0 auto;
 		width: 100%;
 		position: fixed;
@@ -232,7 +237,6 @@ header img
 
 .navbar
 {
-		font-family: 'Josefin Sans', sans-serif;
 		display: flex;
 		justify-content: space-between;
 		align-content: center;
@@ -243,18 +247,24 @@ header img
 
 nav
 {
+		width: 60%;
+		margin: 0 auto;
+		font-size: 0.95em;
+
 		display: flex;
-		flex-direction: row;
 		justify-content: space-between;
-		align-items: left;
+		align-content: center;
+		align-items: center;
+		flex-direction: row;
 		text-align: center;
 }
 
 .navName
 {
-		color: white;
-		font-size: 1.2em;
+		font-size: 1.4em;
+		font-weight: 500;
 		line-height: 0;
+		color: white;
 		margin: 0;
 }
 
@@ -262,7 +272,7 @@ nav a
 {
     padding: 15px 25px;
     font-size: 1.2em;
-		color: white;
+		color: #d1d1d1;
     transition: .15s;
 }
 
@@ -504,11 +514,14 @@ hr
 {
 		transition: 0.3s ease;
 		border-radius: 45px;
+		filter: blur(2px);
 }
 
-.overlay {
+.overlay
+{
 		display: flex;
 		justify-content: center;
+		flex-direction: column;
 		align-items: center;
 
 	  position: absolute;
@@ -531,16 +544,53 @@ hr
 		color: #fff;
 }
 
-.projects a
+.projects .button
 {
-		transition: 0.1s ease;
-		color: #04adc4;
+		border-radius: 50;
+		margin-left: 0;
+		margin-right: 25px;
 }
 
-.projects a:hover
+.projects .button:hover
 {
-		transition: 0.1s ease;
-		color: #006b7d;
+		color: white;
+}
+
+.projects .buttonFlex
+{
+		justify-content: flex-start;
+		padding-top: 10px;
+}
+
+.download
+{
+		background: #ffffff;
+		width: 300px;
+		text-align: center;
+		border: solid 2px #ff8b20;
+		padding: 20px 1px;
+		font-size: 0.6em;
+		display: block;
+		color: white;
+}
+
+.download h5
+{
+		margin: 0;
+}
+
+.download:hover a
+{
+		background: #ffffff;
+		color: #ffffff;
+		font-size: 0.6em;
+		display: block;
+		color: white;
+}
+
+.overlaySubText
+{
+		color: #71c1c7;
 }
 
 .title
@@ -549,8 +599,7 @@ hr
 		font-weight: 700;
 		letter-spacing: 0px;
     text-align: center;
-		margin: 0 auto;
-    margin-top: 0px;
+    margin-top: 50px;
 		margin-bottom: 50px;
 }
 
@@ -691,9 +740,17 @@ iframe
 
 
 
-@media only screen and (max-width: 1600px) {
-  nav
+@media only screen and (max-width: 1775px) {
+	.projects .buttonFlex
 	{
+			justify-content: left;
+			flex-direction: column;
+			align-self: flex-start;
+	}
 
-  }
+	.projects .button
+	{
+			align-self: flex-start;
+			margin: 0 0 20px 0;
+	}
 }
