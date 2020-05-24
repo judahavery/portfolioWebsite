@@ -98,7 +98,7 @@ header img
 		text-align: center;
 		background: #ffffff;
 		color: #161616;
-		width: 55%;
+		width: 65%;
 		margin: 0 auto;
 		padding: 250px 0;
 }
@@ -163,20 +163,6 @@ header img
 		flex-direction: row;
 }
 
-.leftText
-{
-		font-size: 1.3em;
-		text-align: left;
-		width: 55%;
-}
-
-.rightText
-{
-		font-size: 1.3em;
-		text-align: left;
-		width: 30%;
-}
-
 .buttonFlex
 {
 		font-family: 'Raleway', sans-serif;
@@ -225,7 +211,7 @@ header img
 		justify-content: space-between;
 		align-items: center;
 		background: rgba(22, 22, 22, 1);
-		/*box-shadow: 0px 0px 0px #000000;*/
+		box-shadow: 0px 0px 10px #000000;
 		height: 70px;
 		margin: 0 auto;
 		width: 100%;
@@ -242,12 +228,12 @@ header img
 		align-content: center;
 		margin: 0 auto;
 		padding: 0 !important;
-		width: 55%;
+		width: 65%;
 }
 
 nav
 {
-		width: 55%;
+		width: 65%;
 		margin: 0 auto;
 		font-size: 0.95em;
 
@@ -322,6 +308,7 @@ footer
 
 		display: flex;
 		justify-content: center;
+		flex-direction: column;
 		align-items: center;
 		text-align: center;
 }
@@ -363,6 +350,18 @@ footer
 {
 		transition: 0.2s ease;
 		color: #41bbff;
+}
+
+.toTop
+{
+		padding: 20px 0 50px 0;
+		text-align: center;
+		margin: 0 auto;
+}
+
+.toTop:hover
+{
+		color: #fff;
 }
 
 .alignRight
@@ -463,10 +462,41 @@ hr
 		font-family: 'Josefin Sans', sans-serif;
 		background: #ffffff;
 		color: #161616;
-		width: 55%;
+		width: 65%;
 		margin: 0 auto;
-		margin-top: 80px;
-		padding: 60px 0;
+		padding: 150px 0 0 0;
+}
+
+.center
+{
+		margin: 0 auto;
+		text-align: center;
+}
+
+.column
+{
+		display: flex;
+		flex-direction: column !important;
+}
+
+.imageBreak
+{
+		width: 100%;
+		margin: 20px 0;
+		border-radius: 20px;
+}
+
+.bottomGallery
+{
+		display: flex;
+		justify-content: flex-start;
+}
+
+.bottomGallery img
+{
+		width: 30%;
+		margin: 15px 15px 15px 0px;
+		border-radius: 20px;
 }
 
 .descriptionRow
@@ -502,7 +532,15 @@ hr
 .paragraph
 {
 		width: 100%;
-		padding: 10px 0;
+		padding: 30px 0;
+}
+
+.paragraph p
+{
+		font-family: 'Work Sans',sans-serif;
+		font-size: 1.05em !important;
+		line-height: 28px;
+		color: #323232;
 }
 
 .projectCont
@@ -690,21 +728,72 @@ li
 		padding: 60px 0;
 }
 
-.contact .subTitle
+.contact
+{
+		color: #000;
+		width: 65%;
+		margin: 0 auto;
+}
+
+.contactInfo
+{
+		margin: 0 auto;
+		padding: 15px 0 50px 0;
+		color: #000;
+		width: 75%;
+		font-family: 'Josefin Sans', sans-serif;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+}
+
+.contactItem
+{
+		display: flex;
+		justify-content: flex-start;
+		align-items: baseline;
+		padding: 15px 75px 0 0;
+		color: #000;
+		transition: 0.2s ease;
+}
+
+.contactItem i
+{
+		font-size: 1.2em;
+		padding: 0 15px 0 0;
+}
+
+.contactItem h6
+{
+		font-size: 1.2em;
+}
+
+.contactInfo a:hover
+{
+		color: #048aeb;
+}
+
+.titleCont
+{
+		margin-bottom: 15px;
+		text-align: center;
+}
+
+.titleCont .title
+{
+		margin-bottom: 10px;
+		font-family: 'Josefin Sans', sans-serif;
+}
+
+.contactInfo .subTitle
 {
 		font-family: 'Raleway', sans-serif;
-		font-size: 2.25em;
+		font-size: 1.5em;
 		font-weight: 700;
 		letter-spacing: 0px;
 		margin-top: 0px;
 		margin-bottom: 15px;
-		text-align: left;
-}
-
-.contact .title
-{
-		padding: 25px 0 25px 0;
-		margin: 0;
 }
 
 .summary
@@ -746,8 +835,6 @@ li
 		font-weight: 400;
 		color: #ffb660;
 }
-
-
 
 .subCont
 {
@@ -795,39 +882,71 @@ iframe
 
 
 @media only screen and (max-width: 1775px) {
-	.projects .buttonFlex
-	{
-			justify-content: left;
-			flex-direction: column;
-			align-self: flex-start;
-	}
+		.projects .buttonFlex
+		{
+				justify-content: left;
+				flex-direction: column;
+				align-self: flex-start;
+		}
 
-	.projects .button
-	{
-			align-self: flex-start;
-			margin: 0 0 20px 0;
-	}
+		.projects .button
+		{
+				align-self: flex-start;
+				margin: 0 0 20px 0;
+		}
 }
 
 @media only screen and (max-width: 1600px) {
-	.content
-	{
-			width: 100%;
-	}
+		.content
+		{
+				width: 100%;
+		}
 
-	.description
-	{
-			padding-right: 0;
-	}
-
-	.description
-	{
-			padding-right: 0;
-	}
-
-	.projectCont
-	{
-			padding-right: 0;
-			flex-direction: column;
-	}
+		.projectCont
+		{
+				padding-right: 0;
+				flex-direction: column;
+		}
 }
+
+@media only screen and (max-width: 1350px) {
+		#navbar
+		{
+				font-size: 0.7em;
+				height: 50px;
+		}
+
+		nav
+		{
+				display: flex;
+				flex-direction: row;
+		}
+
+		nav a
+		{
+
+		}
+
+		.navName
+		{
+
+		}
+
+		.projectCont
+		{
+				padding-right: 0;
+				flex-direction: column;
+		}
+
+		.projectPage, .projects, .home, .about, .contact
+		{
+				width: 90%;
+		}
+
+		.subFooterCont
+		{
+				width: 90%;
+		}
+}
+
+@media only screen and (max-width: 1150px) {
