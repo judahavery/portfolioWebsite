@@ -295,11 +295,11 @@ footer
 {
 		margin: 0 auto;
 		padding: 15px 0 5px 0;
-		width: 40%;
+		width: 65%;
 
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: center;
 		align-items: center;
 }
 
@@ -457,6 +457,7 @@ hr
 
 .black
 {
+		width: 100%;
 		background: #0d0d0d;
 }
 
@@ -495,14 +496,14 @@ hr
 .projectVis img
 {
 		width: 100%;
-		border-radius: 15px;
+		border-radius: 20px;
 		transition: 0.3s ease;
 }
 
 .projectVis:hover img
 {
 		transition: 0.3s ease;
-		border-radius: 35px;
+		border-radius: 45px;
 }
 
 .overlay {
@@ -517,7 +518,7 @@ hr
 	  right: 0;
 	  opacity: 0;
 	  transition: .3s ease;
-		border-radius: 15px;
+		border-radius: 20px;
 		color: #fff;
 	  background-color: rgba(0, 0, 0, 0.8);
 }
@@ -525,19 +526,21 @@ hr
 .projectVis:hover .overlay
 {
 		transition: 0.3s ease;
-		border-radius: 35px;
+		border-radius: 45px;
 		opacity: 1;
 		color: #fff;
 }
 
 .projects a
 {
-		color: #01a399;
+		transition: 0.1s ease;
+		color: #04adc4;
 }
 
 .projects a:hover
 {
-		color: #00635d;
+		transition: 0.1s ease;
+		color: #006b7d;
 }
 
 .title
@@ -553,16 +556,93 @@ hr
 
 .subTitle
 {
-    font-size: 2..5em;
+    font-size: 2.5em;
 		font-weight: 700;
 		letter-spacing: 0px;
     margin-top: 0px;
 		margin-bottom: 15px;
 }
 
+li
+{
+		font-size: 1em;
+}
 
 
-/* PORTFOLIO PAGE */
+
+/* ABOUT */
+
+
+
+.about
+{
+		display: flex;
+		flex-direction: column;
+
+		text-align: left;
+		font-family: 'Josefin Sans', sans-serif;
+		color: #fff;
+		width: 65%;
+		margin: 0 auto;
+		padding: 60px 0;
+}
+
+.contact .subTitle
+{
+		font-family: 'Raleway', sans-serif;
+		font-size: 2.25em;
+		font-weight: 700;
+		letter-spacing: 0px;
+		margin-top: 0px;
+		margin-bottom: 15px;
+		text-align: left;
+}
+
+.contact .title
+{
+		padding: 25px 0 25px 0;
+		margin: 0;
+}
+
+.summary
+{
+		font-weight: 300;
+		font-size: 1.3em;
+		overflow: visible;
+}
+
+.summary p
+{
+		padding-top: 0;
+}
+
+.summary img
+{
+		height: 30%;
+		width: 30%;
+		border-radius: 15px;
+		box-shadow: 10px 10px 20px #000000;
+		margin-right: 50px;
+		margin-bottom: 20px;
+		float: left;
+}
+
+.resume img
+{
+		height: 90%;
+		width: 90%;
+		margin: 0 auto;
+		border-radius: 15px;
+		box-shadow: 10px 10px 10px #000000;
+		margin-bottom: 75px;
+		float: left;
+}
+
+.about strong
+{
+		font-weight: 400;
+		color: #ffb660;
+}
 
 
 
