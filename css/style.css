@@ -457,6 +457,47 @@ hr
 		padding: 60px 0;
 }
 
+.projectPage
+{
+		text-align: left;
+		font-family: 'Josefin Sans', sans-serif;
+		background: #ffffff;
+		color: #161616;
+		width: 60%;
+		margin: 0 auto;
+		margin-top: 80px;
+		padding: 60px 0;
+}
+
+.descriptionRow
+{
+		display: flex;
+		width: 100%;
+		padding: 25px 0;
+		justify-content: space-between;
+}
+
+.descriptionRow p
+{
+		padding-top: 5px;
+}
+
+.content
+{
+		margin: 0 40px 0 0;
+		font-size: 1.2em;
+}
+
+.content p
+{
+		text-indent: 40px;
+}
+
+.paragraph
+{
+		width: 80%;
+}
+
 .projectItem
 {
 		padding: 50px 20px;
