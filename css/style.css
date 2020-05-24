@@ -606,7 +606,7 @@ hr
 {
 		transition: 0.3s ease;
 		border-radius: 45px;
-		filter: blur(2px);
+		filter: blur(1px);
 }
 
 .overlay
