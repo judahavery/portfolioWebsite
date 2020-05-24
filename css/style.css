@@ -343,13 +343,13 @@ footer
 .link:hover i
 {
 		transition: 0.2s ease;
-		color: #41bbff;
+		color: #00a0db;
 }
 
 .link:hover
 {
 		transition: 0.2s ease;
-		color: #41bbff;
+		color: #00a0db;
 }
 
 .toTop
@@ -382,6 +382,11 @@ footer
 /* -----OTHER PAGES----- */
 
 
+
+.slideshowFont
+{
+		font-family: 'Josefin Sans', sans-serif;
+}
 
 section
 {
@@ -769,11 +774,6 @@ li
 		font-size: 1.2em;
 }
 
-.contactInfo a:hover
-{
-		color: #048aeb;
-}
-
 .titleCont
 {
 		margin-bottom: 15px;
@@ -909,7 +909,7 @@ iframe
 		}
 }
 
-@media only screen and (max-width: 1350px) {
+@media only screen and (max-width: 1450px) {
 		#navbar
 		{
 				font-size: 0.7em;
