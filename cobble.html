@@ -1,52 +1,119 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
     <title>Judah Avery</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/f17e9d136a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="javascript/scrolling.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:900|Roboto:900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="icon" href="images/averyIcon.png">
-  </head>
-  <body class="portfolio">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
 
-    <div class="navbar">
-      <div class="navCont">
+    <link rel="icon" href="images/averyIcon.png">
+</head>
+<body>
+
+    <div id="navbar">
+      <div class="navbar">
         <h1 class="navName">JUDAH AVERY</h1>
         <nav>
-          <a class="active" href="index.html">HOME</a>
-          <a href="portfolio.html">PORTFOLIO</a>
-          <a href="resume.html">RESUME</a>
-          <a href="about.html">ABOUT</a>
+          <a class="active" href="#scrollHere">HOME</a>
+          <a href="#scrollHere">PROJECTS</a>
+          <a href="#scrollHere">ABOUT</a>
+          <a href="#scrollHere">CONTACT</a>
         </nav>
       </div>
     </div>
 
-    <main class="gameSection">
-      <div class="galleryCont">
-        <div class="subCont">
-          <h1 class="portTitle">Game Projects</h1>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/RmceM-9JSDE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="alignContent">
-            <h1 class="title">FADE</h1>
-            <h1 class="subTitle">2017-2018</h1>
-            <hr>
-            <p class="portText">
-              FADE is my first game project. I collaberated with a teamate on this game to
-              compete nationally in a game development competition.
-              <br>
-              <br>
-              We were given
-            </p>
-          </div>
+    <main class="projectPage">
+
+      <div class="projectItem">
+        <div class="description content">
+          <h1 class="subTitle">COBBLE</h1>
+          <h4><strong>Lead Designer | Product Owner</strong></h4>
+          <ul>
+            <li>- Designed systems and levels</li>
+            <li>- Built levels and environments</li>
+            <li>- Designed UI and interaction</li>
+            <li>- Pipeline and design documentation</li>
+            <li>- Organized and lead the team</li>
+            <li>- Ran meetings and weekly reviews</li>
+            <li>- Lead the creative direction</li>
+          </ul>
+        </div>
+        <div class="projectVis">
+          <a target="_blank" href="https://jollycoopco.itch.io/cobble">
+            <img src="images/cobbleRunningLong.png" alt="Cobble Gameplay Screenshot">
+            <div class="overlay">
+              <h1>PLAY COBBLE</h1>
+              <h5>Game Jam Version</h5>
+            </div>
+          </a>
         </div>
       </div>
+        <div class="descriptionRow">
+          <div class="content">
+            <h4><strong>Project Overview</strong></h4>
+            <p>COBBLE is a 2.5D side scrolling puzzle-adventure game. The base game was created in under 48 hours for
+            the 2020 Global Game Jam, and afterward, our team of 8 students continued to develop the project further. Cobble began
+            pre-production and I acted as product owner and lead designer. Development continued for a few months
+            until the team was no longer able to continue working on the game. Most gameplay systems were implemented,
+            all design documents, pipelines, and production documents were completed, and many art assets were created towards the end.
+            Even though the progress we made over these 3 months didn't take place in the amount of game content, I gained a lot from
+            COBBLE.
+            </p>
+          </div>
+
+        </div>
+
+        <a target="_blank" href="downloads/cobbleDesignDocuments.zip" download><h5 class="subTitle">Design Documents</h5></a>
+
     </main>
 
-    <footer><script> </script></footer>
+    <footer>
+      <script></script>
+      <div class="subFooterCont">
+          <div class="iconText">
+            <i class="fas fa-envelope"></i>
+            <h6>judahbavery@gmail.com</h6>
+          </div>
 
-  </body>
+          <div class="iconText">
+            <i class="fas fa-phone"></i>
+            <h6>(802) 777-0970</h6>
+          </div>
+
+          <a class="iconText link" target="_blank" href="https://www.linkedin.com/in/judahavery/">
+            </object>
+            <i class="link fab fa-linkedin-in"></i>
+            <h6>Linked In</h6>
+          </a>
+
+          <a class="iconText link" target="_blank" href="https://twitter.com/avery_judah">
+            <i class="link fab fa-twitter"></i>
+            <h6>Twitter</h6>
+          </a>
+      </div>
+    </footer>
+
+    <footer class="black">
+      <div class="footerCont">
+        <h6>Website Designed and Developed by <strong>Judah Avery</strong></h1>
+      </div>
+    </footer>
+
+</body>
 </html>
