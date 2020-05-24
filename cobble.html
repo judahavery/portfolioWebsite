@@ -30,10 +30,10 @@
       <div class="navbar">
         <h1 class="navName">JUDAH AVERY</h1>
         <nav>
-          <a class="active" href="#scrollHere">HOME</a>
-          <a href="#scrollHere">PROJECTS</a>
-          <a href="#scrollHere">ABOUT</a>
-          <a href="#scrollHere">CONTACT</a>
+          <a class="active" href="index.html">HOME</a>
+          <a href="projects.html">PROJECTS</a>
+          <a target="_blank" href="downloads/averyJudahResume.pdf">RESUME</a>
+          <a href="contact.html">CONTACT</a>
         </nav>
       </div>
     </div>
@@ -53,6 +53,7 @@
             <li>- Ran meetings and weekly reviews</li>
             <li>- Lead the creative direction</li>
           </ul>
+
         </div>
         <div class="projectVis">
           <a target="_blank" href="https://jollycoopco.itch.io/cobble">
@@ -65,21 +66,56 @@
         </div>
       </div>
         <div class="descriptionRow">
-          <div class="content">
+
+          <div class="content paragraph">
             <h4><strong>Project Overview</strong></h4>
-            <p>COBBLE is a 2.5D side scrolling puzzle-adventure game. The base game was created in under 48 hours for
-            the 2020 Global Game Jam, and afterward, our team of 8 students continued to develop the project further. Cobble began
-            pre-production and I acted as product owner and lead designer. Development continued for a few months
-            until the team was no longer able to continue working on the game. Most gameplay systems were implemented,
+            <p>Cobble is a 2.5D side scrolling puzzle-adventure game. The base game was created in under 48 hours for
+            the 2020 Global Game Jam, and afterward, our team of 8 students (myself included) continued to develop the project further. Cobble began
+            pre-production and development continued for a few months until the team was no longer able to continue working on the game. Most gameplay systems were implemented,
             all design documents, pipelines, and production documents were completed, and many art assets were created towards the end.
-            Even though the progress we made over these 3 months didn't take place in the amount of game content, I gained a lot from
-            COBBLE.
+            Even though most of the progress we made over these 3 months didn't take place in the game's content itself, I gained a lot of value from
+            Cobble.
+            <br><br>
+            <h4><strong>Game Intent</strong></h4>
+            <p>The documented plan for the full version of Cobble intended to take aspects from exploratory genres and incorporate them into
+            levels mainly consisting of puzzles. Player discovery would drive the gameplay, but the progression would come in the form of
+            solving puzzles to continue onward and learn more about the world Cobble takes place in. The reward for solving a puzzle is further progression in the world to discover more about the main
+            conflict and backstory of the world. I call this "subtle story and strong fantasy." Shortly after the game jam, many other
+            students constantly about the game's setting and commonly complimented the aesthetic. This showed some key points of interest
+            players would likely about Cobble, so I decided to focus heavily on that and build our design guidelines around those interests.
+            Consequently, I wanted players to have a strong curiosity about the game's world, so we ensured that the art style, setting,
+            and context were all very unique and interesting at first glance.
+            <br><br>
+            <h4><strong>Core Systems Design Process</strong></h4>
+            <p>
+            Many players who tested out the game shortly after the game jam seemed to enjoy the simple core puzzle systems.
+            The goal of each level is moving from point A to B and players must use the machines inside their environment to traverse the level.
+            Different machines have unique uses and movement patterns. For example, platforms will move or rotate, while pistons will launch the player.
+            However, these machines have two fucntional requirements: power from a lever and a gear. Cobble can remove gears from machines to place
+            them in others and can switch levers to change which machines are provided with power. Players caught onto these core mechanics
+            very quickly, and making the game's difficulty scalable meant that a simple concept needed to be built upon in difficulty. I didn't
+            want players to have a stressful experience, so it was important to keep puzzles from feeling overwhelming or too complex.
+            Stress would pull players out the world and cause frustration, taking away from having a strong world fantasy and curiosity.
             </p>
+            <br>
+            <p>
+            These core mechanics (placing gears and switching levers) may have been sufficient for a small game jam,
+            but they weren't quite scalable enough to produce an hour or two of interesting puzzles with. The issue here was adding more
+            complexity to the game while trying not to overwhelm players. One of the main interests players had
+            was the art style, setting, and context of the game. I didn't want to risk adding systems that added unnecessary complexity and
+            didn't build upon other already existing systems. To mitigate this risk, I decided to rework the original core mechanics and add two
+            additional ones. For starters, instead of switching the transmission of power, levers would switch the flow of steam between machines
+            (purely visual change). I decided these machines would move across pipes and connect to the lever through steam hoses, which were attached to a "steam box"
+            (box that sends steam to machine pipes). Players could now remove the hose end from one steam box and plug them into another,
+            changing which mechanism would function on one side of the lever. The ability to essentially re-wire which machines will function
+            based on the lever adds even more depth to the underlying core Systems without adding an entirely new concept to understand.
+            After creating a visual design document representing this change, I made sure the rest of the team figured the concept was easy to grasp.
+            Future levels could now incorporate "re-wiring" and build upon the player's existing knowledge of the underlying mechanics from past levels
+            without causing them to feel confused.
+            </p>
+
           </div>
-
         </div>
-
-        <a target="_blank" href="downloads/cobbleDesignDocuments.zip" download><h5 class="subTitle">Design Documents</h5></a>
 
     </main>
 
