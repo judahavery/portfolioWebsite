@@ -471,9 +471,10 @@ hr
 
 .descriptionRow
 {
-		display: flex;
 		width: 100%;
-		padding: 25px 0;
+		padding: 10px 0;
+		display: flex;
+		flex-wrap: wrap;
 		justify-content: space-between;
 }
 
@@ -493,14 +494,25 @@ hr
 		text-indent: 40px;
 }
 
+.padTop
+{
+		padding-top: 40px;
+}
+
 .paragraph
 {
 		width: 80%;
 }
 
+.projectCont
+{
+		display: flex;
+		flex-direction: row;
+}
+
 .projectItem
 {
-		padding: 50px 20px;
+		padding: 40px 20px;
 
 		display: flex;
 		flex-direction: row;
@@ -631,7 +643,7 @@ hr
 
 .overlaySubText
 {
-		color: #71c1c7;
+		color: #bbbbbb;
 }
 
 .title
