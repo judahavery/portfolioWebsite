@@ -585,12 +585,12 @@ footer .subTitle
 		padding: 10px 0;
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: center;
 }
 
 .overview
 {
-	width: 100%;
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -835,19 +835,19 @@ li
 		color: #fff;
 		margin: 0 auto;
 		padding: 40px 0 20px 0;
+		width: 50%;
 }
 
 .contact
 {
 		color: #fff;
-		margin: 0 auto;
 }
 
 .contactInfo
 {
 		font-family: 'Josefin Sans', sans-serif;
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: center;
 }
 
@@ -856,20 +856,27 @@ li
 		display: flex;
 		justify-content: flex-start;
 		align-items: baseline;
-		padding: 15px 20px;
+		padding: 5px 15px 5px 0;
 		color: #fff;
 		transition: 0.2s ease;
 }
 
 .contactItem i
 {
-		font-size: 1.4em;
-		padding: 0 10px 0 0;
+		font-size: 1.2em;
+		padding: 0 15px 0 0;
 }
 
 .contactItem h6
 {
+		font-size: 1.1em;
+}
+
+.about p
+{
+		padding-bottom: 35px;
 		font-size: 1.3em;
+		font-weight: 300;
 }
 
 .titleCont
@@ -882,47 +889,6 @@ li
 {
 		margin-bottom: 10px;
 		font-family: 'Josefin Sans', sans-serif;
-}
-
-.contact
-{
-		color: #000;
-		width: 65%;
-		margin: 0 auto;
-}
-
-.contactInfo
-{
-		margin: 0 auto;
-		padding: 15px 0 50px 0;
-		color: #000;
-		width: 75%;
-		font-family: 'Josefin Sans', sans-serif;
-
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-}
-
-.contactItem
-{
-		display: flex;
-		justify-content: flex-start;
-		align-items: baseline;
-		padding: 15px 75px 0 0;
-		color: #000;
-		transition: 0.2s ease;
-}
-
-.contactItem i
-{
-		font-size: 1.2em;
-		padding: 0 15px 0 0;
-}
-
-.contactItem h6
-{
-		font-size: 1.2em;
 }
 
 .titleCont
@@ -951,7 +917,8 @@ li
 {
 		font-weight: 300;
 		font-size: 1.3em;
-		overflow: visible;
+		display: flex;
+		justify-content: center;
 }
 
 .summary p
@@ -1033,8 +1000,11 @@ iframe
 				align-self: flex-start;
 				margin: 0 0 20px 0;
 		}
-}
 
+		.about
+		{
+				width: 60%;
+		}
 }
 
 @media only screen and (max-width: 1450px) {
@@ -1044,6 +1014,11 @@ iframe
 				height: 50px;
 		}
 
+		.about
+		{
+				width: 70%;
+		}
+
 		.width
 		{
 				width: 85%;
@@ -1051,6 +1026,11 @@ iframe
 }
 
 @media only screen and (max-width: 1150px) {
+
+		.about
+		{
+				width: 90%;
+		}
 
 		.width
 		{
