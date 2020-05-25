@@ -47,7 +47,12 @@ table {
 /* ABOVE IS CSS RESET */
 
 
-/* NOMRAL CSS IS BELOW */
+
+/* OTHER CSS IS BELOW */
+
+
+
+/* BASE ELEMENTS & SETUP */
 
 
 
@@ -65,67 +70,37 @@ html
 		scroll-behavior: smooth;
 }
 
-
-
-/* -----HOMEPAGE----- */
-
-
-
-header
+hr
 {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    text-align: left;
-}
-
-header img
-{
-    width: 150px;
-}
-
-.home hr
-{
-		width: 100%;
-		border: solid 0.5px #989898;
-		margin: 50px 0 ;
-}
-
-.home
-{
-    display: flex;
-    align-items: center;
-		text-align: center;
-		background: #ffffff;
-		color: #161616;
-		width: 65%;
-		margin: 0 auto;
-		padding: 250px 0;
-}
-
-.slideshow
-{
-    display: flex;
-    align-items: center;
-		text-align: center;
-		width: 100%;
-		margin: 0 auto;
-		background: #161616;
-}
-
-.carousel
-{
+		padding: 1px 0;
+		background: #131313;
     width: 100%;
-    margin: 0 auto;
-    z-index: 0;
 }
 
-.centerBox
+li
 {
-		padding-top: 80px;
-		padding-left: 0px;
-    width: 95%;
+		font-size: 1.4em !important;
 }
+
+.slideshowFont
+{
+		font-family: 'Josefin Sans', sans-serif;
+}
+
+.width
+{
+		width: 65%;
+}
+
+
+
+/* CSS ANIMATIONS */
+
+
+
+/* TYPE CLASSES AND FORMATTING */
+
+
 
 .centerHeader
 {
@@ -156,26 +131,166 @@ header img
 		font-weight: lighter;
 }
 
-.columnBox
+
+
+/* GENERAL FORMATTING AND SPACING */
+
+
+
+.padTop-20
 {
-		display: flex;
-		justify-content: space-between;
-		flex-direction: row;
+		padding-top: 20px;
 }
 
-.buttonFlex
+.padTop-40
 {
-		font-family: 'Raleway', sans-serif;
-    display: flex;
-		justify-content: center;
-    padding-top: 20px;
-    font-size: 1.1em;
-    letter-spacing: 1px;
+		padding-top: 40px;
 }
+
+.padR-50
+{
+		padding-right: 50px !important;
+}
+
+.padR-75
+{
+		padding-right: 75px !important;
+}
+
+.padBottom-20
+{
+		padding-bottom: 20px;
+}
+
+.padBottom-40
+{
+		padding-bottom: 40px;
+}
+
+.padBottom-10
+{
+		padding-bottom: 10px;
+}
+
+.pad-40
+{
+		padding: 40px;
+}
+
+.spaced
+{
+		padding: 0 0 25px 0;
+}
+
+.listSpaced
+{
+		padding: 0 0 6px 0;
+}
+
+.alignRight
+{
+		display: flex;
+		justify-content: flex-end;
+}
+
+.alignLeft
+{
+		display: flex;
+		justify-content: flex-start;
+}
+
+.alignCenter
+{
+		display: flex;
+		justify-content: center;
+}
+
+.center
+{
+		margin: 0 auto;
+		text-align: center;
+}
+
+.column
+{
+		display: flex;
+		flex-direction: column !important;
+}
+
+
+
+/* OVERLAY EFFECTS */
+
+
+
+.overlayCont a
+{
+		position: relative;
+		display: block;
+}
+
+.overlayCont img
+{
+		width: 100%;
+		border-radius: 20px;
+		transition: 0.3s ease;
+}
+
+.overlayCont:hover img
+{
+		transition: 0.3s ease;
+		border-radius: 45px;
+}
+
+.overlayCont:hover .overlay
+{
+		transition: 0.3s ease;
+		border-radius: 45px;
+		opacity: 1;
+		color: #fff;
+}
+
+.overlay
+{
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+
+	  position: absolute;
+	  top: 0;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  opacity: 0;
+	  transition: .3s ease;
+		border-radius: 20px;
+	  background-color: rgba(0, 0, 0, 0.8);
+		color: #fff;
+}
+
+.largeOverlay
+{
+		font-size: 2em !important;
+}
+
+.imgBorder
+{
+		border: 3px solid black;
+}
+
+
+
+/* BUTTONS */
+
+
 
 .button
 {
-		margin: 0 10px 0 10px;
+		font-size: 1.1em;
+		font-family: 'Raleway', sans-serif;
+		letter-spacing: 1px;
+		margin: 0 15px 0 15px;
     color: #ff7a00;
 		font-weight: bold;
     padding: 12px 25px;
@@ -191,6 +306,73 @@ header img
     background: #ff7a00;
     text-decoration: none;
     color: white;
+}
+
+.projectButton
+{
+		margin-left: 0;
+		margin-right: 25px;
+}
+
+.whiteButton
+{
+		margin: 30px 20px;
+		color: #fff;
+		border-color: #fff;
+}
+
+.whiteButton:hover
+{
+    background: #fff;
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* TITLE SECTION */
+
+
+
+.home
+{
+    display: flex;
+    align-items: center;
+		text-align: center;
+		background: #ffffff;
+		color: #161616;
+		margin: 0 auto;
+		padding: 250px 0;
+}
+
+.slideshow
+{
+    display: flex;
+    align-items: center;
+		text-align: center;
+		width: 100%;
+		margin: 0 auto;
+		background: #161616;
+}
+
+.carousel
+{
+    width: 100%;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+.centerBox
+{
+		padding-top: 80px;
+		padding-left: 0px;
+    width: 95%;
+}
+
+.columnBox
+{
+		display: flex;
+		justify-content: space-between;
+		flex-direction: row;
 }
 
 .carousel-caption h1
@@ -221,16 +403,6 @@ header img
 		transition: top 0.3s;
 }
 
-.navbar
-{
-		display: flex;
-		justify-content: space-between;
-		align-content: center;
-		margin: 0 auto;
-		padding: 0 !important;
-		width: 65%;
-}
-
 nav
 {
 		width: 65%;
@@ -258,7 +430,7 @@ nav a
 {
     padding: 15px 25px;
     font-size: 1.2em;
-		color: #d1d1d1;
+		color: #fff;
     transition: .15s;
 }
 
@@ -290,8 +462,7 @@ footer
 .subFooterCont
 {
 		margin: 0 auto;
-		padding: 15px 0 5px 0;
-		width: 65%;
+		padding: 5px 0 5px 0;
 
 		display: flex;
 		flex-direction: row;
@@ -318,6 +489,13 @@ footer
 		padding: 10px;
 		margin: 0 auto;
 	 	text-align: left;
+}
+
+footer .subTitle
+{
+		font-size: 1.8em;
+		font-weight: 500;
+		padding: 30px 0 0 0;
 }
 
 .iconText
@@ -355,93 +533,6 @@ footer
 .toTop
 {
 		padding: 20px 0 50px 0;
-		text-align: center;
-		margin: 0 auto;
-}
-
-.toTop:hover
-{
-		color: #fff;
-}
-
-.alignRight
-{
-		/*display: flex;
-		justify-content: flex-end;*/
-		text-align: right;
-}
-
-.alignLeft
-{
-		display: flex;
-		justify-content: flex-start;
-}
-
-
-
-/* -----OTHER PAGES----- */
-
-
-
-.slideshowFont
-{
-		font-family: 'Josefin Sans', sans-serif;
-}
-
-section
-{
-    padding: 25px 25px 25px 0px;
-    margin: 0 auto;
-}
-
-p
-{
-    font-size: 1em;
-		padding-top: 25px;
-}
-
-hr
-{
-    border: solid 2px;
-    width: 5%;
-		margin-right: 90%;
-		margin-top: 15px;
-}
-
-.notHome
-{
-    margin: 0;
-    font-family: 'Raleway', sans-serif;
-		color: #e2e2e2;
-    background-size: cover;
-}
-
-.info
-{
-    width: 95%;
-		margin: 0 auto;
-		font-family: 'Raleway', sans-serif;
-		padding: 120px 30px 30px 30px;
-		line-height: 25px;
-}
-
-.tint
-{
-		margin: 0 auto;
-		width: 63%;
-		background: rgba(0, 0, 0, 0.9);
-}
-
-.prof
-{
-		width: 25%;
-		padding: 30px 30px 20px 0px;
-		float: left;
-}
-
-.spacedP
-{
-		padding: 40px;
 }
 
 
@@ -456,7 +547,6 @@ hr
 		font-family: 'Josefin Sans', sans-serif;
 		background: #ffffff;
 		color: #161616;
-		width: 65%;
 		margin: 0 auto;
 		padding: 60px 0;
 }
@@ -465,11 +555,9 @@ hr
 {
 		text-align: left;
 		font-family: 'Josefin Sans', sans-serif;
-		background: #ffffff;
 		color: #161616;
-		width: 65%;
 		margin: 0 auto;
-		padding: 150px 0 0 0;
+		padding: 30px 0;
 }
 
 .center
@@ -491,19 +579,6 @@ hr
 		border-radius: 20px;
 }
 
-.bottomGallery
-{
-		display: flex;
-		justify-content: flex-start;
-}
-
-.bottomGallery img
-{
-		width: 30%;
-		margin: 15px 15px 15px 0px;
-		border-radius: 20px;
-}
-
 .descriptionRow
 {
 		width: 100%;
@@ -513,15 +588,39 @@ hr
 		justify-content: space-between;
 }
 
-.descriptionRow p
+.overview
 {
-		padding-top: 5px;
+	width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		border-radius: 20px;
+		padding: 20px 0;
+		color: #fff;
 }
 
-.content
+.projectPage .title
 {
-		margin: 0 40px 0 0;
-		font-size: 1.2em;
+		margin-bottom: 0;
+		margin-top: 120px;
+		color: #fff;
+}
+
+.projectPage .subTitle
+{
+		color: #fff;
+		font-size: 2em;
+}
+
+.overview h5, li
+{
+		font-weight: 300;
+}
+
+.overview strong
+{
+		font-weight: 700;
 }
 
 .projectPage p
@@ -566,6 +665,12 @@ hr
 {
 		width: 100%;
 		background: #0d0d0d;
+}
+
+.darkBlack
+{
+		width: 100%;
+		background: #090909;
 }
 
 .description
@@ -728,9 +833,55 @@ li
 		text-align: left;
 		font-family: 'Josefin Sans', sans-serif;
 		color: #fff;
-		width: 65%;
 		margin: 0 auto;
-		padding: 60px 0;
+		padding: 40px 0 20px 0;
+}
+
+.contact
+{
+		color: #fff;
+		margin: 0 auto;
+}
+
+.contactInfo
+{
+		font-family: 'Josefin Sans', sans-serif;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+}
+
+.contactItem
+{
+		display: flex;
+		justify-content: flex-start;
+		align-items: baseline;
+		padding: 15px 20px;
+		color: #fff;
+		transition: 0.2s ease;
+}
+
+.contactItem i
+{
+		font-size: 1.4em;
+		padding: 0 10px 0 0;
+}
+
+.contactItem h6
+{
+		font-size: 1.3em;
+}
+
+.titleCont
+{
+		margin-bottom: 15px;
+		text-align: center;
+}
+
+.titleCont .title
+{
+		margin-bottom: 10px;
+		font-family: 'Josefin Sans', sans-serif;
 }
 
 .contact
@@ -786,10 +937,10 @@ li
 		font-family: 'Josefin Sans', sans-serif;
 }
 
-.contactInfo .subTitle
+.contact .subTitle
 {
 		font-family: 'Raleway', sans-serif;
-		font-size: 1.5em;
+		font-size: 1.8em;
 		font-weight: 700;
 		letter-spacing: 0px;
 		margin-top: 0px;
@@ -813,20 +964,9 @@ li
 		height: 30%;
 		width: 30%;
 		border-radius: 15px;
-		box-shadow: 10px 10px 20px #000000;
+		box-shadow: 5px 5px 10px #000;
 		margin-right: 50px;
 		margin-bottom: 20px;
-		float: left;
-}
-
-.resume img
-{
-		height: 90%;
-		width: 90%;
-		margin: 0 auto;
-		border-radius: 15px;
-		box-shadow: 10px 10px 10px #000000;
-		margin-bottom: 75px;
 		float: left;
 }
 
@@ -865,29 +1005,28 @@ iframe
 		margin: 30px 5px 30px 0px;
 }
 
-.hrBlack
-{
-		border: solid 2px #000000;
-		margin-top: 15px;
-}
-
 .portText
 {
 		padding: 20px 0 0 0;
 }
 
 
-/* RESPONSIVE (1600px Width) */
+
+/* RESPONSIVE CSS BELOW */
 
 
 
 @media only screen and (max-width: 1775px) {
-		.projects .buttonFlex
+
+		/* Aligning project button in column */
+		.projectButton
 		{
-				justify-content: left;
-				flex-direction: column;
-				align-self: flex-start;
+				margin: 0 0 20px 0;
 		}
+
+}
+
+@media only screen and (max-width: 1625px) {
 
 		.projects .button
 		{
@@ -896,17 +1035,6 @@ iframe
 		}
 }
 
-@media only screen and (max-width: 1600px) {
-		.content
-		{
-				width: 100%;
-		}
-
-		.projectCont
-		{
-				padding-right: 0;
-				flex-direction: column;
-		}
 }
 
 @media only screen and (max-width: 1450px) {
@@ -916,36 +1044,23 @@ iframe
 				height: 50px;
 		}
 
-		nav
+		.width
 		{
-				display: flex;
-				flex-direction: row;
+				width: 85%;
 		}
+}
 
-		nav a
+@media only screen and (max-width: 1150px) {
+
+		.width
 		{
-
-		}
-
-		.navName
-		{
-
+				width: 90%;
 		}
 
 		.projectCont
 		{
 				padding-right: 0;
 				flex-direction: column;
-		}
-
-		.projectPage, .projects, .home, .about, .contact
-		{
-				width: 90%;
-		}
-
-		.subFooterCont
-		{
-				width: 90%;
 		}
 }
 

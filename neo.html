@@ -30,43 +30,48 @@
     <nav>
         <a class="active" href="index.html#home">HOME</a>
         <a href="index.html#projects">PROJECTS</a>
-        <a class="navName" href="index.html#about">JUDAH AVERY</a>
-        <a href="index.html#contact">CONTACT</a>
+        <a href="#contact">CONTACT</a>
         <a target="_blank" href="downloads/averyJudahResume.pdf">RESUME</a>
     </nav>
   </div>
 
-    <main class="projectPage">
+    <main class="black">
+      <div class="projectPage width">
+        <h1 class="alignCenter title">NEO</h1>
+        <h6 class="alignCenter subTitle padBottom-20">Solo Project</h6>
 
-      <div class="projectCont column">
-        <div class="description content padTop">
-          <div class="">
-            <h1 class="subTitle">NEO</h1>
-            <h4><strong>Solo Project</strong></h4>
-            <br>
+        <div class="overview">
+
+          <div class="padBottom-20">
+            <h5 class="spaced"><strong>Development Time:</strong> Sep 2019 - Dec 2019<h5>
+            <h5 class="spaced"><strong>Development Tools:</strong> GameMaker Studio 2 / Photoshop<h5>
+            <h5 class="spaced"><strong>Platform:</strong> Windows PC<h5>
           </div>
-        </div>
-        <div class="projectVis">
-          <a target="_blank" href="https://judah-avery.itch.io/neo">
-            <img src="images/neoGif_2.gif" alt="Cobble Gameplay Screenshot">
-            <div class="overlay">
-              <h1>Play NEO</h1>
-              <h5 class="overlaySubText">itch.io page</h5>
-            </div>
-          </a>
-        </div>
 
+          <div class="padBottom-10 alignCenter">
+            <a target="_blank" class="button whiteButton" href="https://judah-avery.itch.io/neo">Play NEO</a>
+            <a target="_blank" class="button whiteButton" href="downloads/neoLevelDesignDoc.pdf">Level Design Document</a>
+            <a target="_blank" class="button whiteButton" href="downloads/neoVisualDesignDoc.pdf">Visual Design Document</a>
+          </div>
+
+          <div>
+            <img class="imageBreak" src="images/neoGif_2.gif" alt="Cobble Gameplay Screenshot">
+          </div>
+
+        </div>
       </div>
+    </main>
 
+    <main class="projectPage width">
       <div class="description">
 
           <div class="paragraph">
             <h4><strong>Project Overview</strong></h4>
-            <p>NEO is a prototype for a Beat 'em Up game I created for a semester long project. The goal of each level is a simple concept,
+            <p>NEO is a prototype for a Beat 'em Up game I created for a semester-long project. The goal of each level is a simple concept,
             players are dropped into a maze of rooms and tasked with finding the trophy which completes the level (in this case ends the prototype), but this
-            Beat 'em Up has a very unconventional combat system. The gameplay and combat is driven by constant movement and evasion. The retro upbeat
-            music and sound effects along with the neon aesthetic and VFX enforce this fast paced, tense experience.</p>
-            <div class="buttonFlex alignLeft">
+            Beat 'em Up has a very unconventional combat system. The gameplay and combat are driven by constant movement and evasion. The retro upbeat
+            music and sound effects along with the neon aesthetic and VFX enforce this fast-paced, tense experience.</p>
+            <div class="padTop-20 alignLeft">
               <a target="_blank" class="button" href="https://judah-avery.itch.io/neo">Play NEO</a>
               <a target="_blank" class="button" href="downloads/neoDesignDocuments.zip">Design Documents</a>
             </div>
@@ -85,7 +90,7 @@
             <br>
             <h4><strong>Designing The Intended Experience</strong></h4>
             <p>From the beginning, I knew I wanted to create a tense and fast-paced game with an emphasis on movement, but my original vision didn't quite
-            achieve that experience. The old concept for NEO was fairly different from what what you see now. I initially sought out to build an arena
+            achieve that experience. The old concept for NEO was fairly different from what you see now. I initially sought out to build an arena
             survival game where the player could throw a retrievable weapon to defeat waves of enemies.
             The first iteration of the game took place in a very large level with enemies spawning in fixed zones across the map.
             Turns out, the game just wasn't fun. The fast, evasive movement made the level feel way too large and open. Running from enemies
@@ -95,42 +100,49 @@
             <p>
             For starters, I shrunk the levels down to small, bite-sized rooms with multiple obstacles inside. On top of that, players couldn't
             leave this tiny room until all the enemies were defeated.
-            This change added a cramped feeling whiched heavily contributed to make the game a more tense experience.
+            This change added a cramped feeling which heavily contributed to make the game a more tense experience.
             These small rooms also incentivized players to constantly use their fast-paced movement.
             Additionally, instead of having endless combat, now players progressed by completing levels.
-            Each level requierd the player find and gain entry to the trophy room. The levels themselves
-            were a grid of rooms that the player had to explore to find the trophy room, each one being another risk at dying and restarting.
+            Each level required the player to find and gain entry to the trophy room. The levels themselves
+            were a grid of rooms that the player had to explore to find the trophy room, each new room being another risk at dying and restarting.
             </p>
             <p>
             I wanted to ensure players would feel
-            some obligation to explore the level rather than go for a straighshot to the trophy room, so I implemented a scoring system.
+            some obligation to explore the level rather than go for a straight shot to the trophy room, so I implemented a scoring system.
             When you completed the level, your score would display and count up in front of you. To increase their score players had to kill enemies
             across different rooms, incentivizing them to clear as many rooms as possible before completing the level.
             The score added an element of risk versus reward, and in turn, made for more tense decision making. Players could take a chance by clearing more
-            rooms for more points, but would risk restarting the entire level when they die. I also added room drops.
+            rooms for more points but would risk restarting the entire level when they die. I also added room drops.
             Whenever the player cleared a room, a random item would spawn in the center. This item could
             be a heart to heal the player, a bonus point pickup, or the trophy room key. This forced players to continue clearing rooms until the key dropped.
-            Health would allow for more mitakes in combat, while bonus points added to their score, but as the player's score grew so did the consequences of dying.
+            Health would allow for more mistakes in combat, while bonus points added to their score, but as the player's score grew so did the consequences of dying.
             </p>
-            <div class="toTop">
-              <a class="button" href="#top">BACK TO TOP</a>
+            <br>
+            <div class="overlayCont">
+              <a target="_blank" href="downloads/neoLevelDesignDoc.pdf">
+                <img src="images/neoLevelDoc.jpg" alt="NEO Level Design Document Preview">
+                <div class="overlay largeOverlay">
+                  <h1 class="subTitle">Level Design Document PDF</h1>
+                </div>
+              </a>
+            </div>
+            <br>
+            <div class="toTop alignCenter">
+              <a class="button" href="#top">Back To Top</a>
             </div>
           </div>
       </div>
 
     </main>
 
-    <footer>
+    <footer id="contact">
       <script></script>
-      <div class="subFooterCont">
+
+      <h6 class="subTitle alignCenter">Let's Get In Touch</h6>
+      <div class="subFooterCont width">
           <div class="iconText">
             <i class="fas fa-envelope"></i>
             <h6>judahbavery@gmail.com</h6>
-          </div>
-
-          <div class="iconText">
-            <i class="fas fa-phone"></i>
-            <h6>(802) 777-0970</h6>
           </div>
 
           <a class="iconText link" target="_blank" href="https://www.linkedin.com/in/judahavery/">
@@ -138,7 +150,6 @@
             <i class="link fab fa-linkedin-in"></i>
             <h6>Linked In</h6>
           </a>
-
           <a class="iconText link" target="_blank" href="https://twitter.com/avery_judah">
             <i class="link fab fa-twitter"></i>
             <h6>Twitter</h6>

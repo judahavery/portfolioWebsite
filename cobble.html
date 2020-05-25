@@ -24,63 +24,69 @@
 
     <link rel="icon" href="images/averyIcon.png">
 </head>
-<body id="top" >
+<body id="top">
 
   <div id="navbar">
     <nav>
         <a class="active" href="index.html#home">HOME</a>
         <a href="index.html#projects">PROJECTS</a>
-        <a class="navName" href="index.html#about">JUDAH AVERY</a>
-        <a href="index.html#contact">CONTACT</a>
+        <a href="#contact">CONTACT</a>
         <a target="_blank" href="downloads/averyJudahResume.pdf">RESUME</a>
     </nav>
   </div>
 
-    <main class="projectPage">
+  <main class="black">
+    <div class="projectPage width">
+      <h1 class="alignCenter title">COBBLE</h1>
+      <h6 class="alignCenter subTitle padBottom-20">Lead Designer | Product Owner</h6>
 
-      <div class="projectCont">
-        <div class="descriptionRow content leftDisplay">
+      <div class="overview">
+
+        <div class="descriptionRow">
+          <div class="padR-75">
+            <h5 class="spaced"><strong>Team Size:</strong> 8<h5>
+            <h5 class="spaced"><strong>Prototype Development Time:</strong> 48 Hours (Game Jam)<h5>
+            <h5 class="spaced"><strong>Full Development Time:</strong> Jan 2020 - April 2020<h5>
+            <h5 class="spaced"><strong>Development Tools:</strong> UE4 / Photoshop / Blender<h5>
+            <h5 class="spaced"><strong>Platform:</strong> Windows PC<h5>
+          </div>
+
           <div>
-            <h1 class="subTitle">COBBLE</h1>
-            <h4><strong>Lead Designer | Product Owner</strong></h4>
+            <h4 class="padBottom-10"><strong>My Contributions</strong></h4>
             <ul>
-              <li>- Designed systems and levels</li>
-              <li>- Built levels and environments</li>
-              <li>- Designed UI and interaction</li>
-              <li>- Pipeline and design documentation</li>
-              <li>- Organized and lead the team</li>
-              <li>- Ran meetings and weekly reviews</li>
-              <li>- Lead the creative direction</li>
+              <li class="listSpaced">- Designed systems and levels</li>
+              <li class="listSpaced">- Built levels and environments</li>
+              <li class="listSpaced">- Designed UI and interaction</li>
+              <li class="listSpaced">- Pipeline and design documentation</li>
+              <li class="listSpaced">- Organized and lead the team</li>
+              <li class="listSpaced">- Ran meetings and weekly reviews</li>
+              <li class="listSpaced">- Lead the creative direction</li>
             </ul>
           </div>
         </div>
 
-        <div class="projectVis">
-          <a target="_blank" href="https://jollycoopco.itch.io/cobble">
-            <img src="images/cobbleRunning.PNG" alt="Cobble Gameplay Screenshot">
-            <div class="overlay">
-              <h1>Play Cobble</h1>
-              <h5 class="overlaySubText">Game Jam Version</h5>
-            </div>
-          </a>
+        <div class="padBottom-10 alignCenter">
+          <a target="_blank" class="button whiteButton" href="https://jollycoopco.itch.io/cobble">Play Cobble</a>
+          <a target="_blank" class="button whiteButton" href="downloads/cobbleSystemsList.pdf">Systems List</a>
+          <a target="_blank" class="button whiteButton" href="downloads/cobbleVisualDesignDoc.pdf">Visual Design Document</a>
         </div>
 
-      </div>
+        <div>
+          <img class="imageBreak" src="images/cobbleGif_1.gif" alt="Cobble Gameplay Screenshot">
+        </div>
+    </div>
+  </main>
 
+    <main class="projectPage width">
       <div class="description">
-
           <div class="paragraph">
             <h4><strong>Project Overview</strong></h4>
-            <p>Cobble is a 2.5D side scrolling puzzle-adventure game. The base game was created in under 48 hours for
+            <p>Cobble is a 2.5D side-scrolling puzzle-adventure game. The base game was created in under 48 hours for
             the 2020 Global Game Jam, and afterward, our team of 8 students (myself included) continued to develop the project further. Cobble began
             pre-production and development continued for a few months until the team was no longer able to continue working on the game. Most gameplay systems were implemented,
             all design documents, pipelines, and production documents were completed, and many art assets were created towards the end.
             Even though most of the progress we made over these 3 months didn't take place in the game's content itself, I gained a lot of value from
-            Cobble.
-            <div class="buttonFlex alignLeft">
-              <a target="_blank" class="button" href="https://jollycoopco.itch.io/cobble">Play Cobble</a>
-              <a target="_blank" class="button" href="downloads/cobbleDesignDocuments.zip">Design Documents</a>
-            </div>
+            Cobble.</p>
             <br><br>
             <h4><strong>Game Intent</strong></h4>
             <p>The documented plan for the full version of Cobble intended to take aspects from exploratory genres and incorporate them into
@@ -98,15 +104,15 @@
             Many players who tested out the game shortly after the game jam seemed to enjoy the simple core puzzle systems.
             The goal of each level is moving from point A to B and players must use the machines inside their environment to traverse the level.
             Different machines have unique uses and movement patterns. For example, platforms will move or rotate, while pistons will launch the player.
-            However, these machines have two fucntional requirements: power from a lever and a gear. Cobble can remove gears from machines to place
+            However, these machines have two functional requirements: power from a lever and a gear. Cobble can remove gears from machines to place
             them in others and can switch levers to change which machines are provided with power. Players caught onto these core mechanics
-            very quickly, and making the game's difficulty scalable meant that a simple concept needed to be built upon in difficulty. I didn't
+            very quickly and making the game's difficulty scalable meant that a simple concept needed to be built upon in difficulty. I didn't
             want players to have a stressful experience, so it was important to keep puzzles from feeling overwhelming or too complex.
-            Stress would pull players out the world and cause frustration, taking away from having a strong world fantasy and curiosity.
+            Stress would pull players out of the world and cause frustration, taking away from having a strong world fantasy and curiosity.
             </p>
             <p>
             These core mechanics (placing gears and switching levers) may have been sufficient for a small game jam,
-            but they weren't quite scalable enough to produce an hour or two of interesting puzzles with. The issue here was adding more
+            but they weren't quite scalable enough to produce an hour or two of interesting puzzles. The issue here was adding more
             complexity to the game while trying not to overwhelm players. One of the main interests players had
             was the art style, setting, and context of the game. I didn't want to risk adding systems that added unnecessary complexity and
             didn't build upon other already existing systems. To mitigate this risk, I decided to rework the original core mechanics and add two
@@ -119,6 +125,22 @@
             Future levels could now incorporate "re-wiring" and build upon the player's existing knowledge of the underlying mechanics from past levels
             without causing them to feel confused.
             </p>
+            <br>
+            <div class="overlayCont">
+              <a target="_blank" href="downloads/cobbleVisualDesignDoc.pdf">
+                <img src="images/cobbleVDD.jpg" alt="Cobble Visual Design Document Preview">
+                <div class="overlay largeOverlay">
+                  <h1 class="subTitle">Visual Design Doc PDF</h1>
+                </div>
+              </a>
+            </div>
+            <br>
+            <div class="toTop alignCenter">
+              <a class="button" href="#top">Back To Top</a>
+            </div>
+          </div>
+
+        </div>
 
             <div class="toTop">
               <a class="button" href="#top">BACK TO TOP</a>
@@ -128,17 +150,14 @@
 
     </main>
 
-    <footer>
+    <footer id="contact">
       <script></script>
-      <div class="subFooterCont">
+
+      <h6 class="subTitle alignCenter">Let's Get In Touch</h6>
+      <div class="subFooterCont width">
           <div class="iconText">
             <i class="fas fa-envelope"></i>
             <h6>judahbavery@gmail.com</h6>
-          </div>
-
-          <div class="iconText">
-            <i class="fas fa-phone"></i>
-            <h6>(802) 777-0970</h6>
           </div>
 
           <a class="iconText link" target="_blank" href="https://www.linkedin.com/in/judahavery/">
