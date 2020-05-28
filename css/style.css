@@ -532,7 +532,7 @@ footer .subTitle
 
 .toTop
 {
-		padding: 20px 0 50px 0;
+		padding: 20px 0 0 0;
 }
 
 
@@ -841,6 +841,8 @@ li
 .contact
 {
 		color: #fff;
+		border-left: solid 5px #fead42;
+		padding-left: 20px;
 }
 
 .contactInfo
@@ -979,7 +981,7 @@ iframe
 
 
 
-/* RESPONSIVE CSS BELOW */
+/* PC RESPONSIVE CSS */
 
 
 
@@ -990,7 +992,6 @@ iframe
 		{
 				margin: 0 0 20px 0;
 		}
-
 }
 
 @media only screen and (max-width: 1625px) {
@@ -1005,13 +1006,17 @@ iframe
 		{
 				width: 60%;
 		}
+
+		.width
+		{
+				width: 75%;
+		}
 }
 
 @media only screen and (max-width: 1450px) {
 		#navbar
 		{
-				font-size: 0.7em;
-				height: 50px;
+				height: 65px;
 		}
 
 		.about
@@ -1025,16 +1030,16 @@ iframe
 		}
 }
 
-@media only screen and (max-width: 1150px) {
-
+@media only screen and (max-width: 1150px)
+{
 		.about
 		{
-				width: 90%;
+				width: 85%;
 		}
 
 		.width
 		{
-				width: 90%;
+				width: 85%;
 		}
 
 		.projectCont
@@ -1044,4 +1049,40 @@ iframe
 		}
 }
 
-@media only screen and (max-width: 1150px) {
+
+
+/* MOBILE RESPONSIVE CSS */
+
+
+
+@media only screen and (max-width: 500px)
+{
+		.summary
+		{
+				flex-direction: column;
+				align-items: center;
+		}
+
+		.summary img
+		{
+				width: 100%;
+				margin: 0 0 30px 0;
+		}
+
+		.title
+		{
+				font-size: 3em;
+				margin: 25px 0;
+		}
+
+		.footerCont
+		{
+				width: 60%;
+		}
+
+		.contact
+		{
+				justify-content: flex-start;
+				font-size: 0.85em;
+		}
+}
