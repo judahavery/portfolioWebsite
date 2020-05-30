@@ -1049,13 +1049,58 @@ iframe
 
 @media only screen and (max-width: 500px)
 {
+		.width
+		{
+				width: 85%;
+		}
+
+		.about
+		{
+				width: 85%;
+		}
+
 		.title
 		{
 				font-size: 3em;
 				margin: 40px 0 25px 0;
 		}
 
+		.toTop .button
+		{
+				margin: 30px 0 30px 0;
+		}
+
+
+
 		/* FOOTER CSS */
+		.contact
+		{
+				width: 100%;
+				justify-content: flex-start;
+				text-align: left;
+		}
+
+		.contactInfo
+		{
+			  justify-content: flex-start;
+				font-size: 0.9em;
+		}
+
+		.icons
+		{
+				width: 80%;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				padding: 0 0 20px 0;
+		}
+
+		.icons i
+		{
+				margin: 0;
+				padding: 0;
+		}
+
 		.profile
 		{
 				flex-direction: column;
@@ -1072,6 +1117,8 @@ iframe
 		{
 				width: 60%;
 		}
+
+
 
 		/* PROJECTS CSS */
 		.projects
