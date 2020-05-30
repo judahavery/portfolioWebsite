@@ -1,4 +1,4 @@
-html, body, div, span, applet, object, iframe,
+.profilehtml, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
@@ -308,12 +308,6 @@ li
     color: white;
 }
 
-.projectButton
-{
-		margin-left: 0;
-		margin-right: 25px;
-}
-
 .whiteButton
 {
 		margin: 30px 20px;
@@ -326,6 +320,18 @@ li
     background: #fff;
     text-decoration: none;
     color: #000;
+}
+
+.projectButton
+{
+		border-radius: 50;
+		margin-left: 0;
+		margin-right: 25px;
+}
+
+.projectButton:hover
+{
+		color: white;
 }
 
 
@@ -746,18 +752,6 @@ footer .subTitle
 		color: #fff;
 }
 
-.projects .button
-{
-		border-radius: 50;
-		margin-left: 0;
-		margin-right: 25px;
-}
-
-.projects .button:hover
-{
-		color: white;
-}
-
 .projects .buttonFlex
 {
 		justify-content: flex-start;
@@ -841,8 +835,6 @@ li
 .contact
 {
 		color: #fff;
-		border-left: solid 5px #fead42;
-		padding-left: 20px;
 }
 
 .contactInfo
@@ -915,7 +907,7 @@ li
 		margin-bottom: 15px;
 }
 
-.summary
+.profile
 {
 		font-weight: 300;
 		font-size: 1.3em;
@@ -923,12 +915,12 @@ li
 		justify-content: center;
 }
 
-.summary p
+.profile p
 {
 		padding-top: 0;
 }
 
-.summary img
+.profile img
 {
 		height: 30%;
 		width: 30%;
@@ -996,7 +988,7 @@ iframe
 
 @media only screen and (max-width: 1625px) {
 
-		.projects .button
+		.projectButton
 		{
 				align-self: flex-start;
 				margin: 0 0 20px 0;
@@ -1057,22 +1049,23 @@ iframe
 
 @media only screen and (max-width: 500px)
 {
-		.summary
-		{
-				flex-direction: column;
-				align-items: center;
-		}
-
-		.summary img
-		{
-				width: 100%;
-				margin: 0 0 30px 0;
-		}
-
 		.title
 		{
 				font-size: 3em;
-				margin: 25px 0;
+				margin: 40px 0 25px 0;
+		}
+
+		/* FOOTER CSS */
+		.profile
+		{
+				flex-direction: column;
+				align-items: flex-start;
+		}
+
+		.profile img
+		{
+				width: 100%;
+				margin: 0 0 30px 0;
 		}
 
 		.footerCont
@@ -1080,9 +1073,40 @@ iframe
 				width: 60%;
 		}
 
-		.contact
+		/* PROJECTS CSS */
+		.projects
 		{
-				justify-content: flex-start;
-				font-size: 0.85em;
+				padding: 45px 0 0 0;
+		}
+
+		.projectItem
+		{
+				flex-direction: column;
+				text-align: left;
+				padding: 0;
+				margin: 40px 0 60px 0;
+		}
+
+		.projectItem .subTitle
+		{
+				font-size: 2em;
+				margin: 0 0 5px 0;
+		}
+
+		.projectItem h4
+		{
+				font-size: 1.3em;
+				font-weight: 500;
+				margin: 0 0 15px 0;
+		}
+
+		.description
+		{
+				padding: 15px 0 0 0;
+		}
+
+		.projectButton
+		{
+				margin: 0 0 15px 0;
 		}
 }
