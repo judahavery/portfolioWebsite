@@ -131,6 +131,11 @@ li
 		font-weight: lighter;
 }
 
+.leftText
+{
+		text-align: left;
+}
+
 
 
 /* GENERAL FORMATTING AND SPACING */
@@ -213,8 +218,7 @@ li
 
 .column
 {
-		display: flex;
-		flex-direction: column !important;
+		display: block;
 }
 
 
@@ -570,12 +574,6 @@ footer .subTitle
 {
 		margin: 0 auto;
 		text-align: center;
-}
-
-.column
-{
-		display: flex;
-		flex-direction: column !important;
 }
 
 .imageBreak
@@ -1095,7 +1093,7 @@ iframe
 		.home
 		{
 				padding: 50px 0 0 0;
-				height: 55vh;
+				height: 45vh;
 
 				display: flex;
 				justify-content: center;
@@ -1110,7 +1108,7 @@ iframe
 
 
 
-		/* FOOTER */
+		/* ABOUT / CONTACT */
 		.contact
 		{
 				width: 100%;
@@ -1122,21 +1120,6 @@ iframe
 		{
 			  justify-content: flex-start;
 				font-size: 0.9em;
-		}
-
-		.icons
-		{
-				width: 80%;
-				margin: 0 auto;
-				display: flex;
-				justify-content: space-between;
-				padding: 0 0 20px 0;
-		}
-
-		.icons i
-		{
-				margin: 0;
-				padding: 0;
 		}
 
 		.profile
@@ -1151,9 +1134,54 @@ iframe
 				margin: 0 0 30px 0;
 		}
 
+
+
+		/* FOOTER */
 		.footerCont
 		{
 				width: 60%;
+		}
+
+		.subFooterCont
+		{
+				flex-direction: column;
+				font-size: 1.5em;
+		}
+
+		footer .subTitle
+		{
+				font-size: 2em;
+				padding: 40px 0 0 0;
+		}
+
+
+		.subFooterCont h6
+		{
+				font-size: 0.85em;
+		}
+
+		.iconText
+		{
+				padding: 5px 0 20px 0;
+		}
+
+		.iconText i
+		{
+				margin-right: 20px;
+		}
+
+		.icons
+		{
+				width: 40%;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				padding: 0 0 20px 0;
+		}
+
+		.icons i
+		{
+				margin: 0;
 		}
 
 
@@ -1197,5 +1225,73 @@ iframe
 		.projectButton
 		{
 				margin: 0 0 15px 0;
+		}
+
+
+
+		/* PROJECT INFO PAGE */
+		.full
+		{
+				width: 100%;
+		}
+
+		.full img
+		{
+				width: 100%;
+				height: 350px;
+				object-fit: cover;
+		}
+
+		.projectPage
+		{
+				padding: 0 0 25px 0;
+				text-align: left;
+				justify-content: flex-start;
+		}
+
+		.projectPage .subTitle
+		{
+				font-size: 1.3em;
+				padding: 0 0 20px 0;
+				text-align: center;
+		}
+
+		.projectPage .title
+		{
+				font-size: 2.5em;
+				padding-top: 100px;
+				margin: 0;
+		}
+
+		.description
+		{
+				padding-top: 40px;
+		}
+
+		.whiteButton
+		{
+				margin: 0 0 20px 0;
+
+		}
+
+		.paragraph
+		{
+				padding: 30px 0 0 0;
+		}
+
+		.links
+		{
+				width: 100%;
+
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+		}
+
+		.links a
+		{
+			  color: #61d4ff;
+				font-size: 1.4em;
+				padding: 0 0 10px 0;
 		}
 }
