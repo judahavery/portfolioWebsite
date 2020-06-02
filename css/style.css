@@ -89,7 +89,7 @@ li
 
 .width
 {
-		width: 65%;
+		width: 60%;
 }
 
 
@@ -101,35 +101,6 @@ li
 /* TYPE CLASSES AND FORMATTING */
 
 
-
-.centerHeader
-{
-    margin: 0;
-    letter-spacing: 2px;
-		font-family: 'Josefin Sans', sans-serif;
-		font-weight: 700;
-    padding-bottom: 5px;
-    font-size: 4.5em;
-}
-
-.header
-{
-    margin: 0;
-    letter-spacing: 2px;
-    font-family: 'Lato', sans-serif;
-		font-weight: bold;
-    padding: 15px;
-    font-size: 4em;
-		text-align: center;
-}
-
-.centerSubHeader
-{
-		font-family: 'Raleway', sans-serif;;
-	  letter-spacing: 0px;
-    font-size: 2em;
-		font-weight: lighter;
-}
 
 .leftText
 {
@@ -273,6 +244,11 @@ li
 		color: #fff;
 }
 
+.overlay h1
+{
+	  margin: 0;
+}
+
 .largeOverlay
 {
 		font-size: 2em !important;
@@ -347,12 +323,34 @@ li
 {
     display: flex;
     align-items: center;
+		justify-content: center;
 		text-align: center;
 		background: #ffffff;
 		color: #161616;
 		margin: 0 auto;
 		padding: 250px 0;
-		height: 80vh;
+		height: 85vh;
+}
+
+.homeText
+{
+    margin: 0 auto;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 500;
+    padding: 10px 0 10px 0;
+		line-height: 45px;
+    font-size: 1.4em;
+		color: #323232;
+		width: 60%;
+}
+
+.homeHeader
+{
+		font-family: 'Josefin Sans', sans-serif;;
+	  letter-spacing: 0px;
+    font-size: 4em;
+		font-weight: 700;
+		color: #000;
 }
 
 .slideshow
@@ -380,7 +378,7 @@ li
 
 .centerBox
 {
-		padding-top: 80px;
+		padding-top: 0px;
 		padding-left: 0px;
     width: 95%;
 }
@@ -409,9 +407,9 @@ li
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		background: rgba(22, 22, 22, 1);
+		background: rgba(17, 17, 17, 1);
 		box-shadow: 0px 0px 10px #000000;
-		height: 70px;
+		height: 50px;
 		margin: 0 auto;
 		width: 100%;
 		position: fixed;
@@ -422,22 +420,12 @@ li
 
 .navCont
 {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		flex-direction: row;
-
-		width: 50%;
+		width: 60%;
 		margin: 0 auto;
 		font-size: 0.95em;
-}
-
-.rightNav
-{
-		width: 50%;
 
 		display: flex;
-		justify-content: flex-end;
+		justify-content: center;
 		align-items: center;
 		text-align: center;
 }
@@ -453,16 +441,16 @@ li
 
 nav a
 {
-    padding: 15px 25px;
+    padding: 5px 25px;
     font-size: 1.2em;
 		color: #fff;
-    transition: .2s;
+    transition: .15s;
 }
 
 nav a:hover
 {
-    color: #ff7a00;
-    transition: .2s;
+    color: #ff902a;
+    transition: .3s;
 }
 
 a:hover
@@ -472,13 +460,71 @@ a:hover
 
 
 
-/* -----FOOTER----- */
+/* FOOTER / CONTACT */
+
+
+
+.about
+{
+		display: flex;
+		flex-direction: column;
+
+		margin: 0 auto;
+		padding: 40px 0 20px 0;
+		width: 50%;
+}
+
+.contact
+{
+		color: #fff;
+		margin: 0 auto;
+}
+
+.contactInfo
+{
+		font-family: 'Josefin Sans', sans-serif;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+}
+
+.contactItem
+{
+		display: flex;
+		justify-content: flex-start;
+		align-items: baseline;
+		padding: 5px 0;
+		color: #fff;
+		transition: 0.2s ease;
+}
+
+.contactItem i
+{
+		font-size: 1.2em;
+		padding: 0 15px 0 0;
+}
+
+.contactItem h6
+{
+		font-size: 1.1em;
+}
+
+.contact .subTitle
+{
+		font-family: 'Raleway', sans-serif;
+		font-size: 1.8em;
+		font-weight: 700;
+		letter-spacing: 0px;
+		margin-top: 0px;
+		margin-bottom: 15px;
+}
 
 
 
 footer
 {
-		background: #161616;
+		background: #0d0d0d;
 		color: #FFF;
 		font-family: 'Josefin Sans', sans-serif;
 		font-weight: light;
@@ -490,7 +536,7 @@ footer
 		padding: 5px 0 5px 0;
 
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 		justify-content: center;
 		align-items: center;
 }
@@ -514,6 +560,17 @@ footer
 		padding: 10px;
 		margin: 0 auto;
 	 	text-align: left;
+}
+
+.icons
+{
+		width: 150px;
+		font-size: 0.85em;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 5px 0 5px 0;
 }
 
 footer .subTitle
@@ -546,13 +603,13 @@ footer .subTitle
 .link:hover i
 {
 		transition: 0.2s ease;
-		color: #00a0db;
+		color: #16c0ff;
 }
 
 .link:hover
 {
 		transition: 0.2s ease;
-		color: #00a0db;
+		color: #16c0ff;
 }
 
 .toTop
@@ -589,6 +646,12 @@ footer .subTitle
 {
 		margin: 0 auto;
 		text-align: center;
+}
+
+.line
+{
+		background: #ff9a22;
+		padding: 0.5px;
 }
 
 .imageBreak
@@ -674,7 +737,7 @@ footer .subTitle
 
 .projectItem
 {
-		padding: 50px 20px;
+		padding: 60px 20px;
 
 		display: flex;
 		flex-direction: row;
@@ -789,8 +852,8 @@ footer .subTitle
 		font-weight: 700;
 		letter-spacing: 0px;
     text-align: center;
-    margin-top: 50px;
-		margin-bottom: 50px;
+    margin-top: 25px;
+		margin-bottom: 25px;
 }
 
 .subTitle
@@ -805,164 +868,6 @@ footer .subTitle
 li
 {
 		font-size: 1em;
-}
-
-
-
-/* ABOUT */
-
-
-
-.about
-{
-		display: flex;
-		flex-direction: column;
-
-		text-align: left;
-		font-family: 'Josefin Sans', sans-serif;
-		color: #fff;
-		margin: 0 auto;
-		padding: 40px 0 20px 0;
-		width: 50%;
-}
-
-.contact
-{
-		color: #fff;
-}
-
-.contactInfo
-{
-		font-family: 'Josefin Sans', sans-serif;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-}
-
-.contactItem
-{
-		display: flex;
-		justify-content: flex-start;
-		align-items: baseline;
-		padding: 5px 15px 5px 0;
-		color: #fff;
-		transition: 0.2s ease;
-}
-
-.contactItem i
-{
-		font-size: 1.2em;
-		padding: 0 15px 0 0;
-}
-
-.contactItem h6
-{
-		font-size: 1.1em;
-}
-
-.about p
-{
-		padding-bottom: 35px;
-		font-size: 1.3em;
-		font-weight: 300;
-}
-
-.titleCont
-{
-		margin-bottom: 15px;
-		text-align: center;
-}
-
-.titleCont .title
-{
-		margin-bottom: 10px;
-		font-family: 'Josefin Sans', sans-serif;
-}
-
-.titleCont
-{
-		margin-bottom: 15px;
-		text-align: center;
-}
-
-.titleCont .title
-{
-		margin-bottom: 10px;
-		font-family: 'Josefin Sans', sans-serif;
-}
-
-.contact .subTitle
-{
-		font-family: 'Raleway', sans-serif;
-		font-size: 1.8em;
-		font-weight: 700;
-		letter-spacing: 0px;
-		margin-top: 0px;
-		margin-bottom: 15px;
-}
-
-.profile
-{
-		font-weight: 300;
-		font-size: 1.3em;
-		display: flex;
-		justify-content: center;
-}
-
-.profile p
-{
-		padding-top: 0;
-}
-
-.profile img
-{
-		height: 30%;
-		width: 30%;
-		border-radius: 15px;
-		box-shadow: 5px 5px 10px #000;
-		margin-right: 50px;
-		margin-bottom: 20px;
-		float: left;
-}
-
-.about strong
-{
-		font-weight: 400;
-		color: #ffb660;
-}
-
-.subCont
-{
-		background: rgba(0, 0, 0, 0.9);
-		padding: 25px;
-		border-radius: 20px;
-		margin-left: 5%;
-		overflow:hidden;
-}
-
-.portTitle
-{
-		font-family: Lato;
-		font-size: 3.75em;
-		font-weight: bold;
-		padding: 0 0 30px 0;
-}
-
-iframe
-{
-		margin: 20px 30px 30px 0px;
-		border-radius: 15px;
-		float: left;
-}
-
-.alignContent
-{
-		margin: 30px 5px 30px 0px;
-}
-
-.portText
-{
-		padding: 20px 0 0 0;
 }
 
 
@@ -1000,11 +905,6 @@ iframe
 }
 
 @media only screen and (max-width: 1450px) {
-		#navbar
-		{
-				height: 65px;
-		}
-
 		.about
 		{
 				width: 70%;
@@ -1061,8 +961,7 @@ iframe
 
 		.button
 		{
-				font-size: 0.9em;
-				padding: 10px 20px;
+				font-size: 1.2em;
 		}
 
 		.toTop .button
@@ -1078,7 +977,7 @@ iframe
 
 		.centerHeader
 		{
-			margin: 125px 0 0 0;
+				margin: 125px 0 0 0;
 				font-size: 2.45em;
 				padding: 0;
 		}
@@ -1092,8 +991,8 @@ iframe
 
 		.home
 		{
-				padding: 50px 0 0 0;
-				height: 75vh;
+				padding: 100px 0 60px 0;
+				height: auto;
 				text-align: left;
 
 				display: flex;
@@ -1102,9 +1001,22 @@ iframe
 				flex-direction: column;
 		}
 
+		.homeText
+		{
+				width: 100%;
+				line-height: 40px;
+				font-size: 1.3em;
+		}
+
 		.centerBox
 		{
 				padding: 0;
+				margin: 0 auto;
+				text-align: center;
+
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
 		}
 
 		.carousel img
@@ -1273,6 +1185,12 @@ iframe
 				width: 100%;
 				height: 350px;
 				object-fit: cover;
+		}
+
+		.overlay h1
+		{
+				font-size: 1.8em;
+				margin: 0;
 		}
 
 		.projectPage
