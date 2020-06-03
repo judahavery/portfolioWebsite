@@ -2,16 +2,16 @@ window.addEventListener('load', function() {LoadAdaptivePages()});
 
 function LoadAdaptivePages()
 {
-    if (window.innerWidth < 1225) {
-        if (window.location == "index.html")
+    if (screen.width <= 1200) {
+        if (document.location == "file:///D:/Portfolio/portfolioWebsite/index.html")
         {
-            window.alert("Currently on index.html");
+            document.location = "indexMob.html";
         }
-        else if (window.location == "cobble.html")
+        else if (document.location == "cobble.html")
         {
 
         }
-        else if (window.location == "neo.html")
+        else if (document.location == "neo.html")
         {
 
         }

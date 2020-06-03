@@ -1,21 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Judah Avery</title>
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Font Awesome and Bootstrap -->
     <script src="https://kit.fontawesome.com/f17e9d136a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <!-- Scrolling Functionality -->
     <script src="javascript/scrolling.js"></script>
-    <script src="javascript/adaptive.js"></script>
+
+    <!-- Loading Mobile Pages -->
+    <script type="text/javascript">
+      if (screen.width <= 1200) {
+          document.location = "cobbleMob.html";
+      }
+    </script>
+
+    <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <!-- Bootstrap Javascript -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:500" rel="stylesheet">
@@ -28,11 +40,11 @@
 <body id="top">
 
   <div id="navbar">
-    <nav>
-        <a class="active" href="index.html#home">HOME</a>
-        <a href="index.html#projects">PROJECTS</a>
-        <a href="#contact">CONTACT</a>
-        <a target="_blank" href="downloads/averyJudahResume.pdf">RESUME</a>
+    <nav class="navCont">
+      <a class="active" href="index.html#home">JUDAH AVERY</a>
+      <a href="index.html#projects">PROJECTS</a>
+      <a href="#contact">CONTACT</a>
+      <a target="_blank" href="downloads/averyJudahResume.pdf">RESUME</a>
     </nav>
   </div>
 
@@ -145,34 +157,39 @@
 
     </main>
 
-    <footer id="contact">
-      <script></script>
+    <main class="black">
+      <div id="contact" class="contact">
+        <h6 class="title alignCenter">Get In Touch</h6>
 
-      <h6 class="subTitle alignCenter">Let's Get In Touch</h6>
-      <div class="subFooterCont width">
-          <div class="iconText">
-            <i class="fas fa-envelope"></i>
-            <h6>judahbavery@gmail.com</h6>
+        <div class="subFooterCont">
+          <div class="contactInfo">
+            <h6 class="subTitle">Where To Find Me</h6>
+            <a class="contactItem link" target="_blank" href="https://www.linkedin.com/in/judahavery/">
+              <i class="link fab fa-linkedin-in"></i>
+              <h6>Linked In</h6>
+            </a>
+            <a class="contactItem link" target="_blank" href="https://twitter.com/avery_judah">
+              <i class="link fab fa-twitter"></i>
+              <h6>Twitter</h6>
+            </a>
+            <a class="contactItem link" target="_blank" href="https://judah-avery.itch.io/">
+              <i class="link fab fa-itch-io"></i>
+              <h6>itch.io</h6>
+            </a>
           </div>
 
-          <a class="iconText link" target="_blank" href="https://www.linkedin.com/in/judahavery/">
-            </object>
-            <i class="link fab fa-linkedin-in"></i>
-            <h6>Linked In</h6>
-          </a>
-          <a class="iconText link" target="_blank" href="https://twitter.com/avery_judah">
-            <i class="link fab fa-twitter"></i>
-            <h6>Twitter</h6>
-          </a>
-
-          <a class="iconText link" target="_blank" href="https://judah-avery.itch.io/">
-            <i class="link fab fa-itch-io"></i>
-            <h6>itch.io</h6>
-          </a>
+          <div class="contactInfo">
+            <h6 class="subTitle">Send Me An Email</h6>
+            <div class="contactItem">
+              <i class="fas fa-envelope"></i>
+              <h6>judahbavery@gmail.com</h6>
+            </div>
+          </div>
+        </div>
       </div>
-    </footer>
+    </main>
 
-    <footer class="black">
+    <footer class="darkBlack">
       <div class="footerCont">
         <h6>Website Designed and Developed by <strong>Judah Avery</strong></h1>
       </div>

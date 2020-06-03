@@ -2,20 +2,31 @@
 <html lang="en" dir="ltr">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Judah Avery</title>
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Font Awesome and Bootstrap -->
     <script src="https://kit.fontawesome.com/f17e9d136a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <!-- Scrolling Functionality -->
     <script src="javascript/scrolling.js"></script>
-    <script src="javascript/adaptive.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>=
 
+    <!-- Loading Mobile Pages -->
+    <script type="text/javascript">
+      if (screen.width > 1200) {
+          document.location = "index.html";
+      }
+    </script>
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Bootstrap Javascript -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:500" rel="stylesheet">
@@ -31,7 +42,7 @@
     <nav class="navCont">
       <a href="#home">JUDAH AVERY</a>
       <a href="#projects">PROJECTS</a>
-      <a href="#contact">ABOUT</a>
+      <a href="#contact">CONTACT</a>
       <a target="_blank" href="downloads/averyJudahResume.pdf">RESUME</a>
     </nav>
   </div>
@@ -51,7 +62,8 @@
           <strong>graphic design and web design.</strong></p>
 
           <div class="padTop-20 alignCenter">
-              <a target="_blank" class="button" href="downloads/averyJudahResume.pdf">Resume</a>
+            <a class="button" href="#projects">Projects</a>
+            <a target="_blank" class="button" href="downloads/averyJudahResume.pdf">Resume</a>
           </div>
       </div>
 
@@ -70,8 +82,6 @@
                   <a href="cobble.html">
                     <img src="images/cobblePlatform.png" class="d-block w-100" alt="Cobble Gameplay Screenshot"></a>
                     <a href="cobble.html"><div class="carousel-caption d-none d-md-block">
-                        <h1 class="slideshowFont">COBBLE</h1>
-                        <h4 class="slideshowFont">Manipulate the mechanics of your environment</h4>
                     </div></a>
                   </a>
                 </div>
@@ -79,8 +89,6 @@
                   <a target="_blank" href="https://www.youtube.com/watch?v=RmceM-9JSDE&t=">
                     <img src="images/fadeStart.png" class="d-block w-100" alt="FADE Gameplay Screenshot">
                     <a target="_blank" href="https://www.youtube.com/watch?v=RmceM-9JSDE&t="><div class="carousel-caption d-none d-md-block">
-                        <h1 class="slideshowFont">FADE</h1>
-                        <h4 class="slideshowFont">Unravel the mysteries behind an atmospheric world</h4>
                     </div></a>
                   </a>
                 </div>
@@ -88,8 +96,6 @@
                   <a target="_blank" href="https://judah-avery.itch.io/luminescent">
                     <img src="images/luminescentRunes.png" class="d-block w-100" alt="Luminescent Gameplay Screenshot">
                     <a target="_blank" href="https://judah-avery.itch.io/luminescent"><div class="carousel-caption d-none d-md-block">
-                        <h1 class="slideshowFont">LUMINESCENT</h1>
-                        <h4 class="slideshowFont">Explore the dark and corrupted sea</h4>
                     </div></a>
                   </a>
                 </div>
@@ -201,39 +207,31 @@
     </main>
 
     <main class="black">
-      <div id="contact" class="about">
-        <h1 class="title">ABOUT ME</h1>
+      <div id="contact" class="contact">
+        <h6 class="title alignCenter">Get In Touch</h6>
 
-        <p>
-        Whether it's designing and building a game or creating this very website, I enjoy the full process of crafting an experience
-        from start to finish. Designing and creating content for others to experience excites
-        and drives me to invest all of my efforts toward challenging myself to improve as a developer and designer.
-        Constantly, I'm striving to learn from new experiences and seek out unfamiliar territory where I can deliver beyond expectations.
-        Outside of work, school, and my personal projects, I like to spend my time outdoors. Whenever I have the
-        chance, I'm hiking, skiing, snowboarding, or rock climbing.
-        </p>
+        <div class="subFooterCont">
+          <div class="contactInfo">
+            <h6 class="subTitle">Where To Find Me</h6>
+            <a class="contactItem link" target="_blank" href="https://www.linkedin.com/in/judahavery/">
+              <i class="link fab fa-linkedin-in"></i>
+              <h6>Linked In</h6>
+            </a>
+            <a class="contactItem link" target="_blank" href="https://twitter.com/avery_judah">
+              <i class="link fab fa-twitter"></i>
+              <h6>Twitter</h6>
+            </a>
+            <a class="contactItem link" target="_blank" href="https://judah-avery.itch.io/">
+              <i class="link fab fa-itch-io"></i>
+              <h6>itch.io</h6>
+            </a>
+          </div>
 
-        <div class="profile">
-          <img src="images/judahNewYork.JPG" alt="Photo of Myself In New York City">
-          <div class="contact">
-            <h6 class="subTitle alignLeft">Let's Get In Touch</h6>
-            <div class="contactInfo">
-              <div class="contactItem">
-                <i class="fas fa-envelope"></i>
-                <h6>judahbavery@gmail.com</h6>
-              </div>
-              <a class="contactItem link" target="_blank" href="https://www.linkedin.com/in/judahavery/">
-                <i class="link fab fa-linkedin-in"></i>
-                <h6>Linked In</h6>
-              </a>
-              <a class="contactItem link" target="_blank" href="https://twitter.com/avery_judah">
-                <i class="link fab fa-twitter"></i>
-                <h6>Twitter</h6>
-              </a>
-              <a class="contactItem link" target="_blank" href="https://judah-avery.itch.io/">
-                <i class="link fab fa-itch-io"></i>
-                <h6>itch.io</h6>
-              </a>
+          <div class="contactInfo">
+            <h6 class="subTitle">Send Me An Email</h6>
+            <div class="contactItem">
+              <i class="fas fa-envelope"></i>
+              <h6>judahbavery@gmail.com</h6>
             </div>
           </div>
         </div>
