@@ -1,0 +1,458 @@
+
+
+/* DESKTOP / LAPTOP RESPONSIVE CSS */
+
+
+@media only screen and (max-width: 1775px) {
+
+		/* Aligning project button in column */
+		.projectButton
+		{
+				margin: 0 0 20px 0;
+		}
+}
+
+@media only screen and (max-width: 1625px) {
+
+		.projectButton
+		{
+				align-self: flex-start;
+				margin: 0 0 20px 0;
+		}
+
+		.about
+		{
+				width: 60%;
+		}
+
+		.width
+		{
+				width: 75%;
+		}
+
+		.subFooterCont
+		{
+				width: 50%;
+		}
+}
+
+@media only screen and (max-width: 1450px) {
+		.about
+		{
+				width: 70%;
+		}
+
+		.width
+		{
+				width: 85%;
+		}
+
+		.subFooterCont
+		{
+				width: 55%;
+		}
+}
+
+@media only screen and (max-width: 1150px)
+{
+		.about
+		{
+				width: 85%;
+		}
+
+		.width
+		{
+				width: 85%;
+		}
+
+		.projectCont
+		{
+				padding-right: 0;
+				flex-direction: column;
+		}
+}
+
+
+
+/* TABLET RESPONSIVE CSS */
+
+
+
+@media only screen and (max-width: 1200px)
+{
+		.width
+		{
+				width: 60%;
+		}
+
+		.about
+		{
+				width: 85%;
+		}
+
+		.title
+		{
+				font-size: 3em;
+				margin: 40px 0 25px 0;
+		}
+
+		.button
+		{
+				font-size: 1.2em;
+		}
+
+		.toTop .button
+		{
+				margin: 30px 0 30px 0;
+		}
+
+
+
+		/* TITLE SECTION */
+
+
+
+		.centerHeader
+		{
+				margin: 125px 0 0 0;
+				font-size: 2.45em;
+				padding: 0;
+		}
+
+		.centerSubHeader
+		{
+				font-size: 1.8em;
+				font-weight: 500;
+				margin: 0 0 10px 0;
+		}
+
+		.home
+		{
+				padding: 150px 0 100px 0;
+				height: auto;
+				text-align: left;
+
+				display: flex;
+				justify-content: flex-start;
+				align-items: flex-start;
+				flex-direction: column;
+		}
+
+		.homeText
+		{
+				width: 100%;
+				line-height: 40px;
+				font-size: 1.3em;
+		}
+
+		.centerBox
+		{
+				padding: 0;
+				margin: 0 auto;
+				text-align: center;
+
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+		}
+
+		.carousel img
+		{
+				height: 50vh;
+		}
+
+
+
+		/* ABOUT / CONTACT */
+
+
+
+		.contact
+		{
+				width: 100%;
+				justify-content: flex-start;
+				text-align: left;
+		}
+
+		.contactInfo
+		{
+			  justify-content: flex-start;
+				font-size: 0.9em;
+		}
+
+		.profile
+		{
+				flex-direction: column;
+				align-items: flex-start;
+		}
+
+		.profile img
+		{
+				width: 100%;
+				margin: 0 0 30px 0;
+		}
+
+
+
+		/* FOOTER */
+
+
+
+		.footerCont
+		{
+				width: 60%;
+		}
+
+		.icons
+		{
+				width: 50%;
+				font-size: 0.85em;
+				margin: 0 auto;
+				display: flex;
+				justify-content: space-between;
+				padding: 5px 0 5px 0;
+		}
+
+		.icons i
+		{
+				margin: 0;
+		}
+
+
+
+		/* PROJECTS (HOME) */
+
+
+
+		.projects
+		{
+				padding: 45px 0 0 0;
+		}
+
+		.projectItem
+		{
+				flex-direction: column;
+				text-align: left;
+				padding: 0;
+				margin: 40px 0 60px 0;
+		}
+
+		.projects .title
+		{
+				padding-bottom: 20px;
+		}
+
+		.projectItem .subTitle
+		{
+				font-size: 2.2em;
+		}
+
+		.projectItem h4
+		{
+				font-size: 1.3em;
+				font-weight: 500;
+				margin: 0 0 15px 0;
+		}
+
+		.description
+		{
+				padding: 15px 0 0 0;
+		}
+
+		.projects .description
+		{
+				padding: 10px 0 0 0;
+		}
+
+		.projects p
+		{
+				font-size: 1.1em;
+		}
+
+		.projects img
+		{
+				border-radius: 10px;
+		}
+
+		.projectButton
+		{
+				margin: 0 0 15px 0;
+		}
+
+
+
+		/* PROJECT INFO PAGE */
+
+
+
+		.full
+		{
+				width: 100%;
+		}
+
+		.full img
+		{
+				width: 100%;
+				height: 350px;
+				object-fit: cover;
+		}
+
+		.overlay h1
+		{
+				font-size: 1.8em;
+				margin: 0;
+		}
+
+		.projectPage
+		{
+				padding: 0 0 15px 0;
+				text-align: left;
+				justify-content: flex-start;
+		}
+
+		.projectPage .subTitle
+		{
+				font-size: 1.3em;
+				padding: 0;
+				text-align: center;
+		}
+
+		.projectPage .title
+		{
+				font-size: 2.8em;
+				padding-top: 100px;
+				margin: 0;
+		}
+
+		.description
+		{
+				padding-top: 20px;
+		}
+
+		.whiteButton
+		{
+				margin: 0 0 20px 0;
+		}
+
+		.paragraph
+		{
+				padding: 30px 0 0 0;
+		}
+
+		.paragraph h4
+		{
+				font-size: 1.4em;
+				padding: 0 0 0 0;
+		}
+
+		.paragraph p
+		{
+				text-indent: 0;
+				font-size: 0.95em !important;
+		}
+
+		.links
+		{
+				width: 100%;
+
+				display: flex;
+				justify-content: flex-start;
+				flex-direction: column;
+		}
+
+		.links li
+		{
+				line-height: 40px;
+		}
+
+		.links a
+		{
+			  color: #58dcff;
+				font-size: 0.7em;
+				font-weight: 300;
+				border-bottom: 1px solid;
+		}
+
+		.links a:active
+		{
+				color: #58dcff;
+		}
+
+		.links a:hover
+		{
+				color: #58dcff;
+		}
+
+		.subFooterCont
+		{
+				width: 70%;
+		}
+}
+
+@media only screen and (max-width: 1000px)
+{
+		/* GENERAL */
+		.width
+		{
+				width: 90%;
+		}
+
+		.subFooterCont
+		{
+				width: 90%;
+		}
+}
+
+
+
+/* MOBILE */
+
+
+
+@media only screen and (max-width: 700px)
+{
+		/* FOOTER */
+		.subFooterCont
+		{
+				flex-direction: column;
+				justify-content: center;
+				font-size: 1.5em;
+		}
+
+		.subFooterCont .subTitle
+		{
+				font-size: 1.3em;
+				padding: 30px 0 0 0;
+		}
+
+		.subFooterCont h6
+		{
+				font-size: 0.9em;
+		}
+
+		.subFooterCont i
+		{
+				font-size: 0.9em;
+				margin: 0;
+		}
+
+		.contactInfo
+		{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+		}
+
+		/* PROJECTS SECTION */
+		.projects
+		{
+				padding: 30px 0 0 0;
+		}
+
+		/* HOME / TITLE SECTION */
+		.home
+		{
+				padding: 125px 0 75px 0;
+		}
+}
