@@ -413,6 +413,12 @@
 				transition: 0.1s;
 		}
 
+		#navOverlay a:active
+		{
+				color: #ff9322;
+				transition: 0.3s;
+		}
+
 		.navCont
 		{
 				position: relative;
@@ -434,7 +440,6 @@
 
 		.navInner
 		{
-				width: 93%;
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
@@ -462,9 +467,9 @@
 				transition: 0.15s;
 		}
 
-		#navbar a:hover
+		#navbar a:active
 		{
-				color: #ffa722;
+				color: #ff9322;
 				transition: 0.3s;
 		}
 
