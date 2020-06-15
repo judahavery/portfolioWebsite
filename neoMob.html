@@ -10,14 +10,20 @@
     <script src="https://kit.fontawesome.com/f17e9d136a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <!-- Scrolling Functionality -->
-    <script src="javascript/scrolling.js"></script>
+    <!-- Scrolling Functionality AND Open and Close Curtain Navigation -->
+    <script src="javascript/nav.js"></script>
 
     <!-- Loading Mobile Pages -->
     <script type="text/javascript">
+    if (screen.width > 1200) {
+        document.location = "neo.html";
+    }
+
+    window.onresize = function(event) {
       if (screen.width > 1200) {
           document.location = "neo.html";
       }
+    };
     </script>
 
     <!-- jquery -->
@@ -40,15 +46,24 @@
 </head>
 <body id="top" >
 
-  <div id="navbar">
+  <div id="navOverlay">
+
     <nav class="navCont">
-      <a class="active" href="index.html#home">JUDAH AVERY</a>
-      <a href="index.html#projects">PROJECTS</a>
-      <a href="#contact">CONTACT</a>
-      <a target="_blank" href="downloads/averyJudahResume.pdf">RESUME</a>
+      <a onclick="closeNav()" href="index.html#home">JUDAH AVERY</a>
+      <a onclick="closeNav()" href="index.html#projects">PROJECTS</a>
+      <a onclick="closeNav()" href="#contact">CONTACT</a>
+      <a onclick="closeNav()" target="_blank" href="downloads/averyJudahResume.pdf">RESUME</a>
+      <i onclick="delayCloseNav()" class="fas fa-times"></i>
     </nav>
+
   </div>
 
+  <div id="navbar">
+    <div class="navInner">
+      <a href="#home">JUDAH AVERY</a>
+      <i onclick="openNav()" class="openNav fas fa-bars"></i>
+    </div>
+  </div>
   <main class="black">
       <div class="projectPage width">
         <h1 class="alignCenter title">NEO</h1>

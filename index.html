@@ -15,9 +15,15 @@
 
     <!-- Loading Mobile Pages -->
     <script type="text/javascript">
+    if (screen.width <= 1200) {
+        document.location = "indexMob.html";
+    }
+
+    window.onresize = function(event) {
       if (screen.width <= 1200) {
           document.location = "indexMob.html";
       }
+    };
     </script>
 
     <!-- jquery -->

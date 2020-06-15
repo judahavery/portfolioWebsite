@@ -5,15 +5,29 @@ var prevScrollTop = 0;
 
 // Open
 function openNav() {
-    document.getElementById("navOverlay").style.height = "100%";
-    document.getElementById("navbar").style.top = "-70px";
-    navOpen = true;
+    setTimeout(() =>
+    {
+        document.getElementById("navOverlay").style.height = "100%";
+        document.getElementById("navbar").style.top = "-70px";
+        navOpen = true;
+    }, 150);
 }
 
 // Close
 function closeNav() {
     document.getElementById("navOverlay").style.height = "0%";
+    document.getElementById("navbar").style.top = "0px";
     navOpen = false;
+}
+
+// Close Delayed
+function delayCloseNav() {
+    setTimeout(() =>
+    {
+        document.getElementById("navOverlay").style.height = "0%";
+        document.getElementById("navbar").style.top = "0px";
+        navOpen = false;
+    }, 150);
 }
 
 function scrolling()

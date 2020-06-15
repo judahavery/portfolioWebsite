@@ -14,9 +14,15 @@
 
     <!-- Loading Mobile Pages -->
     <script type="text/javascript">
+    if (screen.width > 1200) {
+        document.location = "index.html";
+    }
+
+    window.onresize = function(event) {
       if (screen.width > 1200) {
           document.location = "index.html";
       }
+    };
     </script>
 
     <!-- jquery -->
@@ -41,19 +47,21 @@
 
   <div id="navOverlay">
 
-    <i class="exitNav" onclick="closeNav()" class="fas fa-times"></i>
-
     <nav class="navCont">
-      <a href="#projects">PROJECTS</a>
-      <a href="#contact">CONTACT</a>
-      <a target="_blank" href="downloads/averyJudahResume.pdf">RESUME</a>
+      <a onclick="closeNav()" href="#home">JUDAH AVERY</a>
+      <a onclick="closeNav()" href="#projects">PROJECTS</a>
+      <a onclick="closeNav()" href="#contact">CONTACT</a>
+      <a onclick="closeNav()" target="_blank" href="downloads/averyJudahResume.pdf">RESUME</a>
+      <i onclick="delayCloseNav()" class="fas fa-times"></i>
     </nav>
 
   </div>
 
   <div id="navbar">
-    <a href="#home">JUDAH AVERY</a>
-    <i onclick="openNav()" class="openNav fas fa-bars"></i>
+    <div class="navInner">
+      <a href="#home">JUDAH AVERY</a>
+      <i onclick="openNav()" class="openNav fas fa-bars"></i>
+    </div>
   </div>
 
   <main id="home" class="home width">
