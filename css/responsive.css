@@ -53,24 +53,6 @@
 		}
 }
 
-@media only screen and (max-width: 1150px)
-{
-		.about
-		{
-				width: 85%;
-		}
-
-		.width
-		{
-				width: 85%;
-		}
-
-		.projectCont
-		{
-				padding-right: 0;
-				flex-direction: column;
-		}
-}
 
 
 
@@ -386,6 +368,74 @@
 		.subFooterCont
 		{
 				width: 70%;
+		}
+
+
+
+		/* NAVIGATION */
+
+
+
+		#navOverlay
+		{
+				height: 0%;
+				width: 100%;
+				position: fixed;
+				z-index: 1;
+				left: 0;
+				top: 0;
+				background-color: rgba(0, 0, 0, 0.9);
+				overflow-x: hidden;
+				transition: 0.5s;
+		}
+
+		.navCont
+		{
+				position: relative;
+				top: 35%;
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				margin: 0 auto;
+		}
+
+		.exitNav i
+		{
+				padding: 100px 0 0 0;
+				margin: 0 auto;
+				color: white;
+				font-size: 1.5em;
+		}
+
+		#navbar
+		{
+				width: 100%;
+				justify-content: space-between;
+				align-items: center;
+				z-index: 2;
+		}
+
+		#navbar a
+		{
+				font-size: 1.2em;;
+				color: #fff;
+				margin: 0;
+				padding: 5px 0 0 20px;
+				transition: 0.15s;
+		}
+
+		#navbar a:hover
+		{
+				color: #ffa722;
+				transition: 0.3s;
+		}
+
+		.openNav
+		{
+				color: white;
+				font-size: 1.5em;
+				padding: 0px 20px 0px 15px;
 		}
 }
 
