@@ -1,6 +1,34 @@
 window.addEventListener("scroll", function() {scrolling()});
 
+var navOpen = false;
 var prevScrollTop = 0;
+
+// Open
+function openNav() {
+    setTimeout(() =>
+    {
+        document.getElementById("navOverlay").style.height = "100%";
+        document.getElementById("navbar").style.top = "-70px";
+        navOpen = true;
+    }, 150);
+}
+
+// Close
+function closeNav() {
+    document.getElementById("navOverlay").style.height = "0%";
+    document.getElementById("navbar").style.top = "0px";
+    navOpen = false;
+}
+
+// Close Delayed
+function delayCloseNav() {
+    setTimeout(() =>
+    {
+        document.getElementById("navOverlay").style.height = "0%";
+        document.getElementById("navbar").style.top = "0px";
+        navOpen = false;
+    }, 150);
+}
 
 function scrolling()
 {
@@ -15,10 +43,14 @@ function scrolling()
       document.getElementById("navbar").style.top = "0px";
     }
 
+    //Hiding the top nav when full curtain menu is open
+    if (navOpen) {
+        document.getElementById("navbar").style.top = "-70px";
+    }
+
     //Finding the scroll top value for next check
     prevScrollTop = document.documentElement.scrollTop;
 }
-
 
 //CREDIT TO W3 SCHOOLS FOR THIS FUNCTION
 //Smooth scrolling link code
@@ -44,5 +76,3 @@ $(document).ready(function(){
     } // End if
   });
 });
-
-//<a target="_blank" class="button" href="downloads/cobbleDesignDocuments.zip">Design Documents</a>
