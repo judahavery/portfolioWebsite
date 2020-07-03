@@ -105,19 +105,29 @@
     <main class="projectPage width">
       <div class="paragraph">
         <h4><strong>Project Overview</strong></h4>
-        <p>NEO is a prototype for a Beat 'em Up game I created for a semester-long project. The goal of each level is a simple concept,
-        players are dropped into a maze of rooms and tasked with finding the trophy which completes the level (in this case ends the prototype), but this
-        Beat 'em Up has a very unconventional combat system. The gameplay and combat are driven by constant movement and evasion. The retro upbeat
-        music and sound effects along with the neon aesthetic and VFX enforce this fast-paced, tense experience.</p>
+        <p>Spring Fever is a short puzzle-game I created in under 5 days for the 2020 Unreal Spring Jam. The theme for the game jam was:
+        “What Is Hidden In Snow Comes Forth In The Thaw.” I adapted this theme to a puzzle game by creating mechanics centered around the
+        character and the level melting each time the player moves. Spring Fever takes place on a handful of floating islands where the
+        player must move a snowman to a flurry cloud across the island to escape from the spring heat.</p>
         <br>
-        <h4><strong>Game Intent</strong></h4>
-        <p>NEO takes a lot of inspiration from top-down, fast-paced action games like Ape Out and Hotline Miami.
-        Both games feel tense and stressful most of the time, but also feel immensely satisfying and rewarding to play.
-        I wanted to create a similar experience, but add an interesting twist to the combat systems seen in "Beat 'em Up" or "Shoot 'em Up" games.
-        To separate NEO from other games in the genre, I focused on designing the combat around the player's movement.
-        In NEO, when the player uses their only form of attack (throwing their axe), they become instantly defenseless and must
-        rely on avoiding danger with their evasive movement. This does not only add a twist to the combat mechanics but also
-        puts more pressure on the player, supporting the intended experience.
+        <h4><strong>Working With 5 Days</strong></h4>
+        <p>I came up with the rudimentary concept for Spring Fever fairly quickly after seeing the jam theme. This allowed me to get
+        started on the main functionality of the game very early, using plain geometric shapes as placeholder elements. However, at that
+        time all I could imagine was a block of ice trying to reach some arbitrary point in the level without melting. I had trouble
+        coming up with an interesting context for these mechanics that was within the scope of 5 days. Originally, I wanted players to
+        control an animal that thrived in a cold environment but was stuck in a warmer region during the spring season. This would require
+        the animal to escape north for survival in a colder ecosystem, tying in with the theme perfectly and giving players a character
+        they can feel empathetic towards. A snowman doesn’t exactly provide the same feeling of empathy, it's not something we recognize
+        as a living creature.</p>
+        <p>That animal concept still sounds more appealing to me than what I ended up with, but I didn’t have the time to implement such
+        a complex character. This would involve creating a model with more complicated parts and would also require animations for leg
+        movement. Realistically, if I wanted to have an animal in the game I would have to use a pre-made asset. I considered this but
+        decided to find a different solution because I wanted to create as much as I possibly could by myself from scratch. Instead of
+        using an animal, I went with the snowman. I got away with creating a single looping animation of the snowman slouching back and
+        forth using a simple 3-bone rig. In the engine, I applied physics to the animations and bobbed the snowman backward when it moved
+        to provide feedback to the player. In half a day I had the snowman modeled, animated, and implemented in the game. This was
+        definitely a sacrifice I made but was also a vital decision that allowed me to polish the game as much as I did. Without this
+        thematic switch, I don't think Spring Fever would feel good to play or look nearly as visually appealing.</p>
         </p>
       </div>
     </main>
@@ -128,35 +138,19 @@
 
     <main class="projectPage width">
       <div class="paragraph">
-        <h4><strong>Designing The Intended Experience</strong></h4>
-        <p>From the beginning, I knew I wanted to create a tense and fast-paced game with an emphasis on movement, but my original vision didn't quite
-        achieve that experience. The old concept for NEO was fairly different from what you see now. I initially sought out to build an arena
-        survival game where the player could throw a retrievable weapon to defeat waves of enemies.
-        The first iteration of the game took place in a very large level with enemies spawning in fixed zones across the map.
-        Turns out, the game just wasn't fun. The fast, evasive movement made the level feel way too large and open. Running from enemies
-        and throwing the retrievable weapon at a distance to kill them felt too easy. It wasn't difficult OR tense enough, so
-        I decided to re-work the level design and minute details to enforce feelings of intensity and fast-paced action.
-        </p>
-        <p>
-        For starters, I shrunk the levels down to small, bite-sized rooms with multiple obstacles inside. On top of that, players couldn't
-        leave this tiny room until all the enemies were defeated.
-        This change added a cramped feeling which heavily contributed to make the game a more tense experience.
-        These small rooms also incentivized players to constantly use their fast-paced movement.
-        Additionally, instead of having endless combat, now players progressed by completing levels.
-        Each level required the player to find and gain entry to the trophy room. The levels themselves
-        were a grid of rooms that the player had to explore to find the trophy room, each new room being another risk at dying and restarting.
-        </p>
-        <p>
-        I wanted to ensure players would feel
-        some obligation to explore the level rather than go for a straight shot to the trophy room, so I implemented a scoring system.
-        When you completed the level, your score would display and count up in front of you. To increase their score players had to kill enemies
-        across different rooms, incentivizing them to clear as many rooms as possible before completing the level.
-        The score added an element of risk versus reward, and in turn, made for more tense decision making. Players could take a chance by clearing more
-        rooms for more points but would risk restarting the entire level when they die. I also added room drops.
-        Whenever the player cleared a room, a random item would spawn in the center. This item could
-        be a heart to heal the player, a bonus point pickup, or the trophy room key. This forced players to continue clearing rooms until the key dropped.
-        Health would allow for more mistakes in combat, while bonus points added to their score, but as the player's score grew so did the consequences of dying.
-        </p>
+        <h4><strong>What I Would Improve</strong></h4>
+        <p>The systems I created for Spring Fever have lots of variability in puzzle design but I feel that I didn’t get to make use of
+        them in the ways I intended. By the time the systems were fully working and polished I had a very limited amount of time to design,
+        implement, and decorate levels. I ended up with only 6 levels, which contained puzzles that were too easy and didn’t feel very
+        rewarding to solve. Without the proper time to design puzzles with a strong “aha” moment, the game felt a bit lacking. Not to mention
+        all the other mechanics I had to cut out, for example, blocked passages would require keys to unlock. I had the idea of freezing
+        items like keys or collectibles in ice blocks to create more steps to complete the level, making it less of a straightforward path
+        to the goal. However, yet again the time constraint didn’t allow for this and I had to stick with only the most fundamental mechanics
+        of the game.</p>
+        <p>With such a low quantity of levels that were also fairly simple to solve, I wish I had spent less time polishing and more
+        time designing fun and interesting puzzles. This would have made the game feel much more rewarding to play, but I’m still happy
+        with the end product. It may not have won, but Spring Fever did get an honorable mention in the game jam, putting it among the
+        top 30 games of the total 276 submissions.</p>
       </div>
     </main>
 
