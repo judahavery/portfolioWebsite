@@ -2,6 +2,7 @@ window.addEventListener("scroll", function() {scrolling()});
 
 var navOpen = false;
 var prevScrollTop = 0;
+var delayNav = 0;
 
 // Open
 function openNav() {
@@ -10,7 +11,7 @@ function openNav() {
         document.getElementById("navOverlay").style.height = "100%";
         document.getElementById("navbar").style.top = "-70px";
         navOpen = true;
-    }, 150);
+    }, delayNav);
 }
 
 // Close
@@ -27,7 +28,7 @@ function delayCloseNav() {
         document.getElementById("navOverlay").style.height = "0%";
         document.getElementById("navbar").style.top = "0px";
         navOpen = false;
-    }, 150);
+    }, delayNav);
 }
 
 function scrolling()
@@ -35,12 +36,18 @@ function scrolling()
     //If the top of screen is greater than previous top value
     if (document.documentElement.scrollTop > prevScrollTop)
     {
-      document.getElementById("navbar").style.top = "-70px";
+        document.getElementById("navbar").style.top = "-70px";
     }
     //If the top of screen is less than or equal to top value
     else
     {
-      document.getElementById("navbar").style.top = "0px";
+        document.getElementById("navbar").style.top = "0px";
+    }
+
+    //If the top of page goes beyond screen top, keep the nav showing
+    if (document.documentElement.scrollTop <= 5)
+    {
+        document.getElementById("navbar").style.top = "0px";
     }
 
     //Hiding the top nav when full curtain menu is open
