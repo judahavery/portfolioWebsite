@@ -181,6 +181,7 @@ li
 {
 		display: flex;
 		justify-content: center;
+		text-align: center;
 }
 
 .center
@@ -619,13 +620,13 @@ i
 .link:hover i
 {
 		transition: 0.2s ease;
-		color: #16c0ff;
+		color: #68c7eb;
 }
 
 .link:hover
 {
 		transition: 0.2s ease;
-		color: #16c0ff;
+		color: #68c7eb;
 }
 
 .toTop
@@ -669,9 +670,9 @@ i
 
 .overview .team h5
 {
-		padding: 8px 0;
+		padding: 6px 0;
 		font-weight: 400 !important;
-		line-height: 30px;
+		line-height: 35px;
 }
 
 .center
@@ -712,6 +713,11 @@ i
 		border-radius: 20px;
 		padding: 20px 0;
 		color: #fff;
+}
+
+.overview i
+{
+		font-size: 1.25em;
 }
 
 .overview .subTitle

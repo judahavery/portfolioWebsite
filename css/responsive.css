@@ -283,6 +283,7 @@
 		{
 				flex-direction: column;
 				justify-content: flex-start;
+				text-align: left;
 				width: 100%;
 				padding: 15px 0 15px 0;
 		}
@@ -293,14 +294,7 @@
 				align-items: flex-start;
 		}
 
-		.projectPage
-		{
-				padding: 0 0 15px 0;
-				text-align: left;
-				justify-content: flex-start;
-		}
-
-		.projectPage .subTitle
+		.projectPage .overview .subTitle
 		{
 				font-size: 2.2em !important;
 				text-align: left;
@@ -312,6 +306,16 @@
 				font-size: 2.8em;
 				padding-top: 100px;
 				margin: 0;
+		}
+
+		.projectPage .cobbleSubTitle
+		{
+				font-size: 1.3em !important;
+		}
+
+		.projectPage .subTitle
+		{
+				font-size: 1.75em;
 		}
 
 		.description
