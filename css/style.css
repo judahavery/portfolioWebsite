@@ -653,6 +653,22 @@ footer
 		padding: 30px 0;
 }
 
+.team
+{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		width: 75%;
+}
+
+.overview .team h5
+{
+		padding: 8px 0;
+		font-weight: 400 !important;
+		line-height: 30px;
+}
+
 .center
 {
 		margin: 0 auto;
@@ -691,6 +707,19 @@ footer
 		border-radius: 20px;
 		padding: 20px 0;
 		color: #fff;
+}
+
+.overview .subTitle
+{
+		padding-top: 50px;
+		font-size: 2.5em !important;
+		font-weight: bold;
+}
+
+.overview .link
+{
+		margin: 0 0px 0 5px;
+		color: white;
 }
 
 .projectPage .title
