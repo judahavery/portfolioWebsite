@@ -51,7 +51,7 @@
 	.toTop .button {
 		margin: 30px 0 30px 0;
 	}
-	
+
 	/* TITLE SECTION */
 
 	.centerHeader {
@@ -111,7 +111,7 @@
 	}
 
 	/* FOOTER */
-
+	
 	.footerCont {
 		width: 60%;
 	}
@@ -247,7 +247,7 @@
 	.subFooterCont {
 		width: 70%;
 	}
-	
+
 	/* NAVIGATION */
 
 	#navOverlay {
@@ -332,6 +332,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
+	
 	/* GENERAL */
 
 	.width {
@@ -389,6 +390,14 @@
 	}
 }
 
-@media only screen and (max-height: 850px) {
-	.home;
+@media only screen and (max-height: 850px) and (min-width: 1200px) {
+	.home {
+		padding: 0;
+		margin-top: 5%;
+		height: 85vh;
+	}
+
+	.centerBox p {
+		line-height: 40px;
+	}
 }
