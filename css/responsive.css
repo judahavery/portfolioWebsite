@@ -386,14 +386,14 @@
 	/* HOME / TITLE SECTION */
 
 	.home {
-		padding: 125px 0 75px 0;
+		padding: 85px 0 75px 0;
 	}
 }
 
 @media only screen and (max-height: 850px) and (min-width: 1200px) {
 	.home {
 		padding: 5% 0 0 0;
-		margin-bottom: 2%;
+		margin-bottom: 1%;
 		height: 100vh;
 	}
 
