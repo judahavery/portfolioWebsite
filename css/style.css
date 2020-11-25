@@ -285,61 +285,80 @@ li {
 
 .homeHeader {
 	font-family: 'Josefin Sans', sans-serif;
-	letter-spacing: -3px;
+	letter-spacing: 0px;
 	line-height: 70px;
-	font-size: 4.5em;
-	font-weight: 500;
+	font-size: 4em;
+	font-weight: 700;
 	color: rgb(255, 255, 255);
+	margin: 0;
 }
 
-.slideshow {
+.homeUnderline
+{
+	width: 45%;
+	border: solid #fff 0px;
+	background: #fff;
+	margin-top: 5px;
+	margin-bottom: 20px;
+}
+
+.homeSubHeader
+{
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.6em;
+	font-weight: 700;
+	letter-spacing: 1px;
+	color: rgb(255, 255, 255);
+	margin: 0;
+}
+
+.homeTopBar {
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	text-align: center;
+
 	width: 100%;
 	margin: 0 auto;
 	background: #161616;
 }
 
-.carousel {
-	width: 100%;
-	margin: 0 auto;
-	z-index: 0;
-}
-
-.carousel img {
-	height: 100vh;
+.homeTopBar img {
+	height: 350px;
 	object-fit: cover;
-}
-
-.carousel-inner
-{
-	height: 100%;
-	display: flex;
-	align-items: center;
 }
 
 .tint75
 {
-	filter: blur(3px) brightness(75%);
+	filter: blur(2px) brightness(75%);
+}
+
+.tint65
+{
+	filter: blur(1px) brightness(60%);
 }
 
 .tint50
 {
-	filter: blur(3px) brightness(50%);
+	filter: blur(2px) brightness(50%);
 }
 
 .tint35
 {
-	filter: blur(3px) brightness(35%);
+	filter: blur(2px) brightness(35%);
 }
 
 .centerBox {
-	margin: 0 auto;
-	padding-top: 3%;
-	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	margin: 50% 0;
+	padding-top: 50px;
+	position: absolute;
+	text-align: center;
 	width: 95%;
-	height: 95%;
 }
 
 .columnBox {
@@ -719,7 +738,7 @@ i {
 }
 
 .projectItem {
-	padding: 60px 20px;
+	padding: 30px 20px;
 	display: flex;
 	flex-direction: row;
 }
