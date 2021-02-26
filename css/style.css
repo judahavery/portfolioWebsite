@@ -164,6 +164,17 @@ li {
 .overlayCont a {
 	position: relative;
 	display: block;
+	transition: 0.3s ease;
+}
+
+.overlayCont h1 {
+	font-size: 2.6em;
+	transition: 0.3s ease;
+}
+
+.overlayCont:hover h1 {
+	font-size: 2.5em;
+	transition: 0.3s ease;
 }
 
 .overlayCont img {
@@ -173,15 +184,21 @@ li {
 }
 
 .overlayCont:hover img {
+	border-radius: 40px;
 	transition: 0.3s ease;
-	border-radius: 45px;
+}
+
+.overlayCont {
+	color: #fff;
+	border-radius: 20px;
+	margin: 0 25px;
+	transition: 0.3s ease;
 }
 
 .overlayCont:hover .overlay {
-	transition: 0.3s ease;
-	border-radius: 45px;
+	border-radius: 40px;
 	opacity: 1;
-	color: #fff;
+	transition: 0.3s ease;
 }
 
 .overlay {
@@ -197,7 +214,7 @@ li {
 	opacity: 0;
 	transition: .3s ease;
 	border-radius: 20px;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.85);
 	color: #fff;
 }
 
@@ -457,7 +474,7 @@ nav a {
 }
 
 nav a:hover {
-	color: #ff902a;
+	color: #ffa856;
 	transition: .3s;
 }
 
