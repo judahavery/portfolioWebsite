@@ -583,6 +583,11 @@ i {
 }
 
 .projectPage {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	align-items: center;
+
 	text-align: left;
 	font-family: 'Josefin Sans', sans-serif;
 	color: #161616;
@@ -591,7 +596,33 @@ i {
 }
 
 .projectPage .button{
-	margin: 5px 0 15px 0;
+	margin: 25px 15px;
+}
+
+.projectPage .subTitle{
+	font-weight: 400;
+}
+
+.projectPage h5{
+	font-size: 1.4em;
+}
+
+.imgContainer{
+	overflow: hidden;
+	z-index: 1;
+	height: 400px;
+	margin: 15px  0;
+	border-radius: 15px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.imgContainer .imageBreak{
+	object-fit: cover;
+	margin: 0;
+	border-radius: 0;
 }
 
 .team {
@@ -606,6 +637,10 @@ i {
 	padding: 6px 0;
 	font-weight: 400 !important;
 	line-height: 35px;
+}
+
+.overview .descriptionRow{
+	text-overflow: wrap;
 }
 
 .center {
@@ -673,8 +708,13 @@ i {
 	font-weight: 300;
 }
 
-.overview strong {
+.overview h2{
 	font-weight: 700;
+	padding: 0 0 15px 0;
+}
+
+.overview strong {
+	font-weight: 500;
 }
 
 .projectPage p {
