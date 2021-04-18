@@ -1,14 +1,4 @@
-.profilehtml, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp, small,
-strike, strong, sub, sup, tt, var, b, u, i, center,
-dl, dt, dd, ol, ul, li, fieldset, form, label,
-legend, table, caption, tbody, tfoot, thead, tr,
-th, td, article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup, menu,
-nav, output, ruby, section, summary, time, mark,
-audio, video {
+.profilehtml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -19,8 +9,7 @@ audio, video {
 
 /* HTML5 display-role reset for older browsers */
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
@@ -36,8 +25,7 @@ blockquote, q {
 	quotes: none;
 }
 
-blockquote:before, blockquote:after, q:before,
-q:after {
+blockquote:before, blockquote:after, q:before, q:after {
 	content: '';
 	content: none;
 }
@@ -164,39 +152,47 @@ li {
 .overlayCont a {
 	position: relative;
 	display: block;
-	transition: 0.3s ease;
+	transition: 0.4s ease;
 }
 
 .overlayCont h1 {
 	font-size: 2.6em;
-	transition: 0.3s ease;
+	transition: 0.4s ease;
 }
 
 .overlayCont:hover h1 {
 	font-size: 2.5em;
-	transition: 0.3s ease;
+	transition: 0.4s ease;
 }
 
 .overlayCont img {
 	width: 100%;
-	border-radius: 20px;
-	transition: 0.3s ease;
+	border-radius: 0px;
+	transition: 0.4s ease;
 }
 
 .overlayCont:hover img {
-	border-radius: 40px;
-	transition: 0.3s ease;
+	border-radius: 0px;
+	filter: blur(2px);
+	transition: 0.4s ease;
 }
 
 .overlayCont {
 	color: #fff;
 	border-radius: 20px;
 	margin: 0 25px;
+	overflow: hidden;
+	transition: 0.3s ease;
+}
+
+.overlayCont:hover {
+	border-radius: 40px;
+	margin: 0 25px;
+	overflow: hidden;
 	transition: 0.3s ease;
 }
 
 .overlayCont:hover .overlay {
-	border-radius: 40px;
 	opacity: 1;
 	transition: 0.3s ease;
 }
@@ -214,6 +210,8 @@ li {
 	opacity: 0;
 	transition: .3s ease;
 	border-radius: 20px;
+	z-index: 1;
+	overflow: hidden;
 	background-color: rgba(0, 0, 0, 0.85);
 	color: #fff;
 }
@@ -277,16 +275,19 @@ li {
 
 /* TITLE SECTION */
 
-.home {
+#home {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	text-align: center;
-	background: #ffffff;
-	color: #161616;
+	color: #ffffff;
 	margin: 0 auto;
-	padding: 250px 0;
-	height: 85vh;
+	overflow: hidden;
+}
+
+.centerBox {
+	position: absolute;
 }
 
 .homeText {
@@ -303,77 +304,56 @@ li {
 .homeHeader {
 	font-family: 'Josefin Sans', sans-serif;
 	letter-spacing: 0px;
-	line-height: 70px;
-	font-size: 4em;
+	line-height: 80px;
+	font-size: 4.8em;
 	font-weight: 700;
-	color: rgb(255, 255, 255);
 	margin: 0;
 }
 
-.homeUnderline
-{
-	width: 45%;
-	border: solid #fff 0px;
-	background: #fff;
-	margin-top: 5px;
+.homeUnderline {
+	width: 15%;
+	border: solid #111111 0px;
+	background: #111111;
+	margin-top: 0px;
 	margin-bottom: 20px;
 }
 
-.homeSubHeader
-{
-	font-family: 'Raleway', sans-serif;
-	font-size: 1.6em;
+.homeSubHeader {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 1.1em;
 	font-weight: 700;
-	letter-spacing: 1px;
-	color: rgb(255, 255, 255);
+	letter-spacing: 3px;
 	margin: 0;
 }
 
-.homeTopBar {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-
-	width: 100%;
-	margin: 0 auto;
-	background: #161616;
-}
-
-.homeTopBar img {
-	height: 350px;
+#home img {
+	width: 105%;
+	height: 400px;
+	transform: scale(1.1);
 	object-fit: cover;
 }
 
-.tint75
-{
+.tint75 {
 	filter: blur(2px) brightness(75%);
 }
 
-.tint65
-{
+.tint65 {
 	filter: blur(1px) brightness(60%);
 }
 
-.tint50
-{
+.tint50 {
 	filter: blur(2px) brightness(50%);
 }
 
-.tint35
-{
-	filter: blur(2px) brightness(35%);
+.tint35 {
+	filter: blur(3px) brightness(30%);
 }
 
 .centerBox {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-
-	margin: 50% 0;
-	padding-top: 50px;
-	position: absolute;
+	padding: 100px 0;
 	text-align: center;
 	width: 95%;
 }
@@ -437,18 +417,14 @@ li {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	background: rgba(20, 20, 20, 1);
-	box-shadow: 0px 0px 10px #000000;
+	background: rgb(10, 10, 10);
 	height: 50px;
 	margin: 0 auto;
 	width: 100%;
-	position: fixed;
-	z-index: 1;
-	top: 0px;
 	transition: top 0.3s;
 }
 
-.navCont {
+#navCont {
 	width: 100%;
 	margin: 0 auto;
 	font-size: 0.95em;
@@ -456,6 +432,15 @@ li {
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+}
+
+.navFixed {
+	top: 0;
+	z-index: 100;
+	position: fixed;
+	background: rgba(20, 20, 20, 1);
+	box-shadow: 0px 0px 10px #000000;
+	transition: 0.3s;
 }
 
 .navName {
@@ -469,13 +454,23 @@ li {
 nav a {
 	padding: 5px 25px;
 	font-size: 1.2em;
-	color: #fff;
+	color: #ffffff;
 	transition: .15s;
 }
 
 nav a:hover {
-	color: #ffa856;
-	transition: .3s;
+	color: #ff912b;
+	transition: .15s;
+}
+
+nav .navFixed a {
+	color: #fff !important;
+	transition: .15s;
+}
+
+nav .navFixed a:hover {
+	color: #ffa856 !important;
+	transition: .15s;
 }
 
 a:hover {
@@ -629,11 +624,14 @@ i {
 
 /* PROJECTS */
 
+#projects {
+	background: #fff;
+}
+
 .projects {
 	text-align: left;
 	font-family: 'Josefin Sans', sans-serif;
-	background: #ffffff;
-	color: #161616;
+	color: #fff;
 	margin: 0 auto;
 	padding: 60px 0;
 }
@@ -758,6 +756,7 @@ i {
 	padding: 30px 20px;
 	display: flex;
 	flex-direction: row;
+	overflow: hidden;
 }
 
 .black {
@@ -790,30 +789,6 @@ i {
 	padding-top: 10px;
 	font-size: 1.2em;
 	text-align: left;
-}
-
-.projectVis a {
-	position: relative;
-	display: block;
-}
-
-.projectVis img {
-	width: 100%;
-	border-radius: 20px;
-	transition: 0.3s ease;
-}
-
-.projectVis:hover img {
-	transition: 0.3s ease;
-	border-radius: 45px;
-	filter: blur(1px);
-}
-
-.projectVis:hover .overlay {
-	transition: 0.3s ease;
-	border-radius: 45px;
-	opacity: 1;
-	color: #fff;
 }
 
 .projects .buttonFlex {
