@@ -1,24 +1,55 @@
-window.addEventListener("scroll", function () { scrolling() });
+document.addEventListener("DOMContentLoaded", function () { staticNav() });
+document.addEventListener("resize", function () {
+  scrolling();
+});
+document.addEventListener("scroll", function () {
+  scrolling();
+});
+
+var navbar = document.getElementById("navbar");
 
 var navOpen = false;
-var navFixed = false;
+var navIsFixed;
+
 var prevScrollTop = 0;
 var delayNav = 0;
 
-function fixNav() {
-  document.getElementById().addClass('navFixed');
-  navFixed = true;
+function scrolling() {
+  //Check if the page has passed the home section
+  if (!navIsFixed) {
+    if (window.scrollY >= document.getElementById("home").offsetHeight - document.getElementById("navbar").offsetHeight) {
+      fixNav();
+    }
+  }
+  //If the page is not past that number, then set back to normal
+  else if (navIsFixed) {  
+    if (window.scrollY < document.getElementById("home").offsetHeight - document.getElementById("navbar").offsetHeight) {
+      staticNav();
+    }
+  }
 }
 
-function releaseNav() {
+// Fixed Nav
+function fixNav() {
+  navIsFixed = true;
+  document.getElementById("navbar").style.top = "0px";
+  document.getElementById("navbar").classList.add("fixed-nav");
+  document.getElementById("navbar").classList.remove("static-nav");
+}
 
+// Static Nav
+function staticNav() {
+  navIsFixed = false;
+  document.getElementById("navbar").classList.add("static-nav");
+  document.getElementById("navbar").classList.remove("fixed-nav");
+  document.getElementById("navbar").style.top = document.getElementById("home").offsetHeight - document.getElementById("navbar").offsetHeight + "px";
 }
 
 // Open
 function openNav() {
   setTimeout(() => {
     document.getElementById("navOverlay").style.height = "100%";
-    document.getElementById("navbar").style.top = "-70px";
+    document.getElementById("navbar").style.top = "-50px";
     navOpen = true;
   }, delayNav);
 }
@@ -39,30 +70,6 @@ function delayCloseNav() {
   }, delayNav);
 }
 
-function scrolling() {
-  //If the top of screen is greater than previous top value
-  if (document.documentElement.scrollTop > prevScrollTop) {
-    document.getElementById("navbar").style.top = "-70px";
-  }
-  //If the top of screen is less than or equal to top value
-  else {
-    document.getElementById("navbar").style.top = "0px";
-  }
-
-  //If the top of page goes beyond screen top, keep the nav showing
-  if (document.documentElement.scrollTop <= 5) {
-    document.getElementById("navbar").style.top = "0px";
-  }
-
-  //Hiding the top nav when full curtain menu is open
-  if (navOpen) {
-    document.getElementById("navbar").style.top = "-70px";
-  }
-
-  //Finding the scroll top value for next check
-  prevScrollTop = document.documentElement.scrollTop;
-}
-
 //CREDIT TO W3 SCHOOLS FOR THIS FUNCTION
 //Smooth scrolling link code
 $(document).ready(function () {
@@ -79,8 +86,8 @@ $(document).ready(function () {
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function () {
+        scrollTop: $(hash).offset().top + 500
+      }, 1000, function () {
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
