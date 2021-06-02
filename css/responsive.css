@@ -24,6 +24,18 @@
 	}
 }
 
+@media only screen and (max-height: 700px) {
+	/* NAV */
+
+	.fixed-nav {
+		height: 8vh;
+	}
+	
+	.static-nav {
+		height: 8vh;
+	}
+}
+
 /* DESKTOP / LAPTOP RESPONSIVE CSS */
 
 @media only screen and (max-width: 2560px) {
@@ -184,7 +196,7 @@
 	}
 
 	.project p {
-		font-size: 1.5em;
+		font-size: 1.6em;
 		line-height: 35px;
 		padding-top: 20px;
 	}
@@ -208,11 +220,17 @@
 	/* HOME */
 
 	#home {
-		height: 40vh;
+		height: 45vh;
+	}
+
+	#home h1 {
+		font-size: 3.6em;
 	}
 
 	#home h2 {
 		padding-bottom: 20px;
+		font-weight: 300;
+		font-size: 1.2em;
 	}
 
 	/* NAV */
@@ -294,8 +312,9 @@
 	}
 
 	.project p {
-		font-size: 1.1em;
-		line-height: 28px;
+		font-size: 1.4em;
+		line-height: 32px;
+		padding: 0 0 0 0;
 	}
 
 	.project h4 {
@@ -331,6 +350,12 @@
 	/* NAV */
 
 
+
+	/* HOME */
+
+	#home {
+		height: 50vh;
+	}
 
 	/* FEATURED */
 

@@ -130,26 +130,6 @@ li {
 	padding: 0 0 5px 0;
 }
 
-.listSpaced {
-	padding: 0 0 0 0;
-}
-
-.alignRight {
-	display: flex;
-	justify-content: flex-end;
-}
-
-.alignLeft {
-	display: flex;
-	justify-content: flex-start;
-}
-
-.alignCenter {
-	display: flex;
-	justify-content: center;
-	text-align: center;
-}
-
 .center {
 	margin: 0 auto;
 	text-align: center;
@@ -161,12 +141,12 @@ li {
 
 /* OVERLAY EFFECTS */
 
-.overlayCont a {
+.overlay-cont a {
 	position: relative;
 	display: block;
 }
 
-.overlayCont img {
+.overlay-cont img {
 	width: 100%;
 	border-radius: 20px;
 	transition: 0.3s ease;
@@ -176,12 +156,12 @@ li {
 	transform: scale(1.2);
 }
 
-.overlayCont:hover img {
+.overlay-cont:hover img {
 	transition: 0.3s ease;
 	border-radius: 45px;
 }
 
-.overlayCont:hover .overlay {
+.overlay-cont:hover .overlay {
 	transition: 0.3s ease;
 	border-radius: 45px;
 	opacity: 1;
@@ -209,11 +189,11 @@ li {
 	margin: 0;
 }
 
-.largeOverlay {
+.large-overlay {
 	font-size: 2em !important;
 }
 
-.imgBorder {
+.img-border {
 	border: 3px solid black;
 }
 
@@ -240,25 +220,25 @@ li {
 	color: white;
 }
 
-.whiteButton {
+.white-button {
 	margin: 30px 20px;
 	color: #fff;
 	border-color: #fff;
 }
 
-.whiteButton:hover {
+.white-button:hover {
 	background: #fff;
 	text-decoration: none;
 	color: #000;
 }
 
-.projectButton {
+.project-button {
 	border-radius: 50;
 	margin-left: 0;
 	margin-right: 25px;
 }
 
-.projectButton:hover {
+.project-button:hover {
 	color: white;
 }
 

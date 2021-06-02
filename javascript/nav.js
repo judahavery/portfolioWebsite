@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () { staticNav() });
-document.addEventListener("resize", function () {
+window.onresize = function (event)  {
   scrolling();
-});
+};
 document.addEventListener("scroll", function () {
   scrolling();
 });
