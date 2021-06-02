@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lato:wght@100;300;400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Questrial&family=Quicksand:wght@300;500;700&family=Raleway:wght@100;200;300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 .profilehtml, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 
@@ -523,12 +524,12 @@ a:hover {
 	transition: 0.2s ease-in-out;
 }
 
-#contact .icon-row a:hover .bubble-icon {
+.icon-row a:hover .bubble-icon {
 	background: rgb(235, 235, 235);
 	transition: 0.15s ease-in-out;
 }
 
-#contact .icon-row a:hover i {
+.icon-row a:hover i {
 	color: rgb(26, 26, 26);
 	transition: 0.15s ease-in-out;
 }
@@ -645,11 +646,11 @@ footer a:hover {
 	font-family: 'Josefin Sans', sans-serif;
 	color: #161616;
 	margin: 0 auto;
-	padding: 30px 0;
+	padding: 50px 0;
 }
 
 .proj-page .button{
-	margin: 25px 15px;
+	margin: 25px 25px;
 }
 
 .proj-page h5{
@@ -669,32 +670,52 @@ footer a:hover {
 	color: #535353;
 }
 
+.proj-page-width {
+	width: 60%;
+}
+
+.project-details {
+	color: lime;
+	font-size: 0.6em;
+}
+
 .proj-page-head {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	font-family: 'Quicksand', sans-serif;
+	color: #fff;
 
 	width: 100%;
 	padding: 10px 0;
-	background-color: #fff;
 }
 
 .proj-overview {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	align-items: center;
+	justify-content: space-between;
+	align-items: flex-start;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	color: #0e0e0e;
 
 	width: 100%;
 	border-radius: 20px;
-	padding: 20px 0;
-	color: #fff;
+	padding: 15px 0 0 0;
+}
+
+.proj-overview h5 {
+	line-height: 30px;
 }
 
 .proj-overview .team h5 {
 	padding: 6px 0;
-	font-weight: 400 !important;
+	font-weight: 300;
 	line-height: 35px;
+}
+
+.proj-overview strong {
+	font-weight: 700;
 }
 
 .proj-overview .proj-page-head{
@@ -703,6 +724,11 @@ footer a:hover {
 
 .proj-overview i {
 	font-size: 1.25em;
+}
+
+.proj-overview h4 {
+	font-size: 1.8em;
+	padding: 0 0 5px 0;
 }
 
 .proj-overview .subtitle {
@@ -716,16 +742,15 @@ footer a:hover {
 }
 
 .proj-overview h5, li {
-	font-weight: 300;
+	list-style-type: circle;
+	list-style-position: inside;
+	font-size: 1.2em;
+	font-weight: 500;
 }
 
 .proj-overview h2{
 	font-weight: 700;
 	padding: 0 0 15px 0;
-}
-
-.proj-overview strong {
-	font-weight: 500;
 }
 
 .proj-page p {
@@ -745,8 +770,13 @@ footer a:hover {
 }
 
 .proj-links {
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+
+	width: 100%;
 	margin: 0 auto;
-	padding: 25px 0;
+	padding: 30px 0 0 0;
 }
 
 .line {
@@ -756,7 +786,7 @@ footer a:hover {
 
 .proj-top-img {
 	width: 100%;
-	height: 275px;
+	height: 325px;
 	margin: 20px 0;
 	border-radius: 15px;
 	object-fit: cover;
@@ -770,7 +800,7 @@ footer a:hover {
 }
 
 .black {
-	background: #fff;
+	background: #0e0e0e;
 }
 
 .img-container{
@@ -792,30 +822,135 @@ footer a:hover {
 }
 
 .team {
-	width: 100%;
+	margin: 0 auto;
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-around;
-	align-items: flex-start;
+	align-items: center;
+	text-align: left;
+	font-weight: 300;
+	letter-spacing: 0;
 	color: #fff;
 }
 
+.team .link strong {
+	border-bottom: solid #006b9c00 2px;
+	padding-bottom: 2px;
+
+	transition: 0.2s;
+}
+
+.team .link {
+	color: #0e0e0e;
+	font-size: 1.1em;
+
+	transition: 0.2s;
+}
+
+.team .link strong:hover {
+	color: #0e76a8 ;
+	border-bottom: solid #1b99d3  3px;
+
+	transition: 0.2s;
+}
+
+.team .link i {
+	padding-left: 15px;
+	font-size: 1.2em;
+}
+
+.team-cont {
+	font-family: 'Josefin Sans', sans-serif;
+	padding: 75px 0;
+	background: #131313;
+	color: #fff;
+	padding: 0 0 40px 0;
+}
+
+.team h3 {
+	font-family: 'Questrial', sans-serif;
+	margin: 0 auto;
+	font-size: 2.8em;
+	font-weight: 700;
+	letter-spacing: 3px;
+	padding: 80px 0 50px 0;
+}
+
 .team h5 {
-	padding: 7px 0;
+	padding: 20px 0 5px 0;
+	font-weight: 300;
+	font-size: 1.4em;
+	line-height: 30px;
+}
+
+.team strong {
+	font-weight: 700;
 }
 
 .team h5 a {
 	color: #fff;
-	margin: 0 0 0 15px;
+	margin: 100px 0 0 15px;
 
 	transition: 0.2s ease-in-out;
 }
 
 .team h5 a:hover {
-	color: #5eadf8;
+	color: #42c3ff;
 	margin: 0 0 0 15px;
 
 	transition: 0.2s ease-in-out;
+}
+
+.team-names {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.team-member {
+	width: 30%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+	margin: 25px 0 50px 0;
+}
+
+.team-member h5 {
+	white-space: nowrap;
+}
+
+.team-member img {
+	border-radius: 100%;
+	width: 60%;
+}
+
+.team-member .icon-row {
+	padding: 0;
+}
+
+.team-member .icon-row a:hover i {
+	color: rgb(255, 255, 255);
+
+	transition: 0.15s;
+}
+
+.team-member .bubble-icon {
+	font-size: 0.9em;
+	height: 50px;
+	width: 50px;
+	margin: 0 5px;
+	background: #292929;
+}
+
+.team-member .icon-row a:hover .bubble-icon {
+	background: #019bc2 ;
+
+	transition: 0.15s;
 }
 
 /* TAGS */
@@ -848,7 +983,7 @@ footer a:hover {
 	text-decoration: none;
 	font-size: 1.15em;
 	font-family: 'Raleway', sans-serif;
-	letter-spacing: 1px;
+	letter-spacing: 0px;
 	color: #ff7a00;
 	border: solid 2px #ff7a00;
 	font-weight: bold;
