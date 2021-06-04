@@ -24,7 +24,19 @@
 	}
 }
 
-@media only screen and (max-height: 700px) {
+@media only screen and (max-height: 900px) {
+	/* NAV */
+
+	.fixed-nav {
+		height: 6vh;
+	}
+	
+	.static-nav {
+		height: 6vh;
+	}
+}
+
+@media only screen and (max-height: 750px) {
 	/* NAV */
 
 	.fixed-nav {
@@ -60,6 +72,12 @@
 	#about p {
 		font-size: 2.2em;
 	}
+
+	/* PROJ PAGES */
+
+	.proj-page-width {
+
+	}
 }
 
 @media only screen and (max-width: 2300px) {
@@ -70,7 +88,7 @@
 	}
 
 	#about p {
-		font-size: 2.2em;
+		font-size: 2em;
 	}
 }
 
@@ -78,7 +96,7 @@
 	/* ABOUT */
 
 	#about p {
-		font-size: 2em;
+		font-size: 1.8em;
 	}
 }
 
@@ -100,7 +118,7 @@
 	}
 
 	#about p {
-		font-size: 1.8em;
+		font-size: 1.6em;
 	}
 	
 	.icon-row img{
@@ -110,12 +128,30 @@
 	/* PROJECTS */
 }
 
+@media only screen and (max-width: 1800px) {
+
+	/* ABOUT */
+
+	#about .icon-row img{
+		width: 9%;
+	}
+
+}
+
 @media only screen and (max-width: 1700px) {
 	.master-width{
 		width: 80%;
 	}
 
 	/* NAV */
+
+
+
+	/* PROJ PAGES */
+
+	.proj-page-width {
+		width: 60%;
+	}
 
 }
 
@@ -128,7 +164,11 @@
 	}
 
 	#about p {
-		font-size: 1.8em;
+		font-size: 1.6em;
+	}
+
+	#about .profile-img {
+		width: 25%;
 	}
 
 }
@@ -137,12 +177,12 @@
 	/* FEATURED */
 
 	.featured-image{
-		height: 50%;
+		height: 360px;
 		width: 50%;
 	}
 
 	.featured p {
-		font-size: 1.5em;
+		font-size: 1.4em;
 		line-height: 30px;
 	}
 	
@@ -153,11 +193,17 @@
 	}
 
 	#about .icon-row img {
-		width: 10%;
+		width: 11%;
 	}
 
 	#about p {
-		font-size: 1.7em;
+		font-size: 1.5em;
+	}
+
+	/* PROJ PAGES */
+
+	.proj-overview {
+		font-size: 0.95em;
 	}
 }
 
@@ -200,6 +246,22 @@
 		line-height: 35px;
 		padding-top: 20px;
 	}
+
+	/* PROJ PAGES */
+
+	.proj-page-width {
+		width: 65%;
+	}
+
+	.team-member img {
+		width: 65%;
+	}
+
+	.team-member .bubble-icon {
+		width: 45px;
+		height: 45px;
+		font-size: 0.8em;
+	}
 }
 
 
@@ -220,7 +282,7 @@
 	/* HOME */
 
 	#home {
-		height: 45vh;
+		height: 35vh;
 	}
 
 	#home h1 {
@@ -275,6 +337,7 @@
 
 	#about p {
 		line-height: 35px;
+		font-size: 1.4em;
 	}
 
 	.icon-row {
@@ -289,13 +352,7 @@
 
 	.projects .title {
 		font-size: 3.6em;
-		padding-top: 60px;
-		padding-bottom: 0;
-	}
-
-	.projects hr {
-		border: solid #fff 2px;
-		margin: 5px 0 0 0 auto;
+		padding-top: 0;
 	}
 
 	.project-tag-cont {
@@ -340,6 +397,12 @@
 	.tag h5 {
 		font-size: 1em;
 	}
+
+	/* PROJ PAGES */
+
+	.proj-page-width {
+		width: 70%;
+	}
 }
 
 /* TABLET RESPONSIVE CSS */
@@ -354,7 +417,7 @@
 	/* HOME */
 
 	#home {
-		height: 50vh;
+		height: 40vh;
 	}
 
 	/* FEATURED */
@@ -366,17 +429,23 @@
 	.featured p {
 		font-size: 1.2em;
 		line-height: 25px;
+		padding: 5px 0 15px 0;
 	}
 
 	.featured-image {
-		width: 70%;
-		height: 70%;
+		width:  45%;
+		height: 300px;
 	}
 
-	/* ABOUT / CONTACT */	
+	/* ABOUT */	
 	
 	#about p {
-		line-height: 30px;
+		font-size: 1.3em;
+		line-height: 35px;
+	}
+
+	#about .icon-row img {
+		width: 12%;
 	}
 
 	/* PROJECTS */
@@ -422,12 +491,18 @@
 	}
 
 	.project-tag-cont .tag {
-		font-size: 1.1em;
+		font-size: 1.2em;
 	}
 
 	/* FOOTER */
 
 
+
+	/* PROJ PAGES */
+
+	.proj-page-width {
+		width: 80%;
+	}
 }
 
 @media only screen and (max-width: 1100px) {
@@ -443,6 +518,10 @@
 
 	/* ABOUT */	
 	
+	#about .profile-img {
+		width: 25%;
+	}
+
 	.icon-row img {
 		width: 12%;
 	}
@@ -452,7 +531,8 @@
 	}
 
 	#about p {
-		font-size: 1.4em;
+		font-size: 1.2em;
+		line-height: 30px;
 	}
 
 	#about .master-width {
@@ -463,12 +543,7 @@
 
 	.projects .title {
 		font-size: 3.2em;
-		padding-top: 60px;
-	}
-
-	.projects hr {
-		margin: 0 auto;
-		border: solid #fff 2px;
+		padding-top: 0px;
 	}
 
 	.project-row {
@@ -491,11 +566,15 @@
 	/* GENERAL */
 
 	.tag {
-		font-size: 0.85em;
+		font-size: 1em;
 	}
 
 	.button{
 		font-size: 1em;
+	}
+
+	.master-width {
+		width: 90%;
 	}
 
 	/* NAV */
@@ -528,6 +607,30 @@
 	.featured-image img {
 		transform: scale(1.75);
 	}
+
+	/* ABOUT */	
+	
+	#about .profile-img {
+		width: 25%;
+	}
+
+	.icon-row img {
+		width: 12%;
+	}
+
+	#about .img-cont{
+		width: 40%;
+	}
+
+	#about p {
+		font-size: 1.1em;
+		line-height: 25px;
+	}
+
+	#about .master-width {
+		padding: 40px 0;
+	}
+	
 }
 
 

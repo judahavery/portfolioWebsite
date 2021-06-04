@@ -1,7 +1,16 @@
-document.addEventListener("DOMContentLoaded", function () { staticNav() });
+document.addEventListener("DOMContentLoaded", function () {
+  staticNav();
+
+  var pageName = window.location.pathname.split("/").pop();
+  if (pageName == "index.html") {
+    //Was thinking of removing the home banner for the project pages so this would ignore the height thing
+  }
+});
+
 window.onresize = function (event)  {
   scrolling();
 };
+
 document.addEventListener("scroll", function () {
   scrolling();
 });
