@@ -108,13 +108,13 @@
 	/* HOME */
 
 	#home {
-		height: 35vh;
+		height: 40vh;
 	}
 
 	/* ABOUT */
 
 	#about .profile-img {
-		width: 250px;
+		width: 300px;
 	}
 
 	#about p {
@@ -555,6 +555,10 @@
 	.project {
 		width: 70%;
 		margin: 0 0 40px 0;
+	}
+
+	.wide-project {
+		width: 70% !important;
 	}
 
 	/* FOOTER */

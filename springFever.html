@@ -52,7 +52,7 @@
     </div>
 
     <div class="absolute align-items-center">
-      <h1>Spring Fever</h1>
+      <h1 class="lowercase-title">Spring Fever</h1>
       <h2>Solo Project</h2>
     </div>
   </main>
@@ -120,75 +120,56 @@
       <div class="proj-desc">
         <div class="proj-p">
           <h4><strong>Project Overview</strong></h4>
-          <p>Cobble is a 2.5D side-scrolling puzzle-platformer game. The base game was created in under 48 hours for
-            the 2020 Global Game Jam, and afterward, our team of 8 students (myself included) continued to develop the
-            project further. Cobble began pre-production and the team continued development for a few months until we
-            were
-            no
-            longer able to continue. Through pre-production, we planned out the course of development and direction for
-            Cobble.
-            This included lots of documentation, core systems implementation, art asset creation, and project
-            management.
-            Even though most of the progress we made over these 3 months didn't take place in the game's
-            content itself, I gained a lot of valuable skills from Cobble.</p>
+          <p>Spring Fever is a short puzzle-game I created in under 5 days for the 2020 Unreal Spring Jam. The theme for
+            the game jam was: “What Is Hidden In Snow Comes Forth In The Thaw.” I adapted this theme to a puzzle game by
+            creating mechanics centered around the character and the level melting each time the player moves. Spring
+            Fever takes place on a handful of floating islands where the player must move a snowman to a flurry cloud
+            across the island to escape from the spring heat.</p>
           <br>
-          <h4><strong>Game Intent</strong></h4>
-          <p>Shortly after the game jam, we had other students play Cobble and they commonly complimented the game's
-            setting and aesthetics. This showed some key points of interest that Cobble had, so I decided to focus
-            heavily
-            on those aspects and design the game around them. Because of the interest players had in the game's fantasy,
-            I
-            wanted them to feel a strong curiosity towards the world Cobble took place in, so we ensured that the
-            art style, setting, story, and context were all very catchy and interesting from the get-go. The documented
-            plan for the full version of Cobble intended to take aspects from exploratory genres and incorporate them
-            into
-            levels with platforming puzzles. Each puzzle the player solved would tell more about the underlying story of
-            the game, making discovery drive the gameplay.</p>
-          <img class="image-break" src="images/cobblePlatform.png" alt="Cobble Gameplay Screenshot">
+          <h4><strong>The Time Constraint</strong></h4>
+          <p>I came up with the rudimentary concept for Spring Fever fairly quickly after seeing the jam theme. This
+            allowed me to get started on the main functionality of the game very early, using plain geometric shapes as
+            placeholder elements. However, at that time all I could imagine was a block of ice trying to reach some
+            arbitrary point in the level without melting. I had trouble coming up with an interesting context for these
+            mechanics that was within the scope of 5 days. Originally, I wanted players to control an animal that
+            thrived
+            in a cold environment but was stuck in a warmer region during the spring season. This would require the
+            animal
+            to escape north for survival in a colder ecosystem, tying in with the theme perfectly and giving players a
+            character they can feel empathetic towards. A snowman doesn’t exactly provide the same feeling of empathy,
+            it's not something we recognize as a living creature.</p>
+          <p>That animal concept still sounds more appealing to me than what I ended up with, but I didn’t have the time
+            to implement such a complex character. This would involve creating a model with more complicated parts and
+            would also require animations for leg movement. Realistically, if I wanted to have an animal in the game I
+            would have to use a pre-made asset. I considered this but decided to find a different solution because I
+            wanted to create as much as I possibly could by myself from scratch. Instead of using an animal, I went with
+            the snowman. I got away with creating a single looping animation of the snowman slouching back and
+            forth using a simple 3-bone rig. In the engine, I applied physics to the animations and bobbed the snowman
+            backward when it moved to provide feedback to the player. In half a day I had the snowman modeled, animated,
+            and implemented in the game. This was definitely a sacrifice I made but was also a vital decision that
+            allowed
+            me to polish the game as much as I did. Without this thematic switch, I don't think Spring Fever would feel
+            good to play or look nearly as visually appealing.</p>
+          <img class="image-break" src="images/springFeverGameplay.png" alt="Spring Fever Gameplay Screenshot">
           <br>
-          <h4><strong>Designing The Core Systems</strong></h4>
-          <p>Many players who tested out the game shortly after the game jam seemed to enjoy the simple core puzzle
-            systems. The goal of each level is moving from point A to B and players must use the machines inside their
-            environment to traverse the level. Different machines have unique uses and movement patterns. For example,
-            platforms will move or rotate, while pistons will launch the player. However, these machines have two
-            functional requirements: power from a lever and a gear. Cobble can remove gears from machines to place them
-            in
-            others and can switch levers to change which machines are provided with power. Players caught onto
-            these core mechanics very quickly and making the game's difficulty scalable meant that a simple concept
-            needed
-            to be built upon in difficulty. I didn't want players to have a stressful experience, so it was important to
-            keep puzzles from feeling overwhelming or too complex. Stress would pull players out of the world and cause
-            frustration, taking away from having a strong world fantasy and curiosity.</p>
-          <p>These core mechanics (placing gears and switching levers) may have been sufficient for a small game jam,
-            but
-            they weren't quite scalable enough to produce an hour or two of interesting puzzles. The issue here was
-            adding
-            more complexity to the game while trying not to overwhelm players. One of the main interests players had was
-            the art style, setting, and context of the game. I didn't want to risk adding systems that added
-            unnecessary complexity and didn't build upon other already existing systems. To mitigate this risk, I
-            decided
-            to rework the original core mechanics and add two additional ones. For starters, instead of switching the
-            transmission of power, levers would switch the flow of steam between machines steam hoses, which were
-            attached
-            to a "steam box" (box that sends steam to machine pipes). Players could now remove the hose end from one
-            steam
-            box and plug them into another, changing which mechanism would function on one side of the lever. The
-            ability
-            to essentially re-wire which machines will function based on the lever adds even more depth to the
-            underlying
-            core Systems without adding an entirely new concept to understand. After creating a visual design document
-            representing this change, I made sure the rest of the team figured the concept was easy to grasp. Future
-            levels could now incorporate "re-wiring" and build upon the player's existing knowledge of the underlying
-            mechanics from past levels without causing them to feel confused.</p>
-          <br>
-          <div class="overlay-cont">
-            <a target="_blank" href="downloads/cobbleVisualDesignDoc.pdf">
-              <img src="images/cobbleVDD.jpg" alt="Cobble Visual Design Document Preview">
-              <div class="overlay large-overlay">
-                <h1>Visual Design Doc PDF</h1>
-              </div>
-            </a>
-          </div>
+          <h4><strong>Mini Postmortem</strong></h4>
+          <p>The systems I created for Spring Fever have lots of variability in puzzle design but I feel that I didn’t
+            get
+            to make use of them in the ways I intended. By the time the systems were fully working and polished I had a
+            very limited amount of time to design, implement, and decorate levels. I ended up with only 6 levels, which
+            contained puzzles that were too easy and didn’t feel very rewarding to solve. Without the proper time to
+            design puzzles with a strong “aha” moment, the game felt a bit lacking. Not to mention all the other
+            mechanics
+            I had to cut out, for example, blocked passages would require keys to unlock. I had the idea of freezing
+            items like keys or collectibles in ice blocks to create more steps to complete the level, making it less of
+            a
+            straightforward path to the goal. However, yet again the time constraint didn’t allow for this and I had to
+            stick with only the most fundamental mechanics of the game.</p>
+          <p>With such a low quantity of levels that were also fairly simple to solve, I wish I had spent less time
+            polishing and more time designing fun and interesting puzzles. This would have made the game feel much more
+            rewarding to play, but I’m still happy with the end product. It may not have won, but Spring Fever did get
+            an
+            honorable mention in the game jam, putting it among the top 30 games of the total 276 submissions.</p>
         </div>
       </div>
 
