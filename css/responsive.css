@@ -604,12 +604,20 @@
 	}
 
 	.featured-image {
-		width: 400px;
+		width: 450px;
 		height: 350px;
 	}
 
 	.featured-image img {
 		transform: scale(1.75);
+	}
+
+	.side-info {
+		padding: 0 0 0 25px;
+	}
+
+	.side-info p {
+		font-size: 1.1em;
 	}
 
 	/* ABOUT */	
@@ -640,6 +648,148 @@
 
 /* MOBILE */
 
+
+@media only screen and (max-width: 800px) {
+	.master-width {
+		width: 90%;
+	}
+
+	.button {
+		font-size: 1.2em;
+		border-width: 2px;
+	}
+
+	.projects .title {
+		text-align: left !important;
+		padding: 0 0 5px 0 !important;
+		margin: 0 0 0 0;
+		font-size: 3.5em;
+	}
+
+	.title-line {
+		margin: 0 !important;
+	}
+	
+	/* FEATURED */
+
+	.featured .align-items-center {
+		flex-direction: column;
+		margin: 20px 0 60px  0;
+	}
+
+	.featured-image {
+		height: 300px;
+		width: 100%;
+		margin: 0 0 25px 0;
+		box-shadow: none;
+	}
+
+	.featured .tag h5 {
+		font-size: 1.2em;
+	}
+
+	.featured h1 {
+		font-size: 2.5em;
+		margin: 0 0 10px 0;
+	}
+
+	.featured h3 {
+		font-size: 1.4em;
+	}
+
+	.featured .side-info {
+		align-items: center;
+		width: 100%;
+		padding: 40px 0 0 0;
+	}
+
+	.featured .side-info p {
+		font-size: 1.3em;
+		line-height: 30px;
+	}
+
+	.featured .side-info h3 {
+		margin: 0 0 0 0;
+	}
+	
+	/* ABOUT */
+
+	#about .icon-row {
+		justify-content: space-between;
+		margin: 5px auto 20px auto;
+		width: 100%;
+	}
+
+	.profile-img {
+		display: flex;
+		align-items: center;
+		
+		width: 100% !important;
+		height: 350px;
+		overflow: hidden;
+		border-radius: 15px !important;
+		margin: 20px 0 10px 0;
+	}
+
+	.profile-img img {
+		position: relative;
+		top: -125px;
+		width: 100%;
+	}
+
+	.vertical-spread {
+		align-items: flex-start;
+
+		width: 100%;
+		text-align: left;
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	.vertical-spread h1 {
+		padding: 0;
+	}
+
+	#about p {
+		font-size: 1.6em;
+		line-height: 37px;
+	}
+
+	/* FOOTER */
+
+	.bubble-icon {
+		width: 65px;
+		height: 65px;
+	}
+
+	footer h1 {
+		font-size: 2em;
+	}
+
+	footer a {
+		font-size: 1.3em;
+	}
+
+	/* PROJECTS SECTION */
+
+	.project-row {
+		width: 100%;
+	}
+
+	.project {
+		width: 100%;
+	}
+
+	/* HOME / TITLE SECTION */
+
+	#home {
+		height: 30vh;
+	}
+
+	.home-banner img {
+		top: 0;
+	}
+}
 
 @media only screen and (max-width: 700px) {
 	/* FOOTER */

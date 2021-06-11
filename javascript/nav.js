@@ -1,10 +1,28 @@
+var navbar = document.getElementById("navbar");
+
+var navOpen = false;
+var mobLanding = false;
+var navIsFixed;
+
+var prevScrollTop = 0;
+var delayNav = 0;
+
 document.addEventListener("DOMContentLoaded", function () {
   staticNav();
 
-  var pageName = window.location.pathname.split("/").pop();
-  if (pageName == "index.html") {
-    //Was thinking of removing the home banner for the project pages so this would ignore the height thing
+  var screenWidth = screen.width;
+  if (screenWidth < 800) {
+    mobLandingPage();
   }
+  else if (screenWidth >= 800) {
+    compLandingPage();
+  }
+
+  //Was thinking of removing the home banner for the project pages so this would ignore the height thing
+  /*var pageName = window.location.pathname.split("/").pop();
+  if (pageName == "index.html") {
+
+  }*/
 });
 
 window.onresize = function (event)  {
@@ -15,13 +33,17 @@ document.addEventListener("scroll", function () {
   scrolling();
 });
 
-var navbar = document.getElementById("navbar");
+function mobLandingPage() {
+  mobLanding = true;
+  //Hide the computer home
+  document.querySelector("home").classList.add("hidden");
+}
 
-var navOpen = false;
-var navIsFixed;
-
-var prevScrollTop = 0;
-var delayNav = 0;
+function compLandingPage() {
+  mobLanding = false;
+    //Hide the mobile home
+document.querySelector("mob-home").classList.add("hidden");
+}
 
 function scrolling() {
   //Check if the page has passed the home section
@@ -41,17 +63,33 @@ function scrolling() {
 // Fixed Nav
 function fixNav() {
   navIsFixed = true;
-  document.getElementById("navbar").style.top = "0px";
-  document.getElementById("navbar").classList.add("fixed-nav");
-  document.getElementById("navbar").classList.remove("static-nav");
+
+  if (!mobLanding){
+    document.getElementById("navbar").style.top = "0px";
+    document.getElementById("navbar").classList.add("fixed-nav");
+    document.getElementById("navbar").classList.remove("static-nav");
+  }
+  else {
+    document.getElementById("navbar").style.top = "0px";
+    document.getElementById("navbar").classList.add("mob-fixed-nav");
+    document.getElementById("navbar").classList.remove("mob-static-nav");
+  }
 }
 
 // Static Nav
 function staticNav() {
   navIsFixed = false;
-  document.getElementById("navbar").classList.add("static-nav");
-  document.getElementById("navbar").classList.remove("fixed-nav");
-  document.getElementById("navbar").style.top = document.getElementById("home").offsetHeight - document.getElementById("navbar").offsetHeight + "px";
+
+  if (!mobLanding) {
+    document.getElementById("navbar").classList.add("static-nav");
+    document.getElementById("navbar").classList.remove("fixed-nav");
+    document.getElementById("navbar").style.top = document.getElementById("home").offsetHeight - document.getElementById("navbar").offsetHeight + "px";
+  }
+  else {
+    document.getElementById("navbar").classList.add("mob-static-nav");
+    document.getElementById("navbar").classList.remove("mob-fixed-nav");
+    document.getElementById("navbar").style.top = document.getElementById("mob-home").offsetHeight - document.getElementById("navbar").offsetHeight + "px";
+  }
 }
 
 // Open
