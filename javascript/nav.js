@@ -9,41 +9,15 @@ var delayNav = 0;
 
 document.addEventListener("DOMContentLoaded", function () {
   staticNav();
-
-  var screenWidth = screen.width;
-  if (screenWidth < 800) {
-    mobLandingPage();
-  }
-  else if (screenWidth >= 800) {
-    compLandingPage();
-  }
-
-  //Was thinking of removing the home banner for the project pages so this would ignore the height thing
-  /*var pageName = window.location.pathname.split("/").pop();
-  if (pageName == "index.html") {
-
-  }*/
 });
 
-window.onresize = function (event)  {
+window.onresize = function (event) {
   scrolling();
 };
 
 document.addEventListener("scroll", function () {
   scrolling();
 });
-
-function mobLandingPage() {
-  mobLanding = true;
-  //Hide the computer home
-  document.querySelector("home").classList.add("hidden");
-}
-
-function compLandingPage() {
-  mobLanding = false;
-    //Hide the mobile home
-document.querySelector("mob-home").classList.add("hidden");
-}
 
 function scrolling() {
   //Check if the page has passed the home section
@@ -53,7 +27,7 @@ function scrolling() {
     }
   }
   //If the page is not past that number, then set back to normal
-  else if (navIsFixed) {  
+  else if (navIsFixed) {
     if (window.scrollY < document.getElementById("home").offsetHeight - document.getElementById("navbar").offsetHeight) {
       staticNav();
     }
@@ -64,7 +38,7 @@ function scrolling() {
 function fixNav() {
   navIsFixed = true;
 
-  if (!mobLanding){
+  if (!mobLanding) {
     document.getElementById("navbar").style.top = "0px";
     document.getElementById("navbar").classList.add("fixed-nav");
     document.getElementById("navbar").classList.remove("static-nav");

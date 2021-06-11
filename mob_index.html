@@ -17,17 +17,7 @@
   <script src="javascript/nav.js"></script>
 
   <!-- Loading Mobile Pages -->
-  <script type="text/javascript">
-    if (window.innerWidth >= 800) {
-      document.location = "index.html";
-    }
-
-    window.onresize = function (event) {
-      if (window.innerWidth >= 800) {
-        document.location = "index.html";
-      }
-    };
-  </script>
+  <script src="javascript/adaptive.js" type="text/javascript"></script>
 
   <!-- jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -47,20 +37,27 @@
 
 <body>
 
-  <main id="home">
+  <main class="mob-home" id="home">
     <div class="home-banner">
-      <img src="images/games/cobbleRunning.PNG" alt="Banner Gameplay Screenshot">
+      <img src="images/games/springFeverGameplay.png" alt="Banner Gameplay Screenshot">
     </div>
-
-    <div class="absolute align-items-center">
-      <h1>Judah Avery</h1>
-      <h2>SYSTEMS & UI/UX DESIGN</h2>
-    </div>
+    <div class="mob-home-content">
+      <h1>Game systems & UI/UX designer</h1>
+      <a class="button mob-home-button" href="#projects">View Projects</a>
+    </div> 
   </main>
 
-  <div id="navbar" class="static-nav">
+  <div class="nav-overlay">
     <nav class="nav-contents">
       <a href="#home">HOME</a>
+      <a href="#projects">PROJECTS</a>
+      <a href="#contact">CONTACT</a>
+      <a target="_blank" href="downloads/Judah_Avery_Resume.pdf">RESUME</a>
+    </nav>
+  </div>
+  <div id="navbar" class="mobile-nav static-nav">
+    <nav class="nav-contents">
+      <a href="#home">Judah Avery</a>
       <a href="#projects">PROJECTS</a>
       <a href="#contact">CONTACT</a>
       <a target="_blank" href="downloads/Judah_Avery_Resume.pdf">RESUME</a>
@@ -168,7 +165,7 @@
           Manipulate the mechanics of your environment to traverse an enormous clocktower full of mysterious treachery.
         </p>
 
-        <a class="button mob-project-button" href="https://jollycoopco.itch.io/focuspocus">View Project</a>
+        <a class="button mob-project-button" href="cobble.html">View Project</a>
 
       </div>
 

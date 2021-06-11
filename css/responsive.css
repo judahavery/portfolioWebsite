@@ -107,7 +107,7 @@
 
 	/* HOME */
 
-	#home {
+	.home {
 		height: 40vh;
 	}
 
@@ -281,15 +281,15 @@
 
 	/* HOME */
 
-	#home {
+	.home {
 		height: 35vh;
 	}
 
-	#home h1 {
+	.home h1 {
 		font-size: 3.6em;
 	}
 
-	#home h2 {
+	.home h2 {
 		padding-bottom: 20px;
 		font-weight: 300;
 		font-size: 1.2em;
@@ -416,7 +416,7 @@
 
 	/* HOME */
 
-	#home {
+	.home {
 		height: 40vh;
 	}
 
@@ -583,9 +583,7 @@
 
 	/* NAV */
 
-	#navbar a{
-		padding: 0 20px;
-	}
+	
 
 	/* FEATURED */
 
@@ -642,6 +640,16 @@
 	#about .master-width {
 		padding: 40px 0;
 	}
+
+	/* HOME */
+
+	.home-banner .move-up img {
+		top: 0;
+	}
+
+	.home-banner img {
+		top: 0;
+	}
 	
 }
 
@@ -650,13 +658,25 @@
 
 
 @media only screen and (max-width: 800px) {
+	.tag {
+		background-color: #797979;
+	}
+	
 	.master-width {
+		width: 90%;
+	}
+
+	.proj-page-width {
 		width: 90%;
 	}
 
 	.button {
 		font-size: 1.2em;
 		border-width: 2px;
+	}
+
+	.mob-project-button {
+		font-size: 1.4em;
 	}
 
 	.projects .title {
@@ -668,6 +688,10 @@
 
 	.title-line {
 		margin: 0 !important;
+	}
+
+	.move-up {
+		top: 0;
 	}
 	
 	/* FEATURED */
@@ -782,7 +806,7 @@
 
 	/* HOME / TITLE SECTION */
 
-	#home {
+	.home {
 		height: 30vh;
 	}
 

@@ -1,19 +1,51 @@
-window.addEventListener('load', function() {LoadAdaptivePages()});
+window.addEventListener('load', function () { loadAdaptivePages() });
+window.addEventListener(window.onresize, function () { loadAdaptivePages() });
+//window.addEventListener('load', function () { loadLandingPage() });
 
-function LoadAdaptivePages()
-{
-    if (screen.width <= 1200) {
-        if (document.location == "file:///D:/Portfolio/portfolioWebsite/index.html")
-        {
-            document.location = "indexMob.html";
+var mobPrefix = "mob_";
+
+function loadAdaptivePages() {
+    var pathname = window.location.pathname;
+    var pageName = pathname.split("/").pop();
+    var mobileBreakpoint = 800;
+
+    if (window.innerWidth < mobileBreakpoint) {
+        //If this is the wrong page, then load the new one
+        if (pageName.search(mobPrefix) == -1) {
+            pageName = mobPrefix + pageName;
+            document.location = pageName;
         }
-        else if (document.location == "cobble.html")
-        {
-
-        }
-        else if (document.location == "neo.html")
-        {
-
+    }
+    if (window.innerWidth >= mobileBreakpoint) {
+        //If this is the wrong page, then load the new one
+        if (pageName.search(mobPrefix) != -1) {
+            //Replace the string's name to exclude the mobile prefix
+            pageName = pageName.replace(mobPrefix, "");
+            document.location = pageName;
         }
     }
 }
+
+/*
+function loadLandingPage() {
+    var mobLandingBreakpoint = 800;
+
+    if (window.innerWidth < mobLandingBreakpoint) {
+        mobLandingPage();
+    }
+    else if (window.innerWidth >= mobLandingBreakpoint) {
+        compLandingPage();
+    }
+}
+
+function mobLandingPage() {
+    mobLanding = true;
+    //Hide the computer home
+    document.getElementById("home").classList.add("hidden");
+}
+
+function compLandingPage() {
+    mobLanding = false;
+    //Hide the mobile home
+    document.getElementById("mob-home").classList.add("hidden");
+}*/
