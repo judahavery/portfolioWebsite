@@ -1,4 +1,4 @@
-window.addEventListener('load', function () { loadAdaptivePages() });
+window.addEventListener('DOMContentLoaded', function () { loadAdaptivePages() });
 window.addEventListener(window.onresize, function () { loadAdaptivePages() });
 //window.addEventListener('load', function () { loadLandingPage() });
 

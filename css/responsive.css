@@ -34,6 +34,14 @@
 	.static-nav {
 		height: 6vh;
 	}
+
+	.mob-fixed-nav {
+		height: 8vh;
+	}
+	
+	.mob-static-nav {
+		height: 8vh;
+	}
 }
 
 @media only screen and (max-height: 750px) {

@@ -41,27 +41,25 @@
     <div class="home-banner">
       <img src="images/games/springFeverGameplay.png" alt="Banner Gameplay Screenshot">
     </div>
-    <div class="mob-home-content">
+    <div class="mob-home-content master-width">
       <h1>Game systems & UI/UX designer</h1>
       <a class="button mob-home-button" href="#projects">View Projects</a>
     </div> 
   </main>
 
-  <div class="nav-overlay nav-open">
+  <div id="nav-overlay">
     <nav class="nav-contents">
-      <i class="fas fa-times"></i>
-      <a href="#home">HOME</a>
-      <a href="#projects">PROJECTS</a>
-      <a href="#contact">CONTACT</a>
-      <a target="_blank" href="downloads/Judah_Avery_Resume.pdf">RESUME</a>
+      <i onclick="closeNav()" class="fas fa-times"></i>
+      <a onclick="closeNav()" href="#home">HOME</a>
+      <a onclick="closeNav()" href="#projects">PROJECTS</a>
+      <a onclick="closeNav()" href="#contact">CONTACT</a>
+      <a onclick="closeNav()" target="_blank" href="downloads/Judah_Avery_Resume.pdf">RESUME</a>
     </nav>
   </div>
-  <div id="navbar" class="hidden mobile-nav static-nav">
-    <nav class="nav-contents">
+  <div id="navbar" class="mobile-nav mob-static-nav">
+    <nav class="nav-contents master-width">
       <a href="#home">Judah Avery</a>
-      <a href="#projects">PROJECTS</a>
-      <a href="#contact">CONTACT</a>
-      <a target="_blank" href="downloads/Judah_Avery_Resume.pdf">RESUME</a>
+      <i onclick="openNav()" class="fas fa-bars"></i>
     </nav>
   </div>
 
