@@ -249,6 +249,56 @@ a:hover {
 	font-size: 1.5em;
 }
 
+.nav-overlay {
+	z-index: 5;
+	width: 250px;
+	height: 100vh;
+	
+	box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(15px) brightness(20%);
+	background: rgba(7, 7, 7, 0.85);
+}
+
+.nav-overlay .nav-contents {
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-end;
+	
+	padding: 40px 40px 0 0;
+}
+
+.nav-overlay .nav-contents a {
+	font-size: 1.75em;
+
+	color: rgb(255, 255, 255);
+	padding: 10px 0;
+}
+
+.nav-overlay .nav-contents i {
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 1.75em;
+	letter-spacing: 0px;
+
+	color: rgb(255, 255, 255);
+	padding: 10px 0;
+}
+
+
+.nav-open {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	margin: 0 0 0 auto;
+}
+
+.nav-closed {
+	
+}
+
 /* NAV */
 
 #navbar {
@@ -1331,6 +1381,8 @@ footer a:hover {
 .mob-home-button {
 	background: rgba(255, 255, 255, 1);
 	color: #161616;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 600;
 	border-color: rgba(255, 255, 255, 0);
 	border-radius: 0;
 	padding: 20px 35px;
