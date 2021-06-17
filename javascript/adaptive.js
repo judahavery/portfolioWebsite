@@ -9,14 +9,14 @@ function loadAdaptivePages() {
     var pageName = pathname.split("/").pop();
     var mobileBreakpoint = 800;
 
-    if (window.innerWidth < mobileBreakpoint) {
+    if (window.innerWidth <= mobileBreakpoint) {
         //If this is the wrong page, then load the new one
         if (pageName.search(mobPrefix) == -1) {
             pageName = mobPrefix + pageName;
             document.location = pageName;
         }
     }
-    if (window.innerWidth >= mobileBreakpoint) {
+    if (window.innerWidth > mobileBreakpoint) {
         //If this is the wrong page, then load the new one
         if (pageName.search(mobPrefix) != -1) {
             //Replace the string's name to exclude the mobile prefix
