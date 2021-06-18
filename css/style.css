@@ -478,7 +478,7 @@ a:hover {
 	font-weight: 600;
 	font-size: 2.6em;
 	letter-spacing: 0px;
-	padding: 0 0 30px 0;
+	padding: 0 0 10px 0;
 }
 
 .side-info p {
@@ -610,7 +610,7 @@ a:hover {
 /* PROJECTS */
 
 #projects {
-	background: #161616;
+	background: #1d1d1d;
 	padding: 75px 0 30px 0;
 }
 
@@ -683,7 +683,7 @@ a:hover {
 
 .project:hover .project-header {
 	height: 100%;
-	background: rgb(0, 0, 0, 0.95);
+	background: rgb(0, 0, 0, 0.85);
 
 	transition: 0.15s ease-in-out;
 }
@@ -781,6 +781,7 @@ a:hover {
 	color: rgba(255, 145, 0, 0);
 	font-weight: 300;
 	font-size: 1.8em;
+	padding: 0 0 30px 0;
 
 	transition: 0.3s ease-in-out;
 }
@@ -814,10 +815,14 @@ a:hover {
 	transition: 0.3s ease-in-out;
 }
 
+.tag h5 {
+	font-weight: 500;
+}
+
 /* FOOTER / CONTACT */
 
 #contact {
-	background: rgb(17, 17, 17);
+	background: rgb(26, 26, 26);
 }
 
 .social-icons {

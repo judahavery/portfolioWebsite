@@ -116,7 +116,7 @@
 	/* HOME */
 
 	.home {
-		height: 40vh;
+		height: 400px;
 	}
 
 	/* ABOUT */
@@ -217,6 +217,12 @@
 	.project {
 		height: 450px;
 	}
+
+	.project-body p {
+		padding: 5px 0 0 0;
+		line-height: 35px;
+		font-size: 1.4em;
+	}
 }
 
 @media only screen and (max-width: 1400px) {
@@ -290,7 +296,7 @@
 	/* HOME */
 
 	.home {
-		height: 35vh;
+		height: 275px;
 	}
 
 	.home h1 {
@@ -309,7 +315,9 @@
 
 	/* NAV */
 
-	
+	#navbar {
+		height: 45px;
+	}
 	
 	/* FEATURED */
 
@@ -373,6 +381,11 @@
 
 	.project-tag-cont .tag {
 		font-size: 0.9em;
+	}
+
+	.wide-project .project-body p {
+		font-size: 1.8em !important;
+		line-height: 40px !important;
 	}
 
 	.project {
@@ -501,7 +514,7 @@
 	}
 
 	.project-tag-cont .tag {
-		font-size: 1.2em;
+		font-size: 1em;
 	}
 
 	/* FOOTER */
@@ -569,6 +582,11 @@
 
 	.wide-project {
 		width: 70% !important;
+	}
+
+	.wide-project p {
+		font-size: 1em !important;
+		line-height: 25px !important;
 	}
 
 	/* FOOTER */

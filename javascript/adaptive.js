@@ -10,19 +10,24 @@ function loadAdaptivePages() {
     var mobileBreakpoint = 800;
 
     if (window.innerWidth <= mobileBreakpoint) {
-        //If this is the wrong page, then load the new one
+        //If this is the wrong page, then load the mobile one
         if (pageName.search(mobPrefix) == -1) {
             pageName = mobPrefix + pageName;
             document.location = pageName;
         }
     }
-    if (window.innerWidth > mobileBreakpoint) {
-        //If this is the wrong page, then load the new one
+    else if (window.innerWidth > mobileBreakpoint) {
+        //If this is the wrong page, then load the normal one
         if (pageName.search(mobPrefix) != -1) {
             //Replace the string's name to exclude the mobile prefix
             pageName = pageName.replace(mobPrefix, "");
             document.location = pageName;
         }
+    }
+
+    //Getting rid of any wide-project squares
+    if (window.innerWidth < 1100) {
+        Array.from(document.querySelectorAll('.wide-project')).forEach((el) => el.classList.remove('wide-project'));
     }
 }
 
