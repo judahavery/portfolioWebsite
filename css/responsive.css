@@ -727,7 +727,11 @@
 	.mobile-nav .nav-contents {
 		font-size: 1em;
 	}
-	
+
+	#navbar a {
+		padding: 0;
+	}
+
 	.mobile-nav .nav-contents i {
 		margin: 0 7px 0 0;
 		transform: scale(var(--ggs, 1.75));
@@ -851,6 +855,10 @@
 
 	/* HOME / TITLE SECTION */
 
+	.mob-home-content {
+		padding: 6% 0;
+	}
+
 	.home {
 		height: 30vh;
 	}
@@ -892,10 +900,24 @@
 	/* NAV */
 
 	.mobile-nav {
-		height: 100px !important;
+		height: 80px;
+	}
+
+	.mobile-nav .nav-contents i {
+		transform: scale(var(--ggs, 1.4));
+	}
+
+	.mobile-nav .nav-contents a {
+		font-size: 1.2em;
+	}
+
+	#nav-overlay .nav-contents {
+		padding: 35px 25px;
+		margin-top: 10px;
 	}
 
 	/* FOOTER */
+
 
 
 	/* PROJECTS SECTION */
@@ -944,16 +966,20 @@
 	/* NAV */
 
 	.mobile-nav {
-		height: 75px !important;
+		height: 65px !important;
 	}
 
 	.mobile-nav .nav-contents a {
-		font-size: 1.2em;
+		font-size: 1.1em;
 	}
 
 	.mobile-nav .nav-contents i {
-		font-size: 1.2em;
-		transform: scale(var(--ggs, 1.4));
+		transform: scale(var(--ggs, 1.1));
+	}
+
+	#nav-overlay .nav-contents {
+		padding: 25px 25px;
+		margin-top: 10px;
 	}
 
 	/* FOOTER */

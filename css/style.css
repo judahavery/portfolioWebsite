@@ -44,6 +44,10 @@ table {
 
 /* GENERAL USE */
 
+#overlay-item {
+	transition: 0.3s ease-in-out;
+}
+
 a {
 	text-decoration: none !important;
 }
@@ -59,6 +63,14 @@ a:hover {
 
 .lowercase-title {
 	margin: 0 0 15px 0 !important;
+}
+
+.nav-align-right {
+	margin: 0 0 0 calc(100% - 100px);
+}
+
+.nav-align-left {
+	margin: 0 calc(100%) 0 0;
 }
 
 .absolute {
@@ -248,6 +260,10 @@ a:hover {
 
 /* MOBILE NAV */
 
+#nav-overlay-cont {
+	transition: 1s;
+}
+
 .mobile-nav {
 	height: 125px !important;
 	font-family: 'Poppins', sans-serif !important;
@@ -258,7 +274,8 @@ a:hover {
 }
 
 .mobile-nav .nav-contents {
-	justify-content: space-between;
+	justify-content: space-between !important;
+	align-items: center;
 }
 
 .mobile-nav .nav-contents i {
@@ -269,7 +286,9 @@ a:hover {
 .mobile-nav .nav-contents a {
 	font-size: 1.4em;
 	font-weight: 500;
-	padding: 0 !important;
+	padding: 0;
+
+	transition: 0.5s;
 }
 
 .mobile-nav .nav-contents a:hover {
@@ -324,14 +343,12 @@ a:hover {
 
 #nav-overlay .nav-contents {
 	margin-top: 30px;
-
+	padding: 30px 40px;
+	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	align-items: flex-end;
-	
-	padding: 30px 40px;
 
-	transition: 1s;
+	transition: 1s !important;
 }
 
 #nav-overlay .nav-contents a {
@@ -341,7 +358,7 @@ a:hover {
 	letter-spacing: 0px;
 
 	color: rgb(255, 255, 255);
-	padding: 0 0 20px 0;
+	padding: 0 0 50px 0;
 }
 
 #nav-overlay .nav-contents i {
@@ -381,10 +398,13 @@ a:hover {
 	z-index: 4;
 }
 
-.nav-contents {
-	display: flex;
+#navbar .nav-contents {
 	justify-content: center;
 	align-items: center;
+}
+
+.nav-contents {
+	display: flex;
 	height: 100%;
 }
 
@@ -691,7 +711,7 @@ a:hover {
 
 .project:hover .project-header {
 	height: 100%;
-	background: rgb(0, 0, 0, 0.85);
+	background: rgb(0, 0, 0, 0.925);
 
 	transition: 0.15s ease-in-out;
 }

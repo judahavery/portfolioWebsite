@@ -105,7 +105,8 @@ function openNav() {
   setTimeout(() => {
     document.getElementById("navbar").classList.add("hidden-navbar");
     document.getElementById("nav-overlay").style.margin = "0 0" + (window.innerWidth - document.getElementById("nav-overlay").offsetWidth) + "px 0";
-    document.getElementById("nav-overlay").style.justifyContent = "flex-start";
+    document.getElementById("overlay-item").classList.add("nav-align-right");
+    document.getElementById("overlay-item").classList.remove("nav-align-left");
     navOpen = true;
   }, delayNav);
 }
@@ -119,7 +120,8 @@ function closeNav() {
 
   document.getElementById("navbar").classList.remove("hidden-navbar");
   document.getElementById("nav-overlay").style.margin = "0 0 0 105%";
-  document.getElementById("nav-overlay").style.justifyContent = "flex-end";
+  document.getElementById("overlay-item").classList.add("nav-align-left");
+  document.getElementById("overlay-item").classList.remove("nav-align-right");
   navOpen = false;
 }
 
@@ -133,7 +135,8 @@ function delayCloseNav() {
 
     document.getElementById("navbar").classList.remove("hidden-navbar");
     document.getElementById("nav-overlay").style.margin = "0 0 0 105%";
-    document.getElementById("nav-overlay").style.justifyContent = "flex-end";
+    document.getElementById("overlay-item").classList.add("nav-align-left");
+    document.getElementById("overlay-item").classList.remove("nav-align-right");
     navOpen = false;
   }, delayNav);
 }
