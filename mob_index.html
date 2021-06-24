@@ -7,8 +7,6 @@
   <link rel="icon" href="images/averyIcon.png">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   <!-- css.gg -->
   <link href='https://css.gg/css' rel='stylesheet'>
@@ -19,7 +17,7 @@
   <!-- JSDelivr -->
   <link href='https://cdn.jsdelivr.net/npm/css.gg/icons/all.css' rel='stylesheet'>
 
-  <!-- Bootstrap -->
+  <!-- Fontawesome -->
   <script src="https://kit.fontawesome.com/f17e9d136a.js" crossorigin="anonymous"></script>
 
   <!-- Scrolling -->
@@ -30,17 +28,6 @@
 
   <!-- jquery -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
-  <!-- Bootstrap Javascript -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
 
 </head>
 
@@ -59,16 +46,21 @@
   <div id="nav-overlay">
     <nav id="nav-overlay-cont" class="nav-contents">
       <i id="overlay-item" onclick="closeNav()" class="gg-close"></i>
-      <a id="overlay-item" onclick="closeNav()" class="nav-align-left" href="#home">HOME</a>
-      <a id="overlay-item" onclick="closeNav()" class="nav-align-left" href="#projects">PROJECTS</a>
+      <a id="overlay-item" onclick="closeNav()" class="nav-align-left" href="mob_index.html#home">HOME</a>
+      <a id="overlay-item" onclick="closeNav()" class="nav-align-left" href="mob_index.html#projects">PROJECTS</a>
       <a id="overlay-item" onclick="closeNav()" class="nav-align-left" href="#contact">CONTACT</a>
-      <a id="overlay-item" onclick="closeNav()" class="nav-align-left" target="_blank" href="downloads/Judah_Avery_Resume.pdf">RESUME</a>
+      <a id="overlay-item" onclick="closeNav()" class="nav-align-left" target="_blank"
+        href="downloads/Judah_Avery_Resume.pdf">RESUME</a>
     </nav>
   </div>
-  <div id="navbar" class="mobile-nav mob-static-nav">
+  <div id="mobile-nav" class="mobile-nav mob-static-nav">
     <nav class="nav-contents master-width">
       <a href="#home">Judah Avery</a>
-      <i onclick="openNav()" class="gg-menu"></i>
+      <a href="#" class="bars" onclick="openNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </a>
     </nav>
   </div>
 
@@ -144,6 +136,8 @@
   <main id="projects">
     <div class="projects master-width">
 
+      <br>
+
       <div class="mob-project">
         <h1>COBBLE</h1>
         <h2>Product Owner | Lead Designer</h2>
@@ -171,6 +165,75 @@
 
         <p>
           Manipulate the mechanics of your environment to traverse an enormous clocktower full of mysterious treachery.
+        </p>
+
+        <a class="button mob-project-button" href="cobble.html">View Project</a>
+
+      </div>
+
+      <br>
+
+      <div class="mob-project">
+        <h1>Dreamscape</h1>
+        <h2>Solo Project</h2>
+        <div class="tag-cont">
+          <div class="tag">
+            <h5>Systems</h5>
+          </div>
+          <div class="tag">
+            <h5>UI/UX</h5>
+          </div>
+          <div class="tag">
+            <h5>C#</h5>
+          </div>
+          <div class="tag">
+            <h5>Documentation</h5>
+          </div>
+        </div>
+
+        <div class="project-img">
+          <img src="images/dreamscapeGameplay_1.png" alt="Picture">
+        </div>
+
+        <p>
+          A digital, local-multiplayer card game with an emphasis on resource
+          management where you battle your friends.
+        </p>
+
+        <a class="button mob-project-button" href="cobble.html">View Project</a>
+
+      </div>
+
+      <br>
+
+      <div class="mob-project">
+        <h1>Splatterpunk</h1>
+        <h2>Designer | UI Programmer</h2>
+        <div class="tag-cont">
+          <div class="tag">
+            <h5>Systems</h5>
+          </div>
+          <div class="tag">
+            <h5>Level Design</h5>
+          </div>
+          <div class="tag">
+            <h5>UI/UX</h5>
+          </div>
+          <div class="tag">
+            <h5>C#</h5>
+          </div>
+          <div class="tag">
+            <h5>Documentation</h5>
+          </div>
+        </div>
+
+        <div class="project-img">
+          <img src="images/games/splatterpunk_5.png" alt="Picture">
+        </div>
+
+        <p>
+          Puzzle-platformer set in a colorless, corporate world. Solve puzzles by switching your colors to alter what
+          you collide with!
         </p>
 
         <a class="button mob-project-button" href="cobble.html">View Project</a>

@@ -5,7 +5,7 @@ var mobilePage = false;
 var navIsFixed;
 
 var prevScrollTop = 0;
-var delayNav = 0;
+var delayNav = 100;
 
 document.addEventListener("DOMContentLoaded", function () {
   //Is this a mobile page?
@@ -28,16 +28,18 @@ document.addEventListener("click", (event) => {
   let targetElement = event.target; // clicked element
 
   do {
-      if (targetElement == document.getElementById("nav-overlay")) {
-          // This is a click inside
-          return;
-      }
-      // Go up the DOM
-      targetElement = targetElement.parentNode;
+    if (targetElement == document.getElementById("nav-overlay")) {
+      // This is a click inside
+      return;
+    }
+    // Go up the DOM
+    targetElement = targetElement.parentNode;
   } while (targetElement);
 
   // This is a click outside.
-  closeNav();
+  if (mobilePage) {
+    closeNav();
+  }
 });
 
 function isMobilePage() {
@@ -54,15 +56,30 @@ function isMobilePage() {
 function scrolling() {
   if (!navOpen) {
     //Check if the page has passed the home section
-    if (!navIsFixed) {
-      if (window.scrollY >= document.getElementById("home").offsetHeight - document.getElementById("navbar").offsetHeight) {
-        fixNav();
+    if (!mobilePage) {
+      if (!navIsFixed) {
+        if (window.scrollY >= document.getElementById("home").offsetHeight - document.getElementById("navbar").offsetHeight) {
+          fixNav();
+        }
+      }
+      //If the page is not past that number, then set back to normal
+      else if (navIsFixed) {
+        if (window.scrollY < document.getElementById("home").offsetHeight - document.getElementById("navbar").offsetHeight) {
+          staticNav();
+        }
       }
     }
-    //If the page is not past that number, then set back to normal
-    else if (navIsFixed) {
-      if (window.scrollY < document.getElementById("home").offsetHeight - document.getElementById("navbar").offsetHeight) {
-        staticNav();
+    else {
+      if (!navIsFixed) {
+        if (window.scrollY >= document.getElementById("home").offsetHeight - document.getElementById("mobile-nav").offsetHeight) {
+          fixNav();
+        }
+      }
+      //If the page is not past that number, then set back to normal
+      else if (navIsFixed) {
+        if (window.scrollY < document.getElementById("home").offsetHeight - document.getElementById("mobile-nav").offsetHeight) {
+          staticNav();
+        }
       }
     }
   }
@@ -78,9 +95,9 @@ function fixNav() {
     document.getElementById("navbar").classList.remove("static-nav");
   }
   else {
-    document.getElementById("navbar").style.top = "0";
-    document.getElementById("navbar").classList.add("mob-fixed-nav");
-    document.getElementById("navbar").classList.remove("mob-static-nav");
+    document.getElementById("mobile-nav").style.top = "0";
+    document.getElementById("mobile-nav").classList.add("mob-fixed-nav");
+    document.getElementById("mobile-nav").classList.remove("mob-static-nav");
   }
 }
 
@@ -94,19 +111,19 @@ function staticNav() {
     document.getElementById("navbar").style.top = document.getElementById("home").offsetHeight - document.getElementById("navbar").offsetHeight + "px";
   }
   else {
-    document.getElementById("navbar").classList.add("mob-static-nav");
-    document.getElementById("navbar").classList.remove("mob-fixed-nav");
-    document.getElementById("navbar").style.top = "0px";
+    document.getElementById("mobile-nav").classList.add("mob-static-nav");
+    document.getElementById("mobile-nav").classList.remove("mob-fixed-nav");
+    document.getElementById("mobile-nav").style.top = "0px";
   }
 }
 
 // Open
 function openNav() {
   setTimeout(() => {
-    document.getElementById("navbar").classList.add("hidden-navbar");
+    document.getElementById("mobile-nav").classList.add("hidden-navbar");
     document.getElementById("nav-overlay").style.margin = "0 0" + (window.innerWidth - document.getElementById("nav-overlay").offsetWidth) + "px 0";
-    document.getElementById("overlay-item").classList.add("nav-align-right");
-    document.getElementById("overlay-item").classList.remove("nav-align-left");
+    //document.getElementById("overlay-item").classList.add("nav-align-right");
+    //document.getElementById("overlay-item").classList.remove("nav-align-left");
     navOpen = true;
   }, delayNav);
 }
@@ -115,13 +132,13 @@ function openNav() {
 function closeNav() {
   //If navIsFixed, then set it to the top of screen
   if (navIsFixed) {
-    document.getElementById("navbar").style.margin = "0px";
+    document.getElementById("mobile-nav").style.margin = "0px";
   }
 
-  document.getElementById("navbar").classList.remove("hidden-navbar");
+  document.getElementById("mobile-nav").classList.remove("hidden-navbar");
   document.getElementById("nav-overlay").style.margin = "0 0 0 105%";
-  document.getElementById("overlay-item").classList.add("nav-align-left");
-  document.getElementById("overlay-item").classList.remove("nav-align-right");
+  //document.getElementById("overlay-item").classList.add("nav-align-left");
+  //document.getElementById("overlay-item").classList.remove("nav-align-right");
   navOpen = false;
 }
 
@@ -130,13 +147,13 @@ function delayCloseNav() {
   setTimeout(() => {
     //If navIsFixed, then set it to the top of screen
     if (navIsFixed) {
-      document.getElementById("navbar").style.margin = "0px";
+      document.getElementById("mobile-nav").style.margin = "0px";
     }
 
-    document.getElementById("navbar").classList.remove("hidden-navbar");
+    document.getElementById("mobile-nav").classList.remove("hidden-navbar");
     document.getElementById("nav-overlay").style.margin = "0 0 0 105%";
-    document.getElementById("overlay-item").classList.add("nav-align-left");
-    document.getElementById("overlay-item").classList.remove("nav-align-right");
+    //document.getElementById("overlay-item").classList.add("nav-align-left");
+    //document.getElementById("overlay-item").classList.remove("nav-align-right");
     navOpen = false;
   }, delayNav);
 }
