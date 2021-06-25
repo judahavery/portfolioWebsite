@@ -970,22 +970,21 @@
 	}
 
 	.proj-links a {
-		color: #272727;
+		color: #04578f;
 		font-size: 1.8em;
 		font-weight: 600;
-		background-color: rgba(255, 158, 3, 0.2);
-		border-bottom: solid 3px #e99000;
-		border-radius: 5px;
-		padding: 15px;
-		margin: 15px 0;
+		background-color: none;
+		border-bottom: solid 3px #0094e9;
+		padding: 10px 10px 5px 0;
+		margin: 10px 0;
 
-		transition: 0.4s;
+		transition: 0.2s;
 	}
 
 	.proj-links a:hover {
-		border-radius: 15px;
-		background-color: rgba(255, 158, 3, 0.4);
-		color: #e99000;
+		background-color: rgba(3, 217, 255, 0.2);
+		color: #0094e9;
+		padding: 10px 10px 5px 10px;
 		margin-left: 10px;
 	}
 

@@ -33,23 +33,35 @@
 
 <body id="project">
 
-  <main class="home project-home" id="home">
-    <div class="project-banner move-up-100">
-      <img src="images/games/cobblePlatform.png" alt="Banner Gameplay Screenshot">
+  <main class="mob-home" id="home">
+    <div class="home-banner">
+      <img src="images/cobbleRunning.PNG" alt="Banner Gameplay Screenshot">
     </div>
-
-    <div class="absolute align-items-center">
+    <div class="mob-proj-home-cont">
       <h1>COBBLE</h1>
-      <h2>Lead Designer | Product Owner</h2>
+      <h2>Product Owner | Lead Designer</h2>
     </div>
+    <a class="button mob-home-button" href="#case-study">Case Study</a>
   </main>
 
-  <div id="navbar" class="static-nav">
-    <nav class="nav-contents">
-      <a href="#home">HOME</a>
-      <a href="#projects">PROJECTS</a>
-      <a href="#contact">CONTACT</a>
-      <a target="_blank" href="downloads/Judah_Avery_Resume.pdf">RESUME</a>
+  <div id="nav-overlay">
+    <nav id="nav-overlay-cont" class="nav-contents">
+      <i id="overlay-item" onclick="closeNav()" class="gg-close"></i>
+      <a id="overlay-item" onclick="closeNav()" class="nav-align-left" href="mob_index.html#home">HOME</a>
+      <a id="overlay-item" onclick="closeNav()" class="nav-align-left" href="mob_index.html#projects">PROJECTS</a>
+      <a id="overlay-item" onclick="closeNav()" class="nav-align-left" href="#contact">CONTACT</a>
+      <a id="overlay-item" onclick="closeNav()" class="nav-align-left" target="_blank"
+        href="downloads/Judah_Avery_Resume.pdf">RESUME</a>
+    </nav>
+  </div>
+  <div id="mobile-nav" class="mobile-nav mob-static-nav">
+    <nav class="nav-contents master-width">
+      <a href="#home">Judah Avery</a>
+      <a href="#" class="bars" onclick="openNav()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </a>
     </nav>
   </div>
 
@@ -108,7 +120,7 @@
     <img class="move-up-75" src="images/games/cobblePlatform.png" alt="Spring Fever Gameplay">
   </div>
 
-  <main class="proj-page proj-page-width">
+  <main id="case-study" class="proj-page proj-page-width">
     <h4 class="top-title">COBBLE</h4>
     <h1 class="subtitle">Case Study</h1>
     <hr class="title-line">
