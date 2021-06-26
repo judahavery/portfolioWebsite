@@ -638,6 +638,7 @@
 }
 
 @media only screen and (max-width: 1000px) {
+
 	/* GENERAL */
 
 	.tag {
@@ -764,13 +765,29 @@
 		background-color: #797979;
 	}
 
+	.subtitle {
+		margin: 0 !important;
+	}
+
+	.top-title {
+		margin: 0 !important;
+		padding: 0 0 3px 0;
+	}
+
+	/*.img-page-break {
+		height: 300px;
+		border-radius: 15px;
+		margin: 0 auto 50px auto !important;
+	}*/
+
 	.img-page-break img {
 		transform: scale(0.5);
 	}
 
 	.title-line {
-		margin: 10px auto;
-		width: 65%;
+		margin: 15px 0 0 0;
+		width: 100%;
+		height: 2px;
 	}
 	
 	.master-width {
@@ -942,12 +959,21 @@
 		padding: 0;
 	}
 
+	.proj-overview h5 {
+		font-size: 1.5em !important;
+		line-height: 45px;
+	}
+
 	.project-row {
 		width: 100%;
 	}
 
 	.project {
 		width: 100%;
+	}
+
+	.team .title-line {
+		width: 70%;
 	}
 
 	.team-names {
@@ -988,6 +1014,15 @@
 		margin-left: 10px;
 	}
 
+	.proj-contributions h4 {
+		font-size: 2.2em;
+	}
+
+	.proj-contributions li {
+		font-size: 1.5em !important;
+		line-height: 35px;
+	}
+
 	/* HOME / TITLE SECTION */
 
 	.mob-home-content {
@@ -1020,6 +1055,21 @@
 
 	.mob-project h2 {
 		font-size: 1.8em;
+	}
+
+	.img-page-break img {
+		transform: scale(0.4);
+	}
+
+	.mob-proj-top-cont h1 {
+		font-size: 3.6em;
+		font-weight: 600;
+	}
+	
+	.mob-proj-top-cont h2 {
+		font-size: 1.8em;
+		font-weight: 300;
+		margin: 10px 0 40px 0;
 	}
 
 	/* HOME / TITLE SECTION */
@@ -1068,6 +1118,45 @@
 	.mob-project img {
 		object-fit: cover;
 		height: 300px;
+	}
+
+	.mob-proj-top-cont h1 {
+		font-size: 3.2em;
+		font-weight: 600;
+	}
+	
+	.mob-proj-top-cont h2 {
+		font-size: 1.5em;
+		font-weight: 300;
+		margin: 5px 0 35px 0;
+	}
+
+	.title-line {
+		margin: 10px 0 0 0;
+	}
+
+	.team .title-line {
+		width: 90%;
+	}
+
+	.team-member img {
+		width: 80%;
+	}
+
+	.team-member h5 {
+		font-size: 1.1em;
+		line-height: 22px;
+		margin: 0 0 10px 0;
+	}
+
+	.team-member .bubble-icon {
+		width: 40px;
+		height: 40px;
+		margin: 0 4px;
+	}
+
+	.team-member .bubble-icon i {
+		font-size: 1.25em;
 	}
 
 	/* ABOUT */
@@ -1154,7 +1243,43 @@
 		object-fit: cover;
 		height: 225px;
 	}
+
+	.mob-proj-top-cont h1 {
+		font-size: 3em;
+		font-weight: 600;
+	}
 	
+	.mob-proj-top-cont h2 {
+		font-size: 1.3em;
+		font-weight: 400;
+		margin: 0px 0 35px 0;
+	}
+
+	.team-member {
+		width: 70%;
+		margin: 25px 0;
+	}
+
+	.team-member h5 {
+		margin: 5px 0 5px 0;
+		line-height: 30px;
+		font-size: 1.5em;
+	}
+
+	.team-member .bubble-icon {
+		width: 50px;
+		height: 50px;
+		margin: 0 7px;
+	}
+	
+	.team-member .bubble-icon i {
+		font-size: 1.5em;
+	}
+
+	.team .button {
+		margin: 25px 0;
+	}
+
 	/* ABOUT */
 	
 	#about .icon-row img{

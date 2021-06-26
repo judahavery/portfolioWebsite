@@ -289,7 +289,7 @@ a:hover {
 	color: #ffffff;
 	z-index: 4;
 
-	transition: 0.3s ease-in-out;
+	transition: 0.7s ease-in-out;
 	transition-property: background-color, box-shadow, color, margin;
 }
 
@@ -331,7 +331,7 @@ a:hover {
 .mobile-nav .nav-contents a {
 	font-size: 1.4em;
 	font-weight: 500;
-	padding: 0 0 5px 0;
+	padding: 0 0 0 0;
 	color: #fff;
 
 	transition: 0.1s;
@@ -350,7 +350,7 @@ a:hover {
 	box-shadow: none !important;
 	position: absolute;
 
-	transition: 0.4s;
+	transition: 0.4s ease-in-out;
 }
 
 .mob-fixed-nav {
@@ -359,7 +359,7 @@ a:hover {
 	position: fixed;
 	height: 90px !important;
 
-	transition: 0.4s;
+	transition: 0.4s ease-in-out;
 }
 
 #nav-overlay {
@@ -378,7 +378,7 @@ a:hover {
 	backdrop-filter: blur(15px) brightness(20%);
 	background: rgba(7, 7, 7, 0.85);
 
-	transition: 0.25s ease;
+	transition: 0.4s ease;
 }
 
 #nav-overlay .nav-contents {
@@ -428,7 +428,7 @@ a:hover {
 	backdrop-filter: none !important;
 	box-shadow: none !important;
 
-	transition: 0.1s ease;
+	transition: 0.5s ease;
 }
 
 .closed-navbar a {
@@ -650,34 +650,33 @@ a:hover {
 
 }
 
-.mob-proj-home-cont {
-	width: 80%;
+.mob-proj-top-cont {
 	font-family: 'Poppins', sans-serif;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+	align-items: flex-start;
 
-	text-align: center;
 	z-index: 1;
-	padding: 70px 0 0 0;
-	margin: auto;
+	padding: 15vh 0 0 0;
+	margin: 0 auto 5vw auto;
 }
 
-.mob-proj-home-cont h1 {
+.mob-proj-top-cont h1 {
 	line-height: 50px;
 	letter-spacing: 0px;
-	font-size: 2.6em;
-	font-weight: 700;
+	font-size: 4em;
+	font-weight: 600;
 	padding: 0 0 0 0;
 	margin: 0 0 5px 0;
 }
 
-.mob-proj-home-cont h2 {
-	font-size: 1.2em;
-	font-weight: 400;
+.mob-proj-top-cont h2 {
+	line-height: 25px;
+	font-size: 2em;
+	font-weight: 300;
 	padding: 0 0 0 0;
-	margin: 0 0 10px 0;
+	margin: 15px 0 40px 0;
 }
 
 .mob-project {
@@ -1163,7 +1162,7 @@ footer a:hover {
 	align-items: center;
 
 	text-align: left;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Poppins', sans-serif;
 	color: #111111;
 	margin: 0 auto;
 	padding: 0 0 50px 0;
@@ -1598,7 +1597,7 @@ footer a:hover {
 	border-color: rgba(255, 255, 255, 0);
 	border-radius: 0;
 	padding: 20px 35px;
-	margin: 0 auto 30px auto;
+	margin: 0 0 0 0;
 }
 
 .mob-home-button:hover {

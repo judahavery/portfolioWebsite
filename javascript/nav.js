@@ -121,6 +121,7 @@ function staticNav() {
 function openNav() {
   setTimeout(() => {
     document.getElementById("mobile-nav").classList.add("hidden-navbar");
+    document.getElementById("mobile-nav").classList.add("closed-navbar");
     document.getElementById("nav-overlay").style.margin = "0 0" + (window.innerWidth - document.getElementById("nav-overlay").offsetWidth) + "px 0";
     //document.getElementById("overlay-item").classList.add("nav-align-right");
     //document.getElementById("overlay-item").classList.remove("nav-align-left");
@@ -136,6 +137,7 @@ function closeNav() {
   }
 
   document.getElementById("mobile-nav").classList.remove("hidden-navbar");
+  document.getElementById("mobile-nav").classList.remove("closed-navbar");
   document.getElementById("nav-overlay").style.margin = "0 0 0 105%";
   //document.getElementById("overlay-item").classList.add("nav-align-left");
   //document.getElementById("overlay-item").classList.remove("nav-align-right");
@@ -151,6 +153,7 @@ function delayCloseNav() {
     }
 
     document.getElementById("mobile-nav").classList.remove("hidden-navbar");
+    document.getElementById("mobile-nav").classList.remove("closed-navbar");
     document.getElementById("nav-overlay").style.margin = "0 0 0 105%";
     //document.getElementById("overlay-item").classList.add("nav-align-left");
     //document.getElementById("overlay-item").classList.remove("nav-align-right");
