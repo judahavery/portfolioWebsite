@@ -960,7 +960,7 @@
 	}
 
 	.proj-overview h5 {
-		font-size: 1.5em !important;
+		font-size: 1.5em;
 		line-height: 45px;
 	}
 
@@ -1019,8 +1019,19 @@
 	}
 
 	.proj-contributions li {
-		font-size: 1.5em !important;
+		font-size: 1.5em;
 		line-height: 35px;
+	}
+
+	.proj-p h4 {
+		font-size: 1.8em;
+		padding: 20px 0 20px 0;
+	}
+
+	.proj-p p {
+		font-size: 1.4em;
+		line-height: 35px;
+		padding-bottom: 20px;
 	}
 
 	/* HOME / TITLE SECTION */
@@ -1038,8 +1049,24 @@
 	}
 }
 
+@media only screen and (max-width: 700px) {
+	/* PROJECT PAGE */
+
+	.proj-details {
+		font-size: 1em;
+	}
+
+	.proj-details h5 {
+		line-height: 40px;
+	}
+}
+
 @media only screen and (max-width: 600px) {
 	
+	.team .title-line {
+		width: 80%;
+	}
+
 	/* ABOUT */
 	
 	#about .icon-row img{
@@ -1052,6 +1079,48 @@
 	
 
 	/* PROJECTS SECTION */
+
+	.image-break {
+		margin: 20px 0;
+		height: 300px;
+		border-radius: 10px;
+	}
+
+	.proj-page .subtitle {
+		font-size: 3em;
+	}
+
+	.proj-p p {
+		font-size: 1.2em;
+		line-height: 32px;
+	}
+
+	.proj-p h4 {
+		font-size: 1.8em;
+		padding: 15px 0 15px 0;
+		line-height: 40px;
+	}
+
+	.proj-details h5 {
+		font-size: 1.3em;
+		padding: 10px 0;
+		line-height: 35px;
+	}
+
+	.proj-details strong {
+		font-size: 1.1em;
+		margin-right: 5px;
+		border-bottom: 3px solid #1616166e;
+	}
+
+	.proj-contributions h4 {
+		font-size: 1.8em;
+		margin: 0 0 5px 0;
+	}
+
+	.proj-contributions li {
+		font-size: 1.35em;
+	}
 
 	.mob-project h2 {
 		font-size: 1.8em;
@@ -1078,6 +1147,16 @@
 
 @media only screen and (max-width: 500px) {
 	
+	.team .title-line {
+		display: none;
+	}
+
+	.team .subtitle {
+		font-size: 2.6em;
+		padding-bottom: 5px;
+		border-bottom: solid 4px #383838;
+	}
+
 	/* NAV */
 
 	.mobile-nav {
@@ -1102,6 +1181,28 @@
 
 
 	/* PROJECTS SECTION */
+
+	.proj-details h5 {
+		font-size: 1.2em;
+		padding: 8px 0;
+		line-height: 30px;
+	}
+
+	.proj-details strong {
+		font-size: 1.1em;
+		margin-right: 5px;
+		border-bottom: 3px solid #1616166e;
+	}
+
+	.proj-contributions h4 {
+		font-size: 1.6em;
+		margin: 0 0 5px 0;
+	}
+
+	.proj-contributions li {
+		font-size: 1.2em;
+		line-height: 30px;
+	}
 
 	.mob-project h1 {
 		font-size: 2.8em;
@@ -1226,6 +1327,32 @@
 	}
 
 	/* PROJECTS SECTION */
+
+	.team .subtitle {
+		font-size: 2.4em;
+	}
+
+	.proj-details h5 {
+		font-size: 1.2em;
+		padding: 3px 0;
+		line-height: 30px;
+	}
+
+	.proj-details strong {
+		font-size: 1.1em;
+		margin-right: 5px;
+		border-bottom: 3px solid #161616;
+	}
+
+	.proj-contributions h4 {
+		font-size: 1.6em;
+		margin: 0 0 5px 0;
+	}
+
+	.proj-contributions li {
+		font-size: 1.15em;
+		line-height: 25px;
+	}
 
 	.mob-project h1 {
 		font-size: 2.4em;
