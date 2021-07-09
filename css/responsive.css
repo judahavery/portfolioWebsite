@@ -164,7 +164,7 @@
 }
 
 @media only screen and (max-width: 1600px) {
-	
+
 	/* ABOUT */
 		
 	#about .master-width {
@@ -178,6 +178,8 @@
 	#about .profile-img {
 		width: 25%;
 	}
+
+	/* PROJECTs */
 
 }
 
