@@ -143,36 +143,36 @@ a:hover {
 
 .top-title {
 	font-family: 'Poppins', sans-serif;
-	font-size: 1.4em;
+	font-size: 1.4vw;
 	font-weight: 600;
 	letter-spacing: 1px;
-	padding: 20px 0 0 0;
-	margin: 0 auto 5px auto;
+	padding: 0.75vw 0 0 0;
+	margin: 0 auto 0.2vw auto;
 	text-align: center;
 	color: #ff7a00;
 }
 
 .title-line {
 	background: #9b9b9b;
-	border: solid #9b9b9b 1.5px;
-	margin: 10px auto 30px auto;
+	border: solid #9b9b9b .08vw;
+	margin: 0.5vw auto 1vw auto;
 	width: 50%;
 }
 
 .full-line {
 	width: 100%;
-	margin: 10px 0 15px 0;
-	border: solid #b6b6b6 2px;
+	margin: 0.5vw auto 1vw auto;
+	border: solid #b6b6b6 .08vw;
 }
 
 .short-line {
-	width: 75px;
-	margin: 5px 0 10px 0;
-	border: solid #909090 2px;
+	width: 0.3vw;
+	margin: 0.2vw auto 0.5vw auto;
+	border: solid #909090 .08vw;
 }
 
 #about .short-line {
-	border: solid #909090 2px;
+	border: solid #909090 .08vw;
 }
 
 .align-items-center {
@@ -243,7 +243,7 @@ a:hover {
 
 .home {
 	color: #ffffff;
-	height: 400px;
+	height: 23vw !important;
 	display: flex;
 	justify-content: center;
 	overflow: hidden;
@@ -253,14 +253,14 @@ a:hover {
 .home h1 {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
-	font-size: 4.75em;
+	font-size: 4vw !important;
 	letter-spacing: 1px;
-	margin: 0 0 5px 0;
+	margin: 0 0 0.6vw 0;
 }
 
 .home h2 {
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 1.5em;
+	font-size: 1.2vw !important;
 	font-weight: 400;
 	letter-spacing: 1px;
 	padding-bottom: 30px;
@@ -359,10 +359,6 @@ a:hover {
 
 .mobile-nav .nav-contents a:hover {
 	color: #a7a7a7;
-}
-
-.mobile-nav .nav-contents a:active {
-
 }
 
 .mob-static-nav {
@@ -464,7 +460,7 @@ a:hover {
 	align-items: center;
 
 	width: 100%;
-	height: 50px;
+	height: 3vw;
 	margin: 0 auto;
 	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
 	color: #ffffff;
@@ -489,9 +485,10 @@ a:hover {
 
 	height: 100%;
 	font-weight: light;
+	font-size: 1vw;
 	color: #fff;
 	border-top: solid rgba(255, 154, 59, 0) 2px;
-	padding: 0 25px;
+	padding: 0 1.25vw;
 	margin: 0;
 	transition: 0.1s ease-in-out;
 }
@@ -500,7 +497,7 @@ a:hover {
 	color: #ff9641;
 	border-top: solid #ff8c2d 4px;
 	margin: 6px 0 0 0;
-	padding: 0px 25px 2px 25px;
+	padding: 0px 1.25vw 2px 1.25vw;
 	transition: 0.1s ease-in-out;
 }
 
@@ -508,7 +505,6 @@ a:hover {
 	color: #ff9a3b;
 	border-top: solid #ff9a3b 2px;
 	margin: 2px 0 0 0;
-	padding: 0px 25px;
 	transition: 0.1s ease-in-out;
 }
 
@@ -517,7 +513,7 @@ a:hover {
 	position: absolute;
 
 	transition: 0.2s ease-in-out;
-	transition-property: background-color, box-shadow, color, margin;
+	transition-property: background-color, box-shadow, color, margin, height;
 }
 
 .fixed-nav {
@@ -526,7 +522,7 @@ a:hover {
 	position: fixed;
 
 	transition: 0.3s ease-in-out;
-	transition-property: background-color, box-shadow, color, margin;
+	transition-property: background-color, box-shadow, color, margin, height;
 }
 
 /* FEATURED PROJECT */
@@ -539,7 +535,10 @@ a:hover {
 .featured .align-items-center {
 	display: flex;
 	flex-direction: row;
-	margin: 75px 0;
+	justify-content: flex-start;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: 4vw 0;
 }
 
 .featured-image {
@@ -549,9 +548,8 @@ a:hover {
 	justify-content: center;
 
 	width: 45%;
-	height: 375px;
-	border-radius: 10px;
-	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+	border-radius: 0.8vw;
+	box-shadow: 0px 0px 0.5vw rgba(0, 0, 0, 0.7);
 	overflow: hidden;
 }
 
@@ -564,31 +562,31 @@ a:hover {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
+	width: 50%;
 
-	width: 55%;
-	padding: 0 0 0 55px;
+	padding: 0 0 0 2.5vw;
 	font-family: 'Poppins', sans-serif;
 }
 
 .side-info h3 {
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 400;
-	font-size: 1.4em;
+	font-size: 1.2vw;
 }
 
 .side-info h1 {
 	font-weight: 600;
-	font-size: 2.6em;
+	font-size: 2.1vw;
 	letter-spacing: 0px;
-	padding: 0 0 10px 0;
+	padding: 0.4vw 0 0.5vw 0;
 }
 
 .side-info p {
-	padding: 15px 0;
+	padding: 0.4vw 0 1vw 0;
 	letter-spacing: 0px;
 	font-weight: 500;
-	font-size: 1.6em;
-	line-height: 35px;
+	font-size: 1.4vw;
+	line-height: 1.8vw;
 	color: #4d4d4d;
 }
 
@@ -604,7 +602,7 @@ a:hover {
 }
 
 #about .master-width{
-	padding: 80px 0;
+	padding: 4vw 0;
 
 	display: flex;
 	flex-direction: row;
@@ -612,29 +610,26 @@ a:hover {
 }
 
 #about .profile-img{
-	border-radius: 100%;
 	justify-content: center;
 	align-items: center;
-	width: 30%;
-}
 
-#about .profile-img{
 	border-radius: 100%;
-	width: 30%;
+	width: 17vw;
 }
 
 #about h1 {
 	font-family: 'Poppins', sans-serif;
-	font-weight: 600;
-	font-size: 3.8em;
+	font-weight: 500;
+	font-size: 3.5vw;
 	margin: 0;
 	letter-spacing: 0px;
 }
 
 #about p {
 	font-family: 'Poppins', sans-serif;
-	font-size: 1.5em;
-	line-height: 40px;
+	font-size: 1.4vw;
+	font-weight: 400;
+	line-height: 2.2vw;
 	letter-spacing: -0px;
 	margin: 15px 0 10px 0;
 }
@@ -648,7 +643,7 @@ a:hover {
     flex-direction: column;
     align-items: space-between;
 
-	padding: 0 0 0 60px;
+	padding: 0 0 0 3vw;
 }
 
 .icon-row{
@@ -660,15 +655,11 @@ a:hover {
 }
 
 .icon-row img{
-	padding: 0;
-	width: 8%;
+	padding: 0 5px 0 0;
+	width: 4.5vw;
 }
 
 /* MOBILE PROJECTS */
-
-.mob-project-home {
-
-}
 
 .mob-proj-top-cont {
 	font-family: 'Poppins', sans-serif;
@@ -753,7 +744,7 @@ a:hover {
 
 #projects {
 	background: #181818;
-	padding: 60px 0 50px 0;
+	padding: 4vw 0 4vw 0;
 }
 
 .projects .top-title {
@@ -763,18 +754,17 @@ a:hover {
 
 .projects .title {
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 3.8em;
+	font-size: 3.6vw;
 	font-weight: 700;
 	letter-spacing: 0px;
 	color: #fff;
 	text-align: center;
-	padding: 5px 0 10px 0;
+	padding: 0.8vw 0 0.8vw 0;
 	margin: 0;
-	line-height: 65px;
 }
 
 .projects .title-line {
-	margin: 0px auto 30px auto;
+	margin: 0px auto 3vw auto;
 	width: 45%;
 }
 
@@ -783,7 +773,7 @@ a:hover {
 	flex-direction: row;
 	justify-content: space-between;
 
-	padding: 0 0 40px 0;
+	padding: 0 0 1.5vw 0;
 }
 
 .wide-project {
@@ -794,9 +784,29 @@ a:hover {
 	transform: scale(1.1) !important;
 }
 
+.wide-project .project-body {
+	padding: 0 12vw;
+}
+
 .wide-project p  {
-	line-height: 50px !important;
-	font-size: 2.25em !important;
+	line-height: 2.6vw !important;
+	font-size: 1.6vw !important;
+}
+
+.wide-project h4  {
+	font-size: 1.6vw !important;
+}
+
+.wide-project .project-tag-cont {
+	padding: 0.25vw 0;
+}
+
+.wide-project .project-tag-cont .tag {
+	padding: 0.5vw 0.7vw;
+}
+
+.wide-project .project-tag-cont .tag h5 {
+	font-size: 1.2vw;
 }
 
 .project {
@@ -806,9 +816,8 @@ a:hover {
 
 	overflow: hidden;
 	position: relative;
-	width: 750px;
-	height: 525px;
-	margin: 0 20px;
+	margin: 0 0.75vw;
+	height: 30vw;
 
 	transition: 0.15s ease-in-out;
 }
@@ -860,12 +869,13 @@ a:hover {
 
 .project p {
 	color: rgb(0, 0, 0, 0);
-	font-size: 1.75em;
-	line-height: 40px;
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.4vw;
+	line-height: 2.3vw;
 	width: 95%;
 	margin: 0 auto;
 	letter-spacing: 0px;
-	padding: 20px 0 0 0;
+	padding: 0.5vw 0 0 0;
 
 	transition: 0.3s;
 }
@@ -888,7 +898,7 @@ a:hover {
 .project-header {
 	position: absolute;
 	width: 100%;
-	height: 155px;
+	height: 8vw;
 	z-index: 1;
 	backdrop-filter: blur(5px);
 	top: 0;
@@ -898,7 +908,6 @@ a:hover {
 	font-family: 'Josefin Sans', sans-serif;
 	padding: 0 0 0 0;
 
-	
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -907,9 +916,9 @@ a:hover {
 }
 
 .project-header h1 {
-	padding-top: 35px;
-	margin-bottom: 5px;
-	font-size: 3.2em;
+	padding-top: 2vw;
+	margin-bottom: 0.4vw;
+	font-size: 2.6vw;
 	font-weight: 500;
 	letter-spacing: -2px;
 }
@@ -918,26 +927,21 @@ a:hover {
 	color: rgb(225, 225, 225);
 	font-weight: 300;
 	letter-spacing: 0px;
-	font-size: 2em;
+	font-size: 1.5vw;
 }
 
 .project-header h4 {
 	color: rgba(255, 145, 0, 0);
 	font-weight: 300;
-	font-size: 1.8em;
-	padding: 0 0 30px 0;
+	font-size: 1.4vw;
+	padding: 0 0 1.8vw 0;
 
 	transition: 0.3s ease-in-out;
 }
 
 .project-body{
-	padding: 0 15px;
-	margin: 0 0 30px 0;
-}
-
-.project-body p{
-	font-family: 'Poppins', sans-serif;
-	line-height: 38px;
+	padding: 0 3vw;
+	margin: 0 0 1.2vw 0;
 }
 
 .project-tag-cont {
@@ -947,7 +951,8 @@ a:hover {
 	align-items: center;
 	flex-wrap: wrap;
 
-	margin-top: 15px;
+	margin: 1vw 0 0 0;
+	padding: 0 0.8vw;
 
 	transition: 0.3s ease-in-out;
 }
@@ -955,6 +960,8 @@ a:hover {
 .project-tag-cont .tag {
 	color: rgba(255, 255, 255, 0);
 	background: rgba(255, 255, 255, 0);
+
+	margin-bottom: 0.5vw;
 
 	transition: 0.3s ease-in-out;
 }
@@ -978,12 +985,12 @@ a:hover {
 }
 
 #contact .icon-row {
-	padding: 25px 12px;
+	padding: 1.2vw 1vw;
 	justify-content: center;
 }
 
 #contact .icon-row a {
-	margin: 0 10px;
+	margin: 0 0.4vw;
 }
 
 .bubble-icon {
@@ -991,16 +998,16 @@ a:hover {
 	justify-content: center;
 	align-items: center;
 	background: rgb(26, 26, 26);
-	height: 60px;
-	width: 60px;
-	border-radius: 150px;
+	height: 3.5vw;
+	width: 3.5vw;
+	border-radius: 150%;
 	transition: 0.2s ease-in-out;
 }
 
 .bubble-icon i {
 	color: #fff;
-	font-size: 1.5em;
-	line-height: 20px;
+	font-size: 1.2vw;
+	line-height: 0;
 	margin: 0;
 
 	transition: 0.2s ease-in-out;
@@ -1027,20 +1034,20 @@ footer {
 	text-align: center;
 	background: rgb(8, 8, 8);
 	margin: 0 auto;
-	padding: 75px 0;
+	padding: 5vw 0;
 }
 
 footer h1 {
 	color: #e0e0e0;
-	font-size: 1.5em;
+	font-size: 1.5vw;
 	font-weight: 500;
-	padding: 0 0 10px 0;
+	padding: 0 0 1vw 0;
 	margin: 0;
 }
 
 footer a {
 	color: #8a8a8a;
-	font-size: 1em;
+	font-size: 1vw;
 	text-decoration: underline !important;
 	margin: 0;
 
@@ -1049,7 +1056,6 @@ footer a {
 
 footer a:hover {
 	color: #cfcfcf;
-	font-size: 1em;
 	text-decoration: underline !important;
 	transition: 0.1s;
 }
@@ -1125,7 +1131,7 @@ footer a:hover {
 }
 
 #project .home h2 {
-	font-size: 2em ;
+	font-size: 1.8vw !important;
 	font-weight: 400;
 	padding: 0 0 0 0;
 	letter-spacing: -0px;
@@ -1159,17 +1165,16 @@ footer a:hover {
 	align-items: center;
 
 	width: 100%;
-	height: 250px;
+	height: 15vw;
 	overflow: hidden;
 	margin: 0px 0 50px 0;
 	text-align: center;
 }
 
 .img-page-break img {
-	margin: 0 auto;
+	object-fit: cover;
 	filter: blur(3px) brightness(50%);
-	transform: scale(1.1);
-	position: relative;
+	width: 105vw;
 }
 
 .img-page-break .subtitle {
@@ -1188,20 +1193,21 @@ footer a:hover {
 	font-family: 'Poppins', sans-serif;
 	color: #202020;
 	margin: 0 auto;
-	padding: 0 0 50px 0;
+	padding: 0 0 2vw 0;
 }
 
 .proj-page-width .subtitle {
 	font-family: 'Poppins', sans-serif;
 	margin: 0 auto;
-	font-size: 3.4em;
-	font-weight: 600;
-	letter-spacing: -2px;
+	font-size: 3.1vw;
+	font-weight: 500;
+	letter-spacing: 0px;
 	color: #202020;
 	padding: 0 0 0 0;
 }
 
 .team .subtitle {
+	color: #fff !important;
 	font-size: 3.2em;
 	letter-spacing: 2px;
 }
@@ -1220,15 +1226,15 @@ footer a:hover {
 }
 
 .proj-page .title {
-	font-size: 4em;
+	font-size: 3.8vw;
 	font-weight: 600;
-	margin: 60px 0 0 0;
+	margin: 1.2vw 0 0 0;
 }
 
 .proj-page .proj-role {
-	font-size: 1.8em;
+	font-size: 1.8vw;
 	font-weight: 500;
-	margin-bottom: 20px;
+	margin-bottom: 0.6vw;
 	color: #535353;
 }
 
@@ -1244,7 +1250,7 @@ footer a:hover {
 	color: #fff;
 
 	width: 100%;
-	padding: 10px 0;
+	padding: 0.25vw 0;
 }
 
 .proj-overview {
@@ -1306,7 +1312,7 @@ footer a:hover {
 
 .proj-overview .subtitle {
 	padding-top: 50px;
-	font-size: 2.5em !important;
+	font-size: 2.3vw !important;
 	font-weight: bold;
 }
 
@@ -1363,7 +1369,8 @@ footer a:hover {
 
 .proj-p h4 {
 	font-size: 1.6em;
-	padding: 30px 0 30px 0;
+	font-weight: 600;
+	padding: 35px 0 25px 0;
 }
 
 .proj-details {
@@ -1551,15 +1558,15 @@ footer a:hover {
 /* TAGS */
 
 .tag-cont {
-	margin: 10px 0 0 0;
+	margin: 0.2vw 0 0.2vw 0;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 }
 
 .tag {
-	padding: 8px 12px 6px 12px;
-	margin: 5px 10px 5px 0;
+	padding: 0.4vw 0.6vw 0.4vw 0.6vw;
+	margin: 0.4vw 0.5vw 0.4vw 0;
 	border-radius: 100px;
 	font-weight: 700;
 	background: #9b9b9b;
@@ -1568,8 +1575,8 @@ footer a:hover {
 
 .tag h5 {
 	font-family: 'Poppins', sans-serif;
-	line-height: 1;
-	font-size: 1.2em;
+	line-height: 1vw;
+	font-size: 1vw;
 	padding: 0;
 	margin: 0;
 }
@@ -1578,15 +1585,15 @@ footer a:hover {
 
 .button {
 	text-decoration: none;
-	font-size: 1.25em;
+	font-size: 1.25vw;
 	font-family: 'Raleway', sans-serif;
 	letter-spacing: 0px;
 	color: #ff7a00;
-	border: solid 2px #ff7a00;
+	border: solid 0.165vw #ff7a00;
 	font-weight: bold;
 	border-radius: 100px;
-	margin: 0 15px 0 15px;
-	padding: 15px 25px;
+	margin: 0 0.5vw 0 0.5vw;
+	padding: 0.8vw 1.3vw;
 	transition: .3s;
 }
 

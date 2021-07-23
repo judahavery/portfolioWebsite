@@ -4,7 +4,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Judah Avery</title>
-  <link rel="icon" href="images/icons/averyIcon.png">
+  <link rel="icon" href="images/icons/averyIcon.jpg">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
 
@@ -35,7 +35,7 @@
 
   <main class="home project-home" id="home">
     <div class="project-banner">
-      <img src="images/games/dreamscapeGameplay_4.png" alt="Banner Gameplay Screenshot">
+      <img src="images/games/dreamscapeGameplay_4.jpg" alt="Banner Gameplay Screenshot">
     </div>
 
     <div class="absolute align-items-center">
@@ -61,7 +61,7 @@
       <hr class="title-line">
 
       <div>
-        <img class="proj-top-img" src="images/games/dreamscapeGameplay_3.png" alt="Dreamscape Gameplay GIF">
+        <img class="proj-top-img" src="images/games/dreamscapeGameplay_3.jpg" alt="Dreamscape Gameplay GIF">
       </div>
 
       <div class="proj-page-head">
@@ -105,7 +105,7 @@
   </a>-->
   <br>
   <div class="img-page-break">
-    <img src="images/games/dreamscapeGameplay_4.png" alt="Spring Fever Gameplay">
+    <img src="images/games/dreamscapeGameplay_4.jpg" alt="Spring Fever Gameplay">
   </div>
 
   <main class="proj-page proj-page-width">
@@ -115,7 +115,7 @@
     <br>
     <div class="proj-desc">
       <div class="proj-p">
-        <h4><strong>Project Summary</strong></h4>
+        <h4>Project Summary</h4>
         <p>Dreamscape is a digital, local-multiplayer card game with a strategic emphasis on resource management,
           pitting players against each other in battle. I made Dreamscape during the final month of my Fall 2020
           semester for a game design course. The goal for this project was to bring a game from concept to prototype
@@ -125,10 +125,8 @@
           pleased with how Dreamscape turned out, especially because of how much I had to juggle disciplines on the
           project.
         </p>
-        <br>
-        <img class="image-break" src="images/games/dreamscapeGameplay_5.png" alt="Cobble Gameplay Screenshot">
 
-        <h4><strong>Game Intent</strong></h4>
+        <h4>Game Intent</h4>
         <p>The intent behind Dreamscape was to create a card game with an emphasis on resource management, forcing
           players to think more carefully about spending their resources on cards. I chose this genre because, at that
           time, I just started playing Legends of Runeterra, which got me interested in designing a digital card game of
@@ -137,6 +135,7 @@
           as resources. I had a few ideas about how I would add my own twist to this aspect of the genre but decided on
           the most minimalistic option to focus more of my time on polish.
         </p>
+        <img class="image-break" src="images/games/dreamscapeGameplay_5.jpg" alt="Cobble Gameplay Screenshot">
         <p>
           In Dreamscape, players have two mana types: light and dark. Each card also has one of those mana types, which
           dictates their main use. At the beginning of their turn, players are prompted to allocate their total mana
@@ -147,7 +146,7 @@
           if it didn't innovate in any way, which is why I designed the game around this light and dark mana system.
         </p>
 
-        <h4><strong>Development Process</strong></h4>
+        <h4>Development Process</h4>
         <p>I started Dreamscape’s development in Unity with the turn system, and the basic loop of actions each player
           takes in their turn. Once I had the basic game loop to work with, I poured all my focus into the card
           interaction system. The entire game would be interacted with through the mouse, and the cards are the core of
@@ -155,11 +154,7 @@
           technical problem I faced. If card interaction didn’t feel smooth and intuitive to players, it would detract
           heavily from the game’s experience. In the very first iteration of the card system, players could only browse
           through their collection of cards by hovering over them, and the cards would also react to who’s turn it was.
-          See the clip below.
         </p>
-
-        <img class="image-break" src="images/games/DS_browse.gif" alt="Cobble Gameplay Screenshot">
-        <h3 class="caption">Player browising their cards in hand.</h3>
 
         <p>Not long after this I realized the solution to making the card system work seamlessly required moving the
           objects dynamically with code instead of using Unity’s built-in animation system. I could use a lerp function
@@ -169,6 +164,9 @@
           cards that they could afford by clicking and dragging them onto the board. With playable cards, I could
           finally add combat.
         </p>
+
+        <img class="image-break" src="images/games/gifs/dsBrowse.gif" alt="Cobble Gameplay Screenshot">
+        <h3 class="caption">Player browising their cards in hand.</h3>
 
         <p>I struggled with the combat system for quite some time, but once I got it working, I could start designing
           the individual cards. I created a table of cards with some different abilities to start with and added their
@@ -181,9 +179,6 @@
           consequences.
         </p>
 
-        <img class="image-break" src="images/games/DS_attack.gif" alt="Cobble Gameplay Screenshot">
-        <h3 class="caption">Player selects a card and attacks their opponent with it</h3>
-
         <p>Now I had most of the main systems working, except for the mana system, which I based most of the game’s
           design around. Because the mana system would rely heavily on a polished user interface, I wanted to first
           focus on adding visual and audible effects to all the mouse interactions. I spent a good amount of time
@@ -194,8 +189,8 @@
           otherwise, and going forward I’m going to take this approach more often.
         </p>
 
-        <img class="image-break" src="images/games/DS_play.gif" alt="Cobble Gameplay Screenshot">
-        <h3 class="caption">Player dragging their card onto the board to play it.</h3>
+        <img class="image-break" src="images/games/gifs/dsPlayAttack.gif" alt="Cobble Gameplay Screenshot">
+        <h3 class="caption">Player drops their card on the board to play it, then attacks their opponent</h3>
 
         <p>I had everything I needed functioning well enough, but there was plenty of room for polish on every system,
           so I spent the next few days on that. Initially I focused on visual feedback, because it felt very lacking for
@@ -205,9 +200,6 @@
           effects for card damage and card deaths.
         </p>
 
-        <img class="image-break" src="images/games/DS_mana.gif" alt="Cobble Gameplay Screenshot">
-        <h3 class="caption">After switching turns, the other player gets to choose their mana.</h3>
-
         <p>As usual, I really enjoyed this phase where I got to add all the sound effects, music, artwork, and visual
           feedback to the game. My favorite part of any game’s development is bringing it to a level of polish that
           illustrates something close to the vision in my head. I love when the game can speak for itself, and I can
@@ -215,12 +207,15 @@
           However, the work wasn’t over, because I still had playtesting to do, which also meant bug fixing and
           balancing the game based on feedback, then testing again.
         </p>
+
+        <img class="image-break" src="images/games/gifs/dsMana.gif" alt="Cobble Gameplay Screenshot">
+        <h3 class="caption">At the beginning of their turn, the player chooses their mana</h3>
         
         <p>Because making a networked game was totally unrealistic for the scope of this project, I created Dreamscape
           with the intention of testers using Parsec, which is a free program that allows people to play local
           multiplayer games together remotely. This way I could have testers connect to my PC from anywhere via Parsec
           and we could playtest Dreamscape. As expected I got loads of immediate feedback and found many bugs right off
-          the bat. Earlier I mentioned how my neglection of playtesting would bite back down the line, and it did. I
+          the bat. Earlier I mentioned how my neglection of playtesting would bite back down the road, and it did. I
           didn’t have enough time to do proper iterations with testing, and couldn’t revise the game as much as I’d
           wanted to. The number of systems I implemented came with the cost of the extra time I needed for playtesting.
           Despite this mishap, I’m very satisfied with how the game turned out, especially with all it’s gameplay
