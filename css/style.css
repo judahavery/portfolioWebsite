@@ -154,7 +154,7 @@ a:hover {
 
 .title-line {
 	background: #9b9b9b;
-	border: solid #9b9b9b .08vw;
+	border: solid #9b9b9b 2px;
 	margin: 0.5vw auto 1vw auto;
 	width: 50%;
 }
@@ -162,17 +162,17 @@ a:hover {
 .full-line {
 	width: 100%;
 	margin: 0.5vw auto 1vw auto;
-	border: solid #b6b6b6 .08vw;
+	border: solid #b6b6b6 2px;
 }
 
 .short-line {
 	width: 0.3vw;
 	margin: 0.2vw auto 0.5vw auto;
-	border: solid #909090 .08vw;
+	border: solid #909090 2px;
 }
 
 #about .short-line {
-	border: solid #909090 .08vw;
+	border: solid #909090 2px;
 }
 
 .align-items-center {
