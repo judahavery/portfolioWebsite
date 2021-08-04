@@ -1193,7 +1193,7 @@ footer a:hover {
 	font-family: 'Poppins', sans-serif;
 	color: #202020;
 	margin: 0 auto;
-	padding: 0 0 2vw 0;
+	padding: 4vw 0 2vw 0;
 }
 
 .proj-page-width .subtitle {
@@ -1239,7 +1239,7 @@ footer a:hover {
 }
 
 .proj-page-width {
-	width: 50%;
+	width: 60%;
 }
 
 .proj-page-head {
@@ -1260,7 +1260,7 @@ footer a:hover {
 	align-items: flex-start;
 
 	font-family: 'Quicksand', sans-serif;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 	font-weight: 200;
 	color: #0e0e0e;
 
@@ -1270,7 +1270,7 @@ footer a:hover {
 }
 
 .proj-overview h2 {
-	font-size: 1.8em;
+	font-size: 1.8vw;
 	line-height: 0;
 	padding: 0;
 	margin: 20px 0 5px 0;
@@ -1281,10 +1281,6 @@ footer a:hover {
 	background: #363636;
 	height: 3px;
 	width: 50px;
-}
-
-.proj-overview h5 {
-	line-height: 35px;
 }
 
 .proj-overview .team h5 {
@@ -1306,8 +1302,8 @@ footer a:hover {
 }
 
 .proj-overview h4 {
-	font-size: 1.8em;
-	padding: 0 0 10px 0;
+	font-size: 1.7vw;
+	padding: 0 0 1vw 0;
 }
 
 .proj-overview .subtitle {
@@ -1323,12 +1319,8 @@ footer a:hover {
 .proj-overview h5, li {
 	list-style-type: circle;
 	list-style-position: inside;
-	font-size: 1.2em;
+	font-size: 1.1vw;
 	font-weight: 500;
-}
-
-.proj-overview li {
-	line-height: 25px;
 }
 
 .proj-overview h2{
@@ -1361,24 +1353,26 @@ footer a:hover {
 
 .proj-p p {
 	font-family: 'Work Sans', sans-serif;
-	font-size: 1.1em;
-	line-height: 28px;
+	font-size: 1.1vw;
+	line-height: 1.6vw;
 	padding: 0 0 15px 0;
 	color: #111111;
 }
 
 .proj-p h4 {
-	font-size: 1.6em;
-	font-weight: 600;
+	font-size: 1.6vw;
+	font-weight: 400 !important;
 	padding: 35px 0 25px 0;
 }
 
 .proj-details {
 	width: 55%;
-	font-size: 1.1em;
+	font-size: 1vw;
+	line-height: 2vw;
 }
 
 .proj-contributions {
+	line-height: 1.5vw;
 }
 
 .proj-links {
@@ -1388,7 +1382,7 @@ footer a:hover {
 
 	width: 100%;
 	margin: 0 auto;
-	padding: 30px 0 0 0;
+	padding: 2vw 0 0 0;
 }
 
 .line {
@@ -1397,10 +1391,21 @@ footer a:hover {
 }
 
 .proj-top-img {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 	width: 100%;
-	height: 325px;
+	height: 15vw;
 	margin: 20px 0;
-	border-radius: 15px;
+	border-radius: 0.5vw;
+	overflow: hidden;
+
+	margin: 0 0 2vw 0;
+}
+
+.proj-top-img img {
+	width: 100%;
 	object-fit: cover;
 }
 
@@ -1585,12 +1590,12 @@ footer a:hover {
 
 .button {
 	text-decoration: none;
-	font-size: 1.25vw;
+	font-size: 1.2vw;
 	font-family: 'Raleway', sans-serif;
 	letter-spacing: 0px;
 	color: #ff7a00;
-	border: solid 0.165vw #ff7a00;
-	font-weight: bold;
+	border: solid 0.16vw #ff7a00;
+	font-weight: 600;
 	border-radius: 100px;
 	margin: 0 0.5vw 0 0.5vw;
 	padding: 0.8vw 1.3vw;
