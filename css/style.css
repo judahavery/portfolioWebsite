@@ -190,35 +190,35 @@ a:hover {
 
 /* MOBILE HOME */
 
-.mob-home {
+.left-home {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	align-items: flex-start;
 
 	color: #ffffff;
-	height: 60vh;
+	height: 70vh;
 	overflow: hidden;
 }
 
-.mob-home .home-banner {
+.left-home .home-banner {
 	position: absolute;
 	width: 100%;
 	height: 100%;
 }
 
-.mob-home .home-banner img {
+.left-home .home-banner img {
 	position: relative;
-	top: 150px;
+	top: 0px;
 	right: auto;
 	bottom: auto;
 	left: auto;
 	object-fit: cover;
-	transform: scale(2.6);
-	filter: blur(2px) brightness(20%);
+	transform: scale(1.2);
+	filter: blur(4px) brightness(45%);
 }
 
-.mob-home h1 {
+.left-home h1 {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
 	font-size: 2.2em;
@@ -226,7 +226,7 @@ a:hover {
 	margin: 0 0 20px 0;
 }
 
-.mob-home-content {
+.left-home-content {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
@@ -235,7 +235,7 @@ a:hover {
 	z-index: 1;
 }
 
-.mob-home .absolute .align-items-center {
+.left-home .absolute .align-items-center {
 	margin: 0 0 200px 0;
 }
 
@@ -243,7 +243,7 @@ a:hover {
 
 .home {
 	color: #ffffff;
-	height: 23vw !important;
+	height: 23vw;
 	display: flex;
 	justify-content: center;
 	overflow: hidden;
@@ -253,14 +253,14 @@ a:hover {
 .home h1 {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
-	font-size: 4vw !important;
+	font-size: 4vw;
 	letter-spacing: 1px;
 	margin: 0 0 0.6vw 0;
 }
 
 .home h2 {
 	font-family: 'Josefin Sans', sans-serif;
-	font-size: 1.2vw !important;
+	font-size: 1.2vw;
 	font-weight: 400;
 	letter-spacing: 1px;
 	padding-bottom: 30px;
@@ -301,7 +301,7 @@ a:hover {
 	align-items: center;
 	
 	width: 100%;
-	height: 125px !important;
+	height: 125px;
 	font-family: 'Poppins', sans-serif !important;
 	font-size: 1.5em;
 	margin: 0 auto;
@@ -349,7 +349,7 @@ a:hover {
 }
 
 .mobile-nav .nav-contents a {
-	font-size: 1.4em;
+	font-size: 1.2em;
 	font-weight: 500;
 	padding: 0 0 0 0;
 	color: #fff;
@@ -373,7 +373,7 @@ a:hover {
 	backdrop-filter: blur(5px);
 	background-color: rgb(10, 10, 10, 0.95);
 	position: fixed;
-	height: 90px !important;
+	height: 75px !important;
 
 	transition: 0.4s ease-in-out;
 }
@@ -509,7 +509,7 @@ a:hover {
 }
 
 .static-nav {
-	background-color: rgb(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.63);
 	position: absolute;
 
 	transition: 0.2s ease-in-out;
@@ -661,7 +661,7 @@ a:hover {
 
 /* MOBILE PROJECTS */
 
-.mob-proj-top-cont {
+.proj-home {
 	font-family: 'Poppins', sans-serif;
 	display: flex;
 	flex-direction: column;
@@ -669,23 +669,22 @@ a:hover {
 	align-items: flex-start;
 
 	z-index: 1;
-	padding: 15vh 0 0 0;
-	margin: 0 auto 5vw auto;
+	margin: auto auto auto auto;
 }
 
-.mob-proj-top-cont h1 {
+.proj-home h1 {
 	line-height: 50px;
 	letter-spacing: 0px;
-	font-size: 4em;
+	font-size: 5em;
 	font-weight: 600;
 	padding: 0 0 0 0;
 	margin: 0 0 5px 0;
 }
 
-.mob-proj-top-cont h2 {
+.proj-home h2 {
 	line-height: 25px;
-	font-size: 2em;
-	font-weight: 300;
+	font-size: 1.75em;
+	font-weight: 400;
 	padding: 0 0 0 0;
 	margin: 15px 0 40px 0;
 }
@@ -789,12 +788,12 @@ a:hover {
 }
 
 .wide-project p  {
-	line-height: 2.6vw !important;
-	font-size: 1.6vw !important;
+	line-height: 2.6vw;
+	font-size: 1.6vw;
 }
 
 .wide-project h4  {
-	font-size: 1.6vw !important;
+	font-size: 1.6vw;
 }
 
 .wide-project .project-tag-cont {
@@ -1062,6 +1061,11 @@ footer a:hover {
 
 /* OVERLAY FOR PROJECTS PAGES */
 
+.overlay-cont {
+	padding: 0;
+	margin: 0;
+}
+
 .overlay-cont a {
 	position: relative;
 	display: block;
@@ -1094,16 +1098,20 @@ footer a:hover {
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
+
 	position: absolute;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	opacity: 0;
-	transition: .3s ease;
-	border-radius: 20px;
+
+	overflow: hidden;
+	border-radius: 15px;
 	background-color: rgba(0, 0, 0, 0.8);
 	color: #fff;
+
+	transition: .3s ease;
 }
 
 .overlay h1 {
@@ -1131,7 +1139,7 @@ footer a:hover {
 }
 
 #project .home h2 {
-	font-size: 1.8vw !important;
+	font-size: 1.8vw;
 	font-weight: 400;
 	padding: 0 0 0 0;
 	letter-spacing: -0px;
@@ -1165,15 +1173,16 @@ footer a:hover {
 	align-items: center;
 
 	width: 100%;
-	height: 15vw;
+	height: 200px;
 	overflow: hidden;
-	margin: 0px 0 50px 0;
+	margin: 0 0 0 0;
 	text-align: center;
 }
 
 .img-page-break img {
 	object-fit: cover;
-	filter: blur(3px) brightness(50%);
+	filter: blur(2px) brightness(60%);
+	transform: scale(1.2);
 	width: 105vw;
 }
 
@@ -1193,7 +1202,7 @@ footer a:hover {
 	font-family: 'Poppins', sans-serif;
 	color: #202020;
 	margin: 0 auto;
-	padding: 4vw 0 2vw 0;
+	padding: 8vw 0 2vw 0;
 }
 
 .proj-page-width .subtitle {
@@ -1201,7 +1210,7 @@ footer a:hover {
 	margin: 0 auto;
 	font-size: 3.1vw;
 	font-weight: 500;
-	letter-spacing: 0px;
+	letter-spacing: 0;
 	color: #202020;
 	padding: 0 0 0 0;
 }
@@ -1209,12 +1218,11 @@ footer a:hover {
 .team .subtitle {
 	color: #fff !important;
 	font-size: 3.2em;
-	letter-spacing: 2px;
 }
 
 .team .title-line {
 	background-color: #5c5c5c;
-	border: solid #5c5c5c 1px;
+	border: solid #5c5c5c 2px;
 }
 
 .proj-page .button{
@@ -1308,7 +1316,7 @@ footer a:hover {
 
 .proj-overview .subtitle {
 	padding-top: 50px;
-	font-size: 2.3vw !important;
+	font-size: 2.3vw;
 	font-weight: bold;
 }
 
@@ -1361,7 +1369,7 @@ footer a:hover {
 
 .proj-p h4 {
 	font-size: 1.6vw;
-	font-weight: 400 !important;
+	font-weight: 600 !important;
 	padding: 35px 0 25px 0;
 }
 
@@ -1622,7 +1630,7 @@ footer a:hover {
 	margin: 15px 0 0 0;
 	text-align: center;
 	background: rgba(255, 255, 255, 1);
-	border-color: rgba(255, 255, 255, 0);
+	border-color: rgba(255, 255, 255, 0) !important;
 }
 
 .mob-project-button:hover {
@@ -1637,32 +1645,32 @@ footer a:hover {
 	border-color: rgba(255, 255, 255, 0);
 }
 
-.mob-home-button {
+.square-button {
 	z-index: 1;
 	background: rgba(255, 255, 255, 1);
 	color: #161616;
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
-	border-color: rgba(255, 255, 255, 0);
+	border-color: rgba(255, 255, 255, 0) !important;
 	border-radius: 0;
-	padding: 20px 35px;
+	padding: 20px 30px !important;
 	margin: 0 0 0 0;
 }
 
-.mob-home-button:hover {
-	background: rgba(255, 255, 255, 0.6);
+.square-button:hover {
+	background: rgb(187, 187, 187);
 	color: #000000;
 	border-color: rgba(255, 255, 255, 0);
 }
 
-.mob-home-button:active {
+.square-button:active {
 	background: rgba(255, 255, 255, 0.6);
 	color: #000000;
 	border-color: rgba(255, 255, 255, 0);
 }
 
 .white-button {
-	border-color: #fff;
+	border-color: #fff !important;
 	color: #fff;
 }
 
