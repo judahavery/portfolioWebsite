@@ -234,18 +234,18 @@
 	/* PROJ PAGES */
 
 	.proj-overview h5 {
-		font-size: 1.8vw;
-		line-height: 3.5vw;
+		font-size: 1.6vw;
+		line-height: 3vw;
 	}
 
 	.proj-overview h4 {
-		font-size: 2.6vw;
-		line-height: 3.5vw;
+		font-size: 2.3vw;
+		line-height: 3vw;
 	}
 
 	.proj-overview li {
-		font-size: 1.8vw;
-		line-height: 2.5vw;
+		font-size: 1.4vw;
+		line-height: 2vw;
 	}
 
 	.proj-top-img {
@@ -266,7 +266,7 @@
 		width: 65%;
 	}
 
-	.proj-page-width .subtitle {
+	.subtitle {
 		font-size: 4vw;
 	}
 
@@ -521,6 +521,10 @@
 
 	/* GENERAL */
 
+	.button {
+		font-size: 1em;
+	}
+
 	.master-width {
 		width: 90%;
 	}
@@ -562,6 +566,10 @@
 
 	.proj-contributions {
 		font-size: 0.9em;
+	}
+
+	.proj-page-width .subtitle {
+		font-size: 4vw;
 	}
 }
 
@@ -612,8 +620,8 @@
 	}
 
 	.subtitle {
-		font-size: 3em !important;
-		margin: 0 !important;
+		font-size: 3em;
+		margin: 0;
 	}
 
 	.top-title {
@@ -623,7 +631,7 @@
 
 	.title-line {
 		width: 100%;
-		margin: 15px 0 0 0;
+		margin: 8px 0 0 0;
 		border: solid #9b9b9b 2px !important;
 	}
 

@@ -215,7 +215,7 @@ a:hover {
 	left: auto;
 	object-fit: cover;
 	transform: scale(1.2);
-	filter: blur(4px) brightness(45%);
+	filter: blur(4px) brightness(30%);
 }
 
 .left-home h1 {
@@ -509,7 +509,7 @@ a:hover {
 }
 
 .static-nav {
-	background-color: rgba(0, 0, 0, 0.63);
+	background-color: rgba(0, 0, 0, 0.4);
 	position: absolute;
 
 	transition: 0.2s ease-in-out;
