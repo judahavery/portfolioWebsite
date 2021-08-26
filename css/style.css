@@ -222,6 +222,7 @@ a:hover {
 	font-family: 'Poppins', sans-serif;
 	font-weight: 600;
 	font-size: 2.2em;
+	line-height: 45px;
 	letter-spacing: 1px;
 	margin: 0 0 20px 0;
 }
@@ -610,10 +611,7 @@ a:hover {
 }
 
 #about .profile-img{
-	justify-content: center;
-	align-items: center;
-
-	border-radius: 100%;
+	border-radius: 200px;
 	width: 17vw;
 }
 
@@ -1202,7 +1200,7 @@ footer a:hover {
 	font-family: 'Poppins', sans-serif;
 	color: #202020;
 	margin: 0 auto;
-	padding: 8vw 0 2vw 0;
+	padding: 6vw 0 2vw 0;
 }
 
 .proj-page-width .subtitle {
