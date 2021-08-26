@@ -235,7 +235,9 @@
 
 	.proj-overview h5 {
 		font-size: 1.6vw;
-		line-height: 3vw;
+		line-height: 2.5vw;
+
+		margin: 0 0 7px 0;
 	}
 
 	.proj-overview h4 {
