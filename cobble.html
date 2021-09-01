@@ -4,153 +4,125 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Judah Avery</title>
+  <link rel="icon" href="images/icons/averyIcon.jpg">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
 
-  <!-- Font Awesome and Bootstrap -->
-  <script src="https://kit.fontawesome.com/f17e9d136a.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- css.gg -->
+  <link href='https://css.gg/css' rel='stylesheet'>
 
-  <!-- Scrolling Functionality -->
+  <!-- UNPKG -->
+  <link href='https://unpkg.com/css.gg/icons/all.css' rel='stylesheet'>
+
+  <!-- JSDelivr -->
+  <link href='https://cdn.jsdelivr.net/npm/css.gg/icons/all.css' rel='stylesheet'>
+
+  <!-- Fontawesome -->
+  <script src="https://kit.fontawesome.com/f17e9d136a.js" crossorigin="anonymous"></script>
+
+  <!-- Scrolling -->
   <script src="javascript/nav.js"></script>
 
   <!-- Loading Mobile Pages -->
-  <script type="text/javascript">
-    if (screen.width <= 1200) {
-      document.location = "cobbleMob.html";
-    }
-
-    window.onresize = function (event) {
-      if (screen.width <= 1200) {
-        document.location = "cobbleMob.html";
-      }
-    };
-  </script>
+  <script src="javascript/adaptive.js" type="text/javascript"></script>
 
   <!-- jquery -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-  <!-- Bootstrap Javascript -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-    crossorigin="anonymous"></script>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:500" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu:500" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:900|Roboto:900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
-
-  <link rel="icon" href="images/averyIcon.png">
 </head>
 
-<body id="top">
+<body id="project">
 
-  <div id="navbar">
-    <nav class="navCont">
-      <a class="active" href="index.html#home">JUDAH AVERY</a>
+  <main class="left-home" id="home">
+    <div class="home-banner">
+      <img style="top: 15vh" src="images/games/cobbleRunning.jpg" alt="Banner Gameplay Screenshot">
+    </div>
+    <div class="proj-home proj-page-width">
+      <h1>COBBLE</h1>
+      <h2>Product Owner | Lead Designer</h2>
+      <a class="button square-button" href="#case-study">Case Study</a>
+    </div>
+  </main>
+
+  <div id="navbar" class="static-nav">
+    <nav class="nav-contents">
+      <a href="index.html">HOME</a>
       <a href="index.html#projects">PROJECTS</a>
       <a href="#contact">CONTACT</a>
       <a target="_blank" href="downloads/Judah_Avery_Resume.pdf">RESUME</a>
     </nav>
   </div>
 
-  <main class="black">
-    <div class="projectPage width">
-      <h1 class="alignCenter title">COBBLE</h1>
-      <h6 class="alignCenter subTitle padBottom-20">Lead Designer | Product Owner</h6>
+  <main>
+    <div class="proj-page proj-page-width">
+      <h4 class="top-title">PROJECT</h4>
+      <h1 class="subtitle">Overview</h1>
+      <hr class="title-line">
 
-      <div class="overview">
+      <div class="proj-top-img">
+        <img src="images/games/gifs/cobbleGif_1.gif" alt="Cobble Gameplay GIF">
+      </div>
 
-        <div class="descriptionRow">
-          <div class="padR-75">
-            <h5 class="spaced"><strong>Team Size:</strong> 8 Members</h5>
-            <h5 class="spaced"><strong>Prototype Development Time:</strong> 48 Hours (Game Jam)</h5>
-            <h5 class="spaced"><strong>Full Development Time:</strong> Jan 2020 - April 2020</h5>
-            <h5 class="spaced"><strong>Development Tools:</strong> UE4, Photoshop, Blender</h5>
-            <h5 class="spaced"><strong>Genre:</strong> Puzzle Platformer</h5>
-            <h5 class="spaced"><strong>Platform:</strong> Windows PC</h5>
+      <div class="proj-page-head">
+
+        <div class="proj-overview">
+          <div class="proj-details">
+            <h5><strong>Team Size:</strong> 8 Members</h5>
+            <h5><strong>Prototype Time:</strong> 48 Hours (Game Jam)</h5>
+            <h5><strong>Full Development Time:</strong> Jan 2020 - April 2020</h5>
+            <h5><strong>Development Tools:</strong> UE4, Photoshop, Blender</h5>
+            <h5><strong>Genre:</strong> Puzzle Platformer</h5>
+            <h5><strong>Platform:</strong> Windows PC</h5>
           </div>
 
-          <div>
-            <h4 class="padBottom-10"><strong>My Contributions</strong></h4>
+          <div class="proj-contributions">
+            <h4><strong>My Contributions</strong></h4>
             <ul>
-              <li class="listSpaced">- Designed systems and levels</li>
-              <li class="listSpaced">- Built levels and environments</li>
-              <li class="listSpaced">- Designed UI and interaction</li>
-              <li class="listSpaced">- Pipeline and design documentation</li>
-              <li class="listSpaced">- Organized and led the team</li>
-              <li class="listSpaced">- Ran meetings and weekly reviews</li>
-              <li class="listSpaced">- Led the creative direction</li>
+              <li>Designed systems and levels</li>
+              <li>Built levels and environments</li>
+              <li>Designed UI and interaction</li>
+              <li>Pipeline and design documentation</li>
+              <li>Organized and led the team</li>
+              <li>Ran meetings and weekly reviews</li>
+              <li>Led the creative direction</li>
             </ul>
           </div>
         </div>
 
-        <div class="padBottom-10 alignCenter">
-          <a target="_blank" class="button whiteButton" href="https://jollycoopco.itch.io/cobble">Play Cobble</a>
-          <a target="_blank" class="button whiteButton" href="downloads/cobbleSystemsList.pdf">Systems List</a>
-          <a target="_blank" class="button whiteButton" href="downloads/cobbleVisualDesignDoc.pdf">Visual Design
-            Document</a>
-        </div>
-
-        <div>
-          <img class="imageBreak" src="images/cobbleGif_1.gif" alt="Cobble Gameplay Screenshot">
-        </div>
-
-        <h3 class="subTitle">THE TEAM</h3>
-        <div class="team padTop">
-          <div>
-            <h5>Lead Programmer - <strong>Rhys Sullivan</strong><a target="_blank"
-                href="https://www.linkedin.com/in/rhyssullivan/" class="link"><i class="link fab fa-linkedin"></i></a>
-            </h5>
-            <h5>Programmer - <strong>Khalil Lyons</strong><a target="_blank"
-                href="https://www.linkedin.com/in/khalil-lyons/" class="link"><i class="link fab fa-linkedin"></i></a>
-            </h5>
-            <h5>Sound Designer - <strong>Jeremiah Cory</strong><a target="_blank"
-                href="https://www.linkedin.com/in/jeremiahcory/" class="link"><i class="link fab fa-linkedin"></i></a>
-            </h5>
-            <h5>Producer - <strong>Kendrick Ng-Yow</strong><a target="_blank"
-                href="https://www.linkedin.com/in/kendrickngyow/" class="link"><i class="link fab fa-linkedin"></i></a>
-            </h5>
-          </div>
-          <div>
-            <h5>Lead Artist - <strong>Alexis Sophabmixay</strong><a target="_blank"
-              href="https://www.linkedin.com/in/alexis-sophabmixay-3684601b7/" class="link"><i class="link fab fa-linkedin"></i></a>
-            </h5>
-            <h5>Artist - <strong>Michael Aucella</strong><a target="_blank"
-              href="https://www.linkedin.com/in/michaelaucella/" class="link"><i class="link fab fa-linkedin"></i></a>
-            </h5>
-            <h5>Artist - <strong>Morgan Miller</strong></h5>
-            <h5>Product Owner & Lead Designer <br><strong>Judah Avery</strong><a target="_blank"
-                href="https://www.linkedin.com/in/judahavery/" class="link"><i class="link fab fa-linkedin"></i></a>
-            </h5>
-          </div>
+        <div class="proj-links">
+          <a target="_blank" class="button" href="https://jollycoopco.itch.io/cobble">Play Cobble</a>
+          <a target="_blank" class="button" href="https://www.youtube.com/watch?v=nBv2OFnJC_k&t=24s&ab_channel=JudahAvery">Gameplay Video</a>
+          <a target="_blank" class="button" href="https://drive.google.com/drive/folders/1DQcUpfyedFkS3r7pKvhPfQ0bZ8YnMghv?usp=sharing">Documentation</a>
         </div>
       </div>
   </main>
 
-  <main class="projectPage width">
-    <div class="description">
-      <div class="paragraph">
-        <h4><strong>Project Overview</strong></h4>
+  <!-- TEAM PAGE SECTION WITHOUT PICTURES
+  <a target="_blank" href="https://www.linkedin.com/in/kendrickngyow/" class="link">
+    <h5>Producer - <strong>Kendrick Ng-Yow<i class="fab fa-linkedin"></i></strong></h5>
+  </a>-->
+  <br>
+  <div class="img-page-break">
+    <img class="move-up-75" src="images/games/cobblePlatform.jpg" alt="Spring Fever Gameplay">
+  </div>
+
+  <main id="case-study" class="proj-page proj-page-width">
+    <h4 class="top-title">COBBLE</h4>
+    <h1 class="subtitle">Case Study</h1>
+    <hr class="title-line">
+    <br>
+    <div class="proj-desc">
+      <div class="proj-p">
+        <h4>Project Overview</h4>
         <p>Cobble is a 2.5D side-scrolling puzzle-platformer game. The base game was created in under 48 hours for
           the 2020 Global Game Jam, and afterward, our team of 8 students (myself included) continued to develop the
-          project further. Cobble began pre-production and the team continued development for a few months until we were no
-          longer able to continue. Through pre-production, we planned out the course of development and direction for Cobble.
-          This included lots of documentation, core systems implementation, art asset creation, and project management.
-          Even though most of the progress we made over these 3 months didn't take place in the game's
+          project further. Cobble began pre-production and the team continued development for a few months until we were
+          no longer able to continue. Through pre-production, we planned out the course of development and direction for
+          Cobble. This included lots of documentation, core systems implementation, art asset creation, and project
+          management. Even though most of the progress we made over these 3 months didn't take place in the game's
           content itself, I gained a lot of valuable skills from Cobble.</p>
-        <br><br>
-        <h4><strong>Game Intent</strong></h4>
+        <br>
+        <h4>Game Intent</h4>
         <p>Shortly after the game jam, we had other students play Cobble and they commonly complimented the game's
           setting and aesthetics. This showed some key points of interest that Cobble had, so I decided to focus heavily
           on those aspects and design the game around them. Because of the interest players had in the game's fantasy, I
@@ -159,9 +131,9 @@
           plan for the full version of Cobble intended to take aspects from exploratory genres and incorporate them into
           levels with platforming puzzles. Each puzzle the player solved would tell more about the underlying story of
           the game, making discovery drive the gameplay.</p>
-        <img class="imageBreak" src="images/cobblePlatform.png" alt="Cobble Gameplay Screenshot">
-        <br><br>
-        <h4><strong>Designing The Core Systems</strong></h4>
+        <img class="image-break" src="images/games/cobblePlatform.jpg" alt="Cobble Gameplay Screenshot">
+        <br>
+        <h4>Designing The Core Systems</h4>
         <p>Many players who tested out the game shortly after the game jam seemed to enjoy the simple core puzzle
           systems. The goal of each level is moving from point A to B and players must use the machines inside their
           environment to traverse the level. Different machines have unique uses and movement patterns. For example,
@@ -172,6 +144,7 @@
           to be built upon in difficulty. I didn't want players to have a stressful experience, so it was important to
           keep puzzles from feeling overwhelming or too complex. Stress would pull players out of the world and cause
           frustration, taking away from having a strong world fantasy and curiosity.</p>
+        <br>
         <p>These core mechanics (placing gears and switching levers) may have been sufficient for a small game jam, but
           they weren't quite scalable enough to produce an hour or two of interesting puzzles. The issue here was adding
           more complexity to the game while trying not to overwhelm players. One of the main interests players had was
@@ -186,61 +159,222 @@
           representing this change, I made sure the rest of the team figured the concept was easy to grasp. Future
           levels could now incorporate "re-wiring" and build upon the player's existing knowledge of the underlying
           mechanics from past levels without causing them to feel confused.</p>
-        <br>
-        <div class="overlayCont">
+        <br><br><br>
+        <div class="overlay-cont">
           <a target="_blank" href="downloads/cobbleVisualDesignDoc.pdf">
-            <img src="images/cobbleVDD.jpg" alt="Cobble Visual Design Document Preview">
-            <div class="overlay largeOverlay">
-              <h1 class="subTitle">Visual Design Doc PDF</h1>
+            <img src="images/games/cobbleVDD.jpg" alt="Cobble Visual Design Document Preview">
+            <div class="overlay large-overlay">
+              <h1>Visual Design Doc PDF</h1>
             </div>
           </a>
         </div>
         <br>
-        <div class="toTop alignCenter">
-          <a class="button" href="#top">Back To Top</a>
-        </div>
       </div>
     </div>
 
   </main>
 
-  <main class="black">
-    <div id="contact" class="contact">
-      <h6 class="title alignCenter">Get In Touch</h6>
+  <main class="team-cont">
+    <br>
+    <div class="team proj-page-width">
+      <h1 class="subtitle">Meet The Team</h1>
+      <hr class="title-line">
+      <br>
+      <div class="team-names">
 
-      <div class="subFooterCont">
-        <div class="contactInfo">
-          <h6 class="subTitle">Where To Find Me</h6>
-          <a class="contactItem link" target="_blank" href="https://www.linkedin.com/in/judahavery/">
-            <i class="link fab fa-linkedin-in"></i>
-            <h6>Linked In</h6>
-          </a>
-          <a class="contactItem link" target="_blank" href="https://twitter.com/avery_judah">
-            <i class="link fab fa-twitter"></i>
-            <h6>Twitter</h6>
-          </a>
-          <a class="contactItem link" target="_blank" href="https://judah-avery.itch.io/">
-            <i class="link fab fa-itch-io"></i>
-            <h6>itch.io</h6>
-          </a>
+        <div class="team-member">
+          <img src="images/judahNewYork.JPG" alt="Team Profile Image">
+
+          <h5>Lead Designer<br><strong>Judah Avery</strong></h5>
+
+          <div class="icon-row">
+            <a target="_blank" href="https://www.linkedin.com/in/judahavery/">
+              <div class="bubble-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+            </a>
+            <a target="_blank" href="https://twitter.com/avery_judah">
+              <div class="bubble-icon">
+                <i class="fab fa-twitter"></i>
+              </div>
+            </a>
+            <a target="_blank" href="https://judah-avery.itch.io/">
+              <div class="bubble-icon">
+                <i class="fab fa-itch-io"></i>
+              </div>
+            </a>
+          </div>
         </div>
 
-        <div class="contactInfo">
-          <h6 class="subTitle">Send Me An Email</h6>
-          <div class="contactItem">
-            <i class="fas fa-envelope"></i>
-            <h6>judahbavery@gmail.com</h6>
+        <div class="team-member">
+          <img src="images/teammates/rhys.jpg" alt="Team Profile Image">
+
+          <h5>Lead Programmer<br><strong>Rhys Sullivan</strong></h5>
+
+          <div class="icon-row">
+            <a target="_blank" href="https://rhyssullivan.com/">
+              <div class="bubble-icon">
+                <i class="fas fa-desktop"></i>
+              </div>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/rhyssullivan/">
+              <div class="bubble-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+            </a>
+            <a target="_blank" href="https://twitter.com/rhyssullivan?lang=en">
+              <div class="bubble-icon">
+                <i class="fab fa-twitter"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="images/teammates/khalil.jpg" alt="Team Profile Image">
+
+          <h5>Programmer<br><strong>Khalil Lyons</strong></h5>
+
+          <div class="icon-row">
+            <a target="_blank" href="https://www.linkedin.com/in/khalil-lyons/">
+              <div class="bubble-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+            </a>
+            <a target="_blank" href="https://twitter.com/kjawesome5?lang=en">
+              <div class="bubble-icon">
+                <i class="fab fa-twitter"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="images/teammates/jeremiah.jpg" alt="Team Profile Image">
+
+          <h5>Sound Designer<br><strong>Jeremiah Cory</strong></h5>
+
+          <div class="icon-row">
+            <a target="_blank" href="https://www.linkedin.com/in/jeremiahcory/">
+              <div class="bubble-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+            </a>
+            <a target="_blank" href="https://twitter.com/juicyjabes?lang=en">
+              <div class="bubble-icon">
+                <i class="fab fa-twitter"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="images/teammates/alexis.jpg" alt="Team Profile Image">
+
+          <h5>Lead Artist<br><strong>Alexis Sophabmixay</strong></h5>
+
+          <div class="icon-row">
+            <a target="_blank" href="https://www.linkedin.com/in/alexis-sophabmixay-3684601b7/">
+              <div class="bubble-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+            </a>
+            <a target="_blank" href="https://www.artstation.com/alexissophabmixay">
+              <div class="bubble-icon">
+                <i class="fab fa-artstation"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="images/teammates/michael.jpg" alt="Team Profile Image">
+
+          <h5>Artist<br><strong>Michael Aucella</strong></h5>
+
+          <div class="icon-row">
+            <a target="_blank" href="https://www.linkedin.com/in/michaelaucella//">
+              <div class="bubble-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+            </a>
+            <a target="_blank" href="https://www.artstation.com/michaelaucella/albums/all">
+              <div class="bubble-icon">
+                <i class="fab fa-artstation"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="images/teammates/morgan.jpg" alt="Team Profile Image">
+
+          <h5>Artist<br><strong>Morgan Miller</strong></h5>
+
+          <div class="icon-row">
+            <a target="_blank" href="https://www.linkedin.com/in/morgan-miller-88795b1a2/">
+              <div class="bubble-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="team-member">
+          <img src="images/teammates/kenny.jpg" alt="Team Profile Image">
+
+          <h5>Producer<br><strong>Kendrick Ng-Yow</strong></h5>
+
+          <div class="icon-row">
+            <a target="_blank" href="https://www.linkedin.com/in/kendrickngyow/">
+              <div class="bubble-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+            </a>
+            <a target="_blank" href="https://jollycoopco.itch.io/">
+              <div class="bubble-icon">
+                <i class="fab fa-itch-io"></i>
+              </div>
+            </a>
           </div>
         </div>
       </div>
+      <br>
+      <a class="button white-button" href="#project">Back To Top</a>
+      <br><br><br>
     </div>
   </main>
 
-  <footer class="darkBlack">
-    <div class="footerCont">
-      <h6>Website Designed and Developed by <strong>Judah Avery</strong></h6>
+  <main id="contact">
+    <div class="social-icons">
+      <div class="icon-row">
+        <a target="_blank" href="https://www.linkedin.com/in/judahavery/">
+          <div class="bubble-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+        </a>
+        <a target="_blank" href="https://twitter.com/avery_judah">
+          <div class="bubble-icon">
+            <i class="fab fa-twitter"></i>
+          </div>
+        </a>
+        <a target="_blank" href="https://judah-avery.itch.io/">
+          <div class="bubble-icon">
+            <i class="fab fa-itch-io"></i>
+          </div>
+        </a>
+        <a target="_blank" href="https://www.artstation.com/judahavery">
+          <div class="bubble-icon">
+            <i class="fab fa-artstation"></i>
+          </div>
+        </a>
+      </div>
     </div>
-  </footer>
+    <footer>
+      <h1>GET IN TOUCH</h1>
+      <a href="mailto:judahbavery@gmail.com">JUDAHBAVERY@GMAIL.COM</a>
+    </footer>
+  </main>
 
 </body>
 
