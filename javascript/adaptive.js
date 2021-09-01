@@ -10,7 +10,7 @@ function loadAdaptivePages() {
     var mobileBreakpoint = 800;
 
     if (pageName == "") {
-        pageName = "index";
+        pageName = "index.html";
     }
 
     if (window.innerWidth <= mobileBreakpoint) {
