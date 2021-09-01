@@ -197,7 +197,7 @@ a:hover {
 	align-items: flex-start;
 
 	color: #ffffff;
-	height: 55vh;
+	height: 75vh;
 	overflow: hidden;
 }
 
@@ -215,7 +215,7 @@ a:hover {
 	left: auto;
 	object-fit: cover;
 	transform: scale(1.2);
-	filter: blur(4px) brightness(30%);
+	filter: blur(1.5px) brightness(50%);
 }
 
 .left-home h1 {
@@ -232,7 +232,7 @@ a:hover {
 	flex-direction: column;
 	align-items: flex-start;
 
-	padding: 5vw 0;
+	padding: 5.5vw 0;
 	z-index: 1;
 }
 
