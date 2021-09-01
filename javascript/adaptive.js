@@ -9,7 +9,7 @@ function loadAdaptivePages() {
     var pageName = pathname.split("/").pop();
     var mobileBreakpoint = 800;
 
-    if (pageName == "") {
+    if (pageName == "" || pageName == null) {
         pageName = "index.html";
     }
 
