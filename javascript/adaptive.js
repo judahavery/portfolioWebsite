@@ -9,6 +9,10 @@ function loadAdaptivePages() {
     var pageName = pathname.split("/").pop();
     var mobileBreakpoint = 800;
 
+    if (pageName == "") {
+        pageName = "index";
+    }
+
     if (window.innerWidth <= mobileBreakpoint) {
         //If this is the wrong page, then load the mobile one
         if (pageName.search(mobPrefix) == -1) {
