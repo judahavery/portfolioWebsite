@@ -143,7 +143,7 @@ a:hover {
 
 .top-title {
 	font-family: 'Poppins', sans-serif;
-	font-size: 1.4vw;
+	font-size: 1.2vw;
 	font-weight: 600;
 	letter-spacing: 1px;
 	padding: 0.75vw 0 0 0;
@@ -209,7 +209,7 @@ a:hover {
 
 .left-home .home-banner img {
 	position: relative;
-	top: 0px;
+	top: auto;
 	right: auto;
 	bottom: auto;
 	left: auto;
@@ -232,7 +232,7 @@ a:hover {
 	flex-direction: column;
 	align-items: flex-start;
 
-	padding: 45px 0;
+	padding: 5vw 0;
 	z-index: 1;
 }
 
@@ -302,11 +302,10 @@ a:hover {
 	align-items: center;
 	
 	width: 100%;
-	height: 125px;
 	font-family: 'Poppins', sans-serif !important;
 	font-size: 1.5em;
 	margin: 0 auto;
-	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
 	color: #ffffff;
 	z-index: 4;
 
@@ -358,25 +357,22 @@ a:hover {
 	transition: 0.1s;
 }
 
-.mobile-nav .nav-contents a:hover {
-	color: #a7a7a7;
-}
-
 .mob-static-nav {
+	height: 110px !important;
 	background-color: rgb(0, 0, 0, 0);
 	box-shadow: none !important;
 	position: absolute;
 
-	transition: 0.4s ease-in-out;
+	transition: 0.3s ease-in-out;
 }
 
 .mob-fixed-nav {
 	backdrop-filter: blur(5px);
-	background-color: rgb(10, 10, 10, 0.95);
+	background-color: rgba(14, 14, 14, 0.95);
 	position: fixed;
 	height: 75px !important;
 
-	transition: 0.4s ease-in-out;
+	transition: 0.3s ease-in-out;
 }
 
 #nav-overlay {
@@ -485,7 +481,7 @@ a:hover {
 	align-items: center;
 
 	height: 100%;
-	font-weight: light;
+	font-weight: 400;
 	font-size: 1vw;
 	color: #fff;
 	border-top: solid rgba(255, 154, 59, 0) 2px;
@@ -510,7 +506,7 @@ a:hover {
 }
 
 .static-nav {
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.45);
 	position: absolute;
 
 	transition: 0.2s ease-in-out;
@@ -518,8 +514,8 @@ a:hover {
 }
 
 .fixed-nav {
-	backdrop-filter: blur(5px);
-	background-color: rgb(10, 10, 10, 1);
+	backdrop-filter: blur(4px);
+	background-color: rgb(10, 10, 10, 0.95);
 	position: fixed;
 
 	transition: 0.3s ease-in-out;
@@ -671,7 +667,7 @@ a:hover {
 }
 
 .proj-home h1 {
-	line-height: 50px;
+	line-height: 80px;
 	letter-spacing: 0px;
 	font-size: 5em;
 	font-weight: 600;
@@ -814,6 +810,7 @@ a:hover {
 	overflow: hidden;
 	position: relative;
 	margin: 0 0.75vw;
+	width: 50%;
 	height: 30vw;
 
 	transition: 0.15s ease-in-out;
@@ -1036,9 +1033,9 @@ footer {
 
 footer h1 {
 	color: #e0e0e0;
-	font-size: 1.5vw;
+	font-size: 1.7vw;
 	font-weight: 500;
-	padding: 0 0 1vw 0;
+	padding: 0 0 0.7vw 0;
 	margin: 0;
 }
 
@@ -1200,20 +1197,22 @@ footer a:hover {
 	font-family: 'Poppins', sans-serif;
 	color: #202020;
 	margin: 0 auto;
-	padding: 6vw 0 2vw 0;
+	padding: 4vw 0 2vw 0;
 }
 
 .proj-page-width .subtitle {
 	font-family: 'Poppins', sans-serif;
 	margin: 0 auto;
 	font-size: 3.1vw;
-	font-weight: 500;
-	letter-spacing: 0;
+	font-weight: 600;
+	letter-spacing: -2px;
 	color: #202020;
 	padding: 0 0 0 0;
 }
 
 .team .subtitle {
+	letter-spacing: 0px;
+	font-weight: 600;
 	color: #fff !important;
 	font-size: 3.2em;
 }
@@ -1270,7 +1269,6 @@ footer a:hover {
 	font-weight: 200;
 	color: #0e0e0e;
 
-	width: 100%;
 	border-radius: 20px;
 	padding: 0;
 }
@@ -1335,20 +1333,20 @@ footer a:hover {
 }
 
 .proj-page p {
-	text-indent: 25px;
-	padding: 5px 0;
+	text-indent: 2.5vw;
 }
 
 .proj-p {
 	width: 100%;
 	font-family: 'Poppins', sans-serif;
-	padding: 10px 0 30px 0;
+	padding: 15px 0 30px 0;
 }
 
 .caption {
 	font-family: 'Questrial', sans-serif;
 	font-size: 1.1em;
 	font-weight: 700;
+	line-height: 25px;
 	letter-spacing: 1px;
 	font-style: italic;
 	text-align: center;
@@ -1360,8 +1358,8 @@ footer a:hover {
 .proj-p p {
 	font-family: 'Work Sans', sans-serif;
 	font-size: 1.1vw;
-	line-height: 1.6vw;
-	padding: 0 0 15px 0;
+	line-height: 1.9vw;
+	padding: 5px 0 20px 0;
 	color: #111111;
 }
 
@@ -1372,7 +1370,6 @@ footer a:hover {
 }
 
 .proj-details {
-	width: 55%;
 	font-size: 1vw;
 	line-height: 2vw;
 }
@@ -1488,7 +1485,7 @@ footer a:hover {
 }
 
 .team h5 {
-	padding: 20px 0 5px 0;
+	padding: 20px 0 10px 0;
 	font-weight: 300;
 	font-size: 1.4em;
 	line-height: 30px;
@@ -1532,6 +1529,11 @@ footer a:hover {
 }
 
 .team-member h5 {
+	position: relative;
+	top: auto;
+	right: auto;
+	bottom: auto;
+	left: auto;
 	white-space: nowrap;
 }
 
@@ -1553,11 +1555,14 @@ footer a:hover {
 }
 
 .team-member .bubble-icon {
-	font-size: 0.85em;
-	height: 45px;
-	width: 45px;
+	height: 52px;
+	width: 52px;
 	margin: 0 5px;
 	background: #292929;
+}
+
+.team-member .bubble-icon i {
+	font-size: 1.2em;
 }
 
 .team-member .icon-row a:hover .bubble-icon {

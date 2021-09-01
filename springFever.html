@@ -33,14 +33,14 @@
 
 <body id="project">
 
-  <main class="home" id="home">
-    <div class="project-banner">
-      <img src="images/games/springFeverTitle.jpg" alt="Banner Gameplay Screenshot">
+  <main class="left-home" id="home">
+    <div class="home-banner">
+      <img style="top: 15vw" src="images/games/springFeverGameplay.jpg" alt="Banner Gameplay Screenshot">
     </div>
-
-    <div class="absolute align-items-center">
-      <h1 class="lowercase-title">Spring Fever</h1>
+    <div class="proj-home proj-page-width">
+      <h1>Spring Fever</h1>
       <h2>Solo Project</h2>
+      <a class="button square-button" href="#case-study">Case Study</a>
     </div>
   </main>
 
@@ -60,8 +60,8 @@
       <h1 class="subtitle black-text">Overview</h1>
       <hr class="title-line">
 
-      <div>
-        <img class="proj-top-img" src="images/games/springFeverGif_1.gif" alt="Cobble Gameplay GIF">
+      <div class="proj-top-img">
+        <img src="images/games/gifs/springFeverGif_1.gif" alt="Spring Fever Gameplay GIF">
       </div>
 
       <div class="proj-page-head">
@@ -85,8 +85,8 @@
         </div>
 
         <div class="proj-links">
-          <a target="_blank" class="button" href="https://jollycoopco.itch.io/cobble">Play Spring Fever</a>
-          <a target="_blank" class="button" href="downloads/cobbleVisualDesignDoc.pdf">Gameplay Video</a>
+          <a target="_blank" class="button" href="https://judah-avery.itch.io/spring-fever">Play Spring Fever</a>
+          <a target="_blank" class="button" href="https://www.youtube.com/watch?v=67mYp1MAh0A&ab_channel=JudahAvery">Gameplay Video</a>
         </div>
       </div>
   </main>
@@ -100,21 +100,22 @@
     <div class="img-page-break">
       <img src="images/games/springFeverShaded.jpg" alt="Spring Fever Gameplay">
     </div>
-    <div class="proj-page proj-page-width">
+    <div id="case-study" class="proj-page proj-page-width">
+      <br><br>
       <h4 class="top-title">SPRING FEVER</h4>
       <h1 class="subtitle">Case Study</h1>
       <hr class="title-line">
       <br>
       <div class="proj-desc">
         <div class="proj-p">
-          <h4><strong>Project Overview</strong></h4>
+          <h4>Project Overview</h4>
           <p>Spring Fever is a short puzzle-game I created in under 5 days for the 2020 Unreal Spring Jam. The theme for
             the game jam was: “What Is Hidden In Snow Comes Forth In The Thaw.” I adapted this theme to a puzzle game by
             creating mechanics centered around the character and the level melting each time the player moves. Spring
             Fever takes place on a handful of floating islands where the player must move a snowman to a flurry cloud
             across the island to escape from the spring heat.</p>
           <br>
-          <h4><strong>The Time Constraint</strong></h4>
+          <h4>The Time Constraint</h4>
           <p>I came up with the rudimentary concept for Spring Fever fairly quickly after seeing the jam theme. This
             allowed me to get started on the main functionality of the game very early, using plain geometric shapes as
             placeholder elements. However, at that time all I could imagine was a block of ice trying to reach some
@@ -140,7 +141,7 @@
             good to play or look nearly as visually appealing.</p>
           <img class="image-break" src="images/games/springFeverGameplay.jpg" alt="Spring Fever Gameplay Screenshot">
           <br>
-          <h4><strong>Mini Postmortem</strong></h4>
+          <h4>Mini Postmortem</h4>
           <p>The systems I created for Spring Fever have lots of variability in puzzle design but I feel that I didn’t
             get
             to make use of them in the ways I intended. By the time the systems were fully working and polished I had a
