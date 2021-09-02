@@ -197,8 +197,12 @@ a:hover {
 	align-items: flex-start;
 
 	color: #ffffff;
-	height: 75vh;
+	height: 55vh;
 	overflow: hidden;
+}
+
+.mobile-body .left-home {
+	height: 75vh;
 }
 
 .left-home .home-banner {
