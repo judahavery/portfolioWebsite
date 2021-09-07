@@ -4,8 +4,10 @@ var navOpen = false;
 var mobilePage = false;
 var navIsFixed;
 
-var prevScrollTop = 0;
-var delayNav = 100;
+var currentScrollPos = window.pageYOffset;
+var prevScrollPos = window.pageYOffset;
+var hideNavOnScrollDist = 600;
+var delayNav = 200;
 
 document.addEventListener("DOMContentLoaded", function () {
   //Is this a mobile page?
@@ -55,7 +57,13 @@ function isMobilePage() {
 
 function scrolling() {
   if (!navOpen) {
-    //Check if the page has passed the home section
+    //Saving scroll positions for checkNavScroll()
+    prevScrollPos = currentScrollPos;
+    currentScrollPos = window.pageYOffset;
+
+    //Below, checking if the page has passed the home section, and checking to hide nav on scroll
+
+    //DESKTOP PAGES
     if (!mobilePage) {
       if (!navIsFixed) {
         if (window.scrollY >= document.getElementById("home").offsetHeight - document.getElementById("navbar").offsetHeight) {
@@ -64,11 +72,16 @@ function scrolling() {
       }
       //If the page is not past that number, then set back to normal
       else if (navIsFixed) {
+        if (currentScrollPos > document.getElementById("home").offsetHeight - document.getElementById("navbar").offsetHeight + hideNavOnScrollDist){
+          checkNavScroll();
+        }
+
         if (window.scrollY < document.getElementById("home").offsetHeight - document.getElementById("navbar").offsetHeight) {
           staticNav();
         }
       }
     }
+    //MOBILE PAGES
     else {
       if (!navIsFixed) {
         if (window.scrollY >= document.getElementById("home").offsetHeight - document.getElementById("mobile-nav").offsetHeight) {
@@ -77,10 +90,33 @@ function scrolling() {
       }
       //If the page is not past that number, then set back to normal
       else if (navIsFixed) {
+        if (currentScrollPos > document.getElementById("home").offsetHeight - document.getElementById("mobile-nav").offsetHeight + hideNavOnScrollDist){
+          checkNavScroll();
+        }
+
         if (window.scrollY < document.getElementById("home").offsetHeight - document.getElementById("mobile-nav").offsetHeight) {
           staticNav();
         }
       }
+    }
+  }
+}
+
+function checkNavScroll(isNavMobile) {
+  //HIDE NAV ON SCROLL DOWN WHEN NAV IS FIXED TO TOP OF SCREEN
+  if (currentScrollPos > prevScrollPos) {
+    if (!isNavMobile) {
+      document.getElementById("navbar").style.margin = -1 * document.getElementById("navbar").offsetHeight + "px 0 0 0";
+    }
+    else {
+      document.getElementById("mobile-nav").style.margin = -1 * document.getElementById("mobile-nav").offsetHeight + "px 0 0 0";
+    }
+  } else {
+    if (!isNavMobile) {
+      document.getElementById("navbar").style.margin = "0";
+    }
+    else {
+      document.getElementById("mobile-nav").style.margin = "0";
     }
   }
 }

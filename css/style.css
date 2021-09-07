@@ -367,7 +367,7 @@ a:hover {
 	box-shadow: none !important;
 	position: absolute;
 
-	transition: 0.3s ease-in-out;
+	transition: 0.2s;
 }
 
 .mob-fixed-nav {
@@ -376,7 +376,7 @@ a:hover {
 	position: fixed;
 	height: 75px !important;
 
-	transition: 0.3s ease-in-out;
+	transition: 0.2s;
 }
 
 #nav-overlay {
@@ -510,10 +510,11 @@ a:hover {
 }
 
 .static-nav {
-	background-color: rgba(0, 0, 0, 0.45);
+	background-color: rgba(0, 0, 0, 0.6);
+	backdrop-filter: blur(5px);
 	position: absolute;
 
-	transition: 0.2s ease-in-out;
+	transition: 0.3s;
 	transition-property: background-color, box-shadow, color, margin, height;
 }
 
@@ -522,7 +523,7 @@ a:hover {
 	background-color: rgb(10, 10, 10, 0.95);
 	position: fixed;
 
-	transition: 0.3s ease-in-out;
+	transition: 0.1s;
 	transition-property: background-color, box-shadow, color, margin, height;
 }
 
@@ -645,7 +646,7 @@ a:hover {
 }
 
 .icon-row{
-	display: flex;
+	display: flex !important;
 	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
