@@ -1519,14 +1519,12 @@ footer a:hover {
 	flex-direction: row;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
 }
 
 .team-member {
 	width: 30%;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
 	align-items: center;
 	flex-wrap: wrap;
 	text-align: center;
