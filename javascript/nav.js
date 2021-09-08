@@ -73,7 +73,7 @@ function scrolling() {
       //If the page is not past that number, then set back to normal
       else if (navIsFixed) {
         if (currentScrollPos > document.getElementById("home").offsetHeight - document.getElementById("navbar").offsetHeight + hideNavOnScrollDist){
-          checkNavScroll();
+          checkNavScroll(false);
         }
 
         if (window.scrollY < document.getElementById("home").offsetHeight - document.getElementById("navbar").offsetHeight) {
@@ -91,7 +91,7 @@ function scrolling() {
       //If the page is not past that number, then set back to normal
       else if (navIsFixed) {
         if (currentScrollPos > document.getElementById("home").offsetHeight - document.getElementById("mobile-nav").offsetHeight + hideNavOnScrollDist){
-          checkNavScroll();
+          checkNavScroll(true);
         }
 
         if (window.scrollY < document.getElementById("home").offsetHeight - document.getElementById("mobile-nav").offsetHeight) {
