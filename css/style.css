@@ -544,6 +544,7 @@ a:hover {
 }
 
 .featured-image {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -555,9 +556,40 @@ a:hover {
 	overflow: hidden;
 }
 
-.featured-image img {
+.featured-image:hover .main-img {
+	transform: scale(1.05);
+	filter: brightness(0%);
+
+	transition: 0.2s;
+}
+
+.featured-image .main-img {
 	width: 100%;
-	transform: scale(1.5);
+	filter: brightness(100%);
+
+	transition: 0.5s;
+}
+
+.featured-image .hidden-gif {
+	position: absolute;
+	width: 100%;
+	filter: brightness(0%);
+	opacity: 0;
+	z-index: 1;
+	transform: scale(1);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	transition: 0.4s;
+}
+
+.featured-image:hover .hidden-gif {
+	filter: brightness(100%);
+	opacity: 100;
+
+	transition: 0.15s;
 }
 
 .side-info {
