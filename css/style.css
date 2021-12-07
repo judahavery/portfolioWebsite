@@ -592,6 +592,10 @@ a:hover {
 	transition: 0.15s;
 }
 
+.featured-image .hidden-gif img {
+	width: 100%;
+}
+
 .side-info {
 	display: flex;
 	flex-direction: column;
