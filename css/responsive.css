@@ -375,6 +375,14 @@
 		line-height: 3vw;
 	}
 
+	.proj-details {
+		width: 45%;
+	}
+
+	.proj-contributions {
+		width: 50%;
+	}
+
 	.proj-page-width {
 		width: 70%;
 	}
